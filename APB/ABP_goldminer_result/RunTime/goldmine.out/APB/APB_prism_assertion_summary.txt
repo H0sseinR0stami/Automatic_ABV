@@ -1,0 +1,25 @@
+Assertion report generated on: 16-Jun-2023 01:38:55 PM
+
+Assertion summary report for design: APB
+########################################
+
+Target  | Total | Passed | Failed | Vacuous | Hit | Miss
+------- | ----- | ------ | ------ | ------- | --- | ----
+INT_RX  |   2   |   0    |   0    |    2    | 0.0 | 1.0 
+INT_TX  |   2   |   0    |   0    |    2    | 0.0 | 1.0 
+PREADY  |  N/A  |  N/A   |  N/A   |   N/A   | N/A | N/A 
+PSLVERR |   2   |   0    |   0    |    2    | 0.0 | 1.0 
+RD_ENA  |  N/A  |  N/A   |  N/A   |   N/A   | N/A | N/A 
+WR_ENA  |  N/A  |  N/A   |  N/A   |   N/A   | N/A | N/A 
+
+
+Resource usage summary report for the desing: APB
+#################################################
+
+      Phase       | Time (in [H]H:MM:SS:UUUUUU) | Memory (in MB)
+----------------- | --------------------------- | --------------
+V Parse & Ranking |       0:00:02.077382        |     388.56    
+   Simulation     |       0:00:02.054486        |     460.57    
+     D Parse      |       0:02:17.149785        |     819.37    
+     Mining       |       0:03:49.642671        |     823.93    
+     Overall      |       0:06:29.447898        |     823.93    

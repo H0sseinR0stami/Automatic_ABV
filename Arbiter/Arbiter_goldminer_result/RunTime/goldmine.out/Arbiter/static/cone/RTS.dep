@@ -1,0 +1,9 @@
+[1]state	[1]RTS_FF_in
+[1]IDLE	[1]RTS_FF_in
+[1]RTS_FF	[1]RTS_FF_in
+RTS_FF	RTS
+[1]RTS_FF_in	RTS_FF
+rst	RTS_FF
+[2]rst	[1]state
+[2]rst	[1]RTS_FF
+[1]DCTS	[1]RTS_FF_in

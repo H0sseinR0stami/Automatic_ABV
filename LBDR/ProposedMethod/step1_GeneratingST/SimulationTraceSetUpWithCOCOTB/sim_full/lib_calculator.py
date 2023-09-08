@@ -1,0 +1,31 @@
+def calculated_outputs(Rxy_rst,Cx_rst,dst_addr,cur_addr_rst):
+      binary_Rxy_rst = bin(Rxy_rst)[2:].zfill(8)
+      binary_Cx_rst = bin(Cx_rst)[2:].zfill(4)
+      binary_dst_addr = bin(dst_addr)[2:].zfill(4)
+      binary_cur_addr_rst = bin(cur_addr_rst)[2:].zfill(4)   
+      Rsw = int(binary_Rxy_rst[7])
+      Rse = int(binary_Rxy_rst[6])
+      Rws = int(binary_Rxy_rst[5])
+      Rwn = int(binary_Rxy_rst[4])
+      Res = int(binary_Rxy_rst[3])
+      Ren = int(binary_Rxy_rst[2])
+      Rnw = int(binary_Rxy_rst[1])
+      Rne = int(binary_Rxy_rst[0])
+      Cs = int(binary_Cx_rst[3])
+      Cw = int(binary_Cx_rst[2])
+      Ce = int(binary_Cx_rst[1])
+      Cn = int(binary_Cx_rst[0])       
+      x_dst = int(binary_dst_addr[2:4])
+      y_dst = int(binary_dst_addr[0:2]) 
+      x_cur = int(binary_cur_addr_rst[2:4])
+      y_cur = int(binary_cur_addr_rst[0:2])   
+      N1 = int(y_dst < y_cur)
+      E1 = int(x_cur < x_dst)
+      W1 = int(x_dst < x_cur)
+      S1 = int(y_cur < y_dst) 
+      Nport = ((N1 & ~E1 & ~W1) | (N1 & E1 & Rne) | (N1 & W1 & Rnw)) & Cn
+      Eport = ((E1 & ~N1 & ~S1) | (E1 & N1 & Ren) | (E1 & S1 & Res)) & Ce
+      Wport = ((W1 & ~N1 & ~S1) | (W1 & N1 & Rwn) | (W1 & S1 & Rws)) & Cw
+      Sport = ((S1 & ~E1 & ~W1) | (S1 & E1 & Rse) | (S1 & W1 & Rsw)) & Cs
+      Lport = int(not(N1) and not(E1) and not(W1) and not(S1))
+      return (Nport,Eport,Wport,Sport,Lport)

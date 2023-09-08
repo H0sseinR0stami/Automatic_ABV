@@ -1,0 +1,1686 @@
+property property_1;
+@(posedge clk)
+(rst == 1) |=> (Grant_E == 0)
+endproperty
+
+
+
+
+property property_2;
+@(posedge clk)
+(DUT_Arbiter.state[1] == 1) |-> (Grant_E == 0)
+endproperty
+
+
+
+
+property property_3;
+@(posedge clk)
+(DUT_Arbiter.state[0] == 1) |-> (Grant_E == 0)
+endproperty
+
+
+
+
+property property_4;
+@(posedge clk)
+(DUT_Arbiter.state[3] == 0) |-> (Grant_E == 0)
+endproperty
+
+
+
+
+property property_5;
+@(posedge clk)
+(DUT_Arbiter.state[2] == 1) |-> (Grant_E == 0)
+endproperty
+
+
+
+
+property property_6;
+@(posedge clk)
+(DCTS == 0 & DUT_Arbiter.RTS_FF == 1) ##2 (DUT_Arbiter.state[4] == 0) |-> (Grant_E == 0)
+endproperty
+
+
+
+
+property property_7;
+@(posedge clk)
+(DCTS == 0 & DUT_Arbiter.state_in[2] == 1) ##2 (DUT_Arbiter.state[4] == 0) |-> (Grant_E == 0)
+endproperty
+
+
+
+
+property property_8;
+@(posedge clk)
+(DCTS == 0 & DUT_Arbiter.RTS_FF == 1 & DUT_Arbiter.state_in[4] == 0) |=> ##1 (Grant_E == 0)
+endproperty
+
+
+
+
+property property_9;
+@(posedge clk)
+(DUT_Arbiter.state[3] == 1 & DUT_Arbiter.state_in[4] == 0 & DUT_Arbiter.state_in[3] == 1) ##2 (DUT_Arbiter.state[3] == 1 & DUT_Arbiter.state[0] == 0 & DUT_Arbiter.state[1] == 0 & DUT_Arbiter.state[2] == 0 & DUT_Arbiter.state[4] == 1) |-> (Grant_E == 1)
+endproperty
+
+
+
+
+property property_10;
+@(posedge clk)
+(DUT_Arbiter.state_in[3] == 0 & DUT_Arbiter.RTS_FF == 1) |=> ##1 (Grant_E == 0)
+endproperty
+
+
+
+
+property property_11;
+@(posedge clk)
+(DUT_Arbiter.state[3] == 0 & DUT_Arbiter.state_in[3] == 1 & DUT_Arbiter.RTS_FF == 1) ##1 (rst == 0) ##2 (DUT_Arbiter.state[3] == 1) |-> (Grant_E == 1)
+endproperty
+
+
+
+
+property property_12;
+@(posedge clk)
+(DUT_Arbiter.state_in[2] == 0 & DUT_Arbiter.state_in[1] == 1 & DCTS == 1) |=> ##1 (Grant_E == 0)
+endproperty
+
+
+
+
+property property_13;
+@(posedge clk)
+(DUT_Arbiter.state[3] == 0 & DUT_Arbiter.state_in[2] == 1 & DCTS == 1 & DUT_Arbiter.state_in[1] == 1) ##2 (DUT_Arbiter.state[3] == 1 & DUT_Arbiter.state[4] == 0) |-> (Grant_E == 1)
+endproperty
+
+
+
+
+property property_14;
+@(posedge clk)
+(DUT_Arbiter.state[3] == 1 & DUT_Arbiter.state[1] == 1 & DUT_Arbiter.state_in[3] == 1 & DCTS == 1) ##2 (DUT_Arbiter.state[3] == 1 & DUT_Arbiter.state[0] == 0 & DUT_Arbiter.state[1] == 0 & DUT_Arbiter.state[2] == 0) |-> (Grant_E == 1)
+endproperty
+
+
+
+
+property property_15;
+@(posedge clk)
+(DCTS == 1) ##1 (DUT_Arbiter.RTS_FF == 1 & DCTS == 0) ##2 (DUT_Arbiter.state[3] == 1 & DUT_Arbiter.state[0] == 0 & DUT_Arbiter.state[4] == 0) |-> (Grant_E == 1)
+endproperty
+
+
+
+
+property property_16;
+@(posedge clk)
+(DCTS == 0 & DUT_Arbiter.RTS_FF == 1) ##1 (DCTS == 1) |=> (Grant_E == 0)
+endproperty
+
+
+
+
+property property_17;
+@(posedge clk)
+(DUT_Arbiter.state_in[0] == 1) |=> ##1 (Grant_E == 0)
+endproperty
+
+
+
+
+property property_18;
+@(posedge clk)
+(DUT_Arbiter.state_in[1] == 1 & DCTS == 1) ##1 (DCTS == 0) ##2 (DUT_Arbiter.state[4] == 1) |-> (Grant_E == 0)
+endproperty
+
+
+
+
+property property_19;
+@(posedge clk)
+(DUT_Arbiter.state[3] == 1 & DUT_Arbiter.RTS_FF_in == 0 & DCTS == 0) ##1 (DCTS == 1) ##2 (DUT_Arbiter.state[3] == 1 & DUT_Arbiter.state[0] == 0 & DUT_Arbiter.state[1] == 0 & DUT_Arbiter.state[2] == 0 & DUT_Arbiter.state[4] == 1) |-> (Grant_E == 1)
+endproperty
+
+
+
+
+property property_20;
+@(posedge clk)
+(DUT_Arbiter.state[3] == 0 & DUT_Arbiter.state_in[1] == 1 & DUT_Arbiter.state_in[2] == 1 & DUT_Arbiter.state_in[3] == 1) ##2 (DUT_Arbiter.state[3] == 1) |-> (Grant_E == 1)
+endproperty
+
+
+
+
+property property_21;
+@(posedge clk)
+(DUT_Arbiter.state_in[4] == 0 & DUT_Arbiter.state[3] == 0 & DCTS == 1) |=> ##1 (Grant_E == 0)
+endproperty
+
+
+
+
+property property_22;
+@(posedge clk)
+(DUT_Arbiter.state_in[3] == 0 & DCTS == 1 & DUT_Arbiter.state[3] == 1) |=> ##1 (Grant_E == 0)
+endproperty
+
+
+
+
+property property_23;
+@(posedge clk)
+(DCTS == 0 & DUT_Arbiter.state_in[1] == 1 & DUT_Arbiter.state[2] == 1) |=> ##1 (Grant_E == 0)
+endproperty
+
+
+
+
+property property_24;
+@(posedge clk)
+(DCTS == 0 & DUT_Arbiter.RTS_FF_in == 1) ##2 (DUT_Arbiter.state[4] == 0) |-> (Grant_E == 0)
+endproperty
+
+
+
+
+property property_25;
+@(posedge clk)
+(DUT_Arbiter.state[3] == 0 & DUT_Arbiter.state[4] == 0 & DUT_Arbiter.state_in[3] == 1 & DUT_Arbiter.RTS_FF_in == 0 & DCTS == 0 & DUT_Arbiter.state_in[4] == 0) ##1 (rst == 0) ##2 (DUT_Arbiter.state[3] == 1) |-> (Grant_E == 1)
+endproperty
+
+
+
+
+property property_26;
+@(posedge clk)
+(DCTS == 0 & DUT_Arbiter.state_in[2] == 0 & DUT_Arbiter.state_in[4] == 1 & DUT_Arbiter.RTS_FF_in == 0) |=> ##1 (Grant_E == 0)
+endproperty
+
+
+
+
+property property_27;
+@(posedge clk)
+(DUT_Arbiter.state[0] == 1 & DCTS == 1) ##1 (DCTS == 0) ##2 (DUT_Arbiter.state[4] == 1) |-> (Grant_E == 0)
+endproperty
+
+
+
+
+property property_28;
+@(posedge clk)
+(DUT_Arbiter.state[3] == 0 & DUT_Arbiter.state[0] == 1 & DUT_Arbiter.state_in[2] == 1 & DUT_Arbiter.state_in[3] == 1 & DUT_Arbiter.state_in[4] == 1) ##2 (DUT_Arbiter.state[3] == 1) |-> (Grant_E == 1)
+endproperty
+
+
+
+
+property property_29;
+@(posedge clk)
+(DUT_Arbiter.state[3] == 1 & DUT_Arbiter.state[2] == 1 & DUT_Arbiter.state_in[4] == 1 & DUT_Arbiter.RTS_FF == 1) |=> ##1 (Grant_E == 0)
+endproperty
+
+
+
+
+property property_30;
+@(posedge clk)
+(DUT_Arbiter.state[3] == 0 & DUT_Arbiter.state[2] == 0 & DUT_Arbiter.state_in[3] == 1 & DUT_Arbiter.RTS_FF_in == 1 & DUT_Arbiter.state_in[4] == 1) ##1 (rst == 0) ##2 (DUT_Arbiter.state[3] == 1) |-> (Grant_E == 1)
+endproperty
+
+
+
+
+property property_31;
+@(posedge clk)
+(DUT_Arbiter.state[3] == 0 & DCTS == 1 & DUT_Arbiter.state_in[2] == 1 & DUT_Arbiter.state_in[1] == 0 & DUT_Arbiter.state[1] == 0) ##1 (DCTS == 1) ##2 (DUT_Arbiter.state[3] == 1) |-> (Grant_E == 1)
+endproperty
+
+
+
+
+property property_32;
+@(posedge clk)
+(DUT_Arbiter.state[0] == 1 & DUT_Arbiter.state_in[2] == 0 & DUT_Arbiter.state[4] == 1 & DCTS == 1) |=> ##1 (Grant_E == 0)
+endproperty
+
+
+
+
+property property_33;
+@(posedge clk)
+(DUT_Arbiter.state[3] == 0 & DUT_Arbiter.state[0] == 1 & DUT_Arbiter.state_in[3] == 0 & DUT_Arbiter.state_in[1] == 0 & DUT_Arbiter.state[2] == 1) ##2 (DUT_Arbiter.state[3] == 1) |-> (Grant_E == 1)
+endproperty
+
+
+
+
+property property_34;
+@(posedge clk)
+(DUT_Arbiter.state[3] == 1 & DUT_Arbiter.state[0] == 1) ##2 (DUT_Arbiter.state[4] == 0) |-> (Grant_E == 0)
+endproperty
+
+
+
+
+property property_35;
+@(posedge clk)
+(DUT_Arbiter.state[3] == 0 & DUT_Arbiter.state[4] == 0 & DUT_Arbiter.state_in[1] == 1 & DUT_Arbiter.state_in[4] == 0 & DUT_Arbiter.RTS_FF_in == 0) ##2 (DUT_Arbiter.state[3] == 1) |-> (Grant_E == 1)
+endproperty
+
+
+
+
+property property_36;
+@(posedge clk)
+(DUT_Arbiter.state[2] == 1 & DUT_Arbiter.RTS_FF_in == 1 & DCTS == 0) |=> ##1 (Grant_E == 0)
+endproperty
+
+
+
+
+property property_37;
+@(posedge clk)
+(DUT_Arbiter.RTS_FF_in == 1 & DUT_Arbiter.state[2] == 1) ##2 (DUT_Arbiter.state[4] == 1) |-> (Grant_E == 0)
+endproperty
+
+
+
+
+property property_38;
+@(posedge clk)
+(DUT_Arbiter.state_in[1] == 1 & DUT_Arbiter.RTS_FF_in == 1) |=> ##1 (Grant_E == 0)
+endproperty
+
+
+
+
+property property_39;
+@(posedge clk)
+(DUT_Arbiter.state_in[3] == 0 & DUT_Arbiter.RTS_FF_in == 1) |=> ##1 (Grant_E == 0)
+endproperty
+
+
+
+
+property property_40;
+@(posedge clk)
+(DUT_Arbiter.RTS_FF_in == 1) ##1 (DCTS == 1) ##2 (DUT_Arbiter.state[4] == 1) |-> (Grant_E == 0)
+endproperty
+
+
+
+
+property property_41;
+@(posedge clk)
+(DUT_Arbiter.RTS_FF_in == 1) ##1 (DUT_Arbiter.RTS_FF == 0) |=> (Grant_E == 0)
+endproperty
+
+property property_42;
+@(posedge clk)
+(rst == 1) |=> (Grant_L == 0)
+endproperty
+
+
+
+
+property property_43;
+@(posedge clk)
+(DUT_Arbiter.state[1] == 0) |-> (Grant_L == 0)
+endproperty
+
+
+
+
+property property_44;
+@(posedge clk)
+(DUT_Arbiter.state[0] == 1) |-> (Grant_L == 0)
+endproperty
+
+
+
+
+property property_45;
+@(posedge clk)
+(DUT_Arbiter.state_in[1] == 0) ##2 (DUT_Arbiter.state[2] == 1) |-> (Grant_L == 0)
+endproperty
+
+
+
+
+property property_46;
+@(posedge clk)
+(DUT_Arbiter.state_in[1] == 0 & DCTS == 1) ##2 (DUT_Arbiter.state[4] == 1) |-> (Grant_L == 0)
+endproperty
+
+
+
+
+property property_47;
+@(posedge clk)
+(DUT_Arbiter.state_in[1] == 1 & DCTS == 1 & DUT_Arbiter.state_in[4] == 0 & DUT_Arbiter.state_in[2] == 1 & DUT_Arbiter.state_in[3] == 0) ##2 (DUT_Arbiter.state[1] == 1 & DUT_Arbiter.state[0] == 0 & DUT_Arbiter.state[3] == 1) |-> (Grant_L == 1)
+endproperty
+
+
+
+
+property property_48;
+@(posedge clk)
+(DCTS == 1 & DUT_Arbiter.state_in[4] == 1 & DUT_Arbiter.state_in[2] == 0) ##2 (DUT_Arbiter.state[3] == 1) |-> (Grant_L == 0)
+endproperty
+
+
+
+
+property property_49;
+@(posedge clk)
+(DCTS == 1 & DUT_Arbiter.RTS_FF == 1 & DUT_Arbiter.state_in[3] == 1) |=> ##1 (Grant_L == 0)
+endproperty
+
+
+
+
+property property_50;
+@(posedge clk)
+(DCTS == 1 & DUT_Arbiter.state_in[4] == 1 & DUT_Arbiter.state_in[3] == 0 & DUT_Arbiter.state_in[2] == 1) ##2 (DUT_Arbiter.state[2] == 0) |-> (Grant_L == 0)
+endproperty
+
+
+
+
+property property_51;
+@(posedge clk)
+(DUT_Arbiter.RTS_FF_in == 0 & DCTS == 0) ##2 (DUT_Arbiter.state[3] == 0 & DUT_Arbiter.state[2] == 1 & DUT_Arbiter.state[4] == 1) |-> (Grant_L == 0)
+endproperty
+
+
+
+
+property property_52;
+@(posedge clk)
+(DUT_Arbiter.state_in[1] == 1 & DCTS == 0) ##1 (DCTS == 0 & DUT_Arbiter.RTS_FF == 1) ##2 (DUT_Arbiter.state[1] == 1 & DUT_Arbiter.state[0] == 0 & DUT_Arbiter.state[4] == 0) |-> (Grant_L == 1)
+endproperty
+
+
+
+
+property property_53;
+@(posedge clk)
+(DUT_Arbiter.state_in[0] == 1) |=> ##1 (Grant_L == 0)
+endproperty
+
+
+
+
+property property_54;
+@(posedge clk)
+(DUT_Arbiter.state_in[1] == 0 & DUT_Arbiter.state_in[2] == 1) |=> ##1 (Grant_L == 0)
+endproperty
+
+
+
+
+property property_55;
+@(posedge clk)
+(DUT_Arbiter.state_in[1] == 1 & DUT_Arbiter.state_in[4] == 0 & DCTS == 1 & DUT_Arbiter.state_in[3] == 0 & DUT_Arbiter.RTS_FF_in == 1) ##2 (DUT_Arbiter.state[1] == 1 & DUT_Arbiter.state[0] == 0) |-> (Grant_L == 1)
+endproperty
+
+
+
+
+property property_56;
+@(posedge clk)
+(DUT_Arbiter.state_in[1] == 1 & DUT_Arbiter.state[1] == 0 & DUT_Arbiter.state_in[4] == 1) ##1 (DCTS == 1) ##2 (DUT_Arbiter.state[1] == 1 & DUT_Arbiter.state[0] == 0 & DUT_Arbiter.state[3] == 1 & DUT_Arbiter.state[2] == 0) |-> (Grant_L == 1)
+endproperty
+
+
+
+
+property property_57;
+@(posedge clk)
+(DUT_Arbiter.state_in[1] == 1 & DUT_Arbiter.state[1] == 0 & DUT_Arbiter.state_in[3] == 1) ##1 (DCTS == 0) ##2 (DUT_Arbiter.state[1] == 1 & DUT_Arbiter.state[0] == 0 & DUT_Arbiter.state[2] == 1 & DUT_Arbiter.state[3] == 1) |-> (Grant_L == 1)
+endproperty
+
+
+
+
+property property_58;
+@(posedge clk)
+(DUT_Arbiter.state[0] == 1 & DUT_Arbiter.state_in[3] == 0 & DCTS == 0 & DUT_Arbiter.state_in[2] == 1) ##2 (DUT_Arbiter.state[2] == 1) |-> (Grant_L == 0)
+endproperty
+
+
+
+
+property property_59;
+@(posedge clk)
+(DUT_Arbiter.state[0] == 1 & DUT_Arbiter.state_in[1] == 0 & DCTS == 1) ##2 (DUT_Arbiter.state[3] == 0) |-> (Grant_L == 0)
+endproperty
+
+
+
+
+property property_60;
+@(posedge clk)
+(DUT_Arbiter.state[0] == 1 & DCTS == 0 & DUT_Arbiter.state_in[3] == 1) ##2 (DUT_Arbiter.state[3] == 0) |-> (Grant_L == 0)
+endproperty
+
+
+
+
+property property_61;
+@(posedge clk)
+(DUT_Arbiter.RTS_FF == 1 & DUT_Arbiter.state_in[2] == 1) ##1 (DUT_Arbiter.RTS_FF == 1 & DCTS == 0) ##2 (DUT_Arbiter.state[1] == 1 & DUT_Arbiter.state[0] == 0) |-> (Grant_L == 1)
+endproperty
+
+
+
+
+property property_62;
+@(posedge clk)
+(DUT_Arbiter.RTS_FF_in == 0 & DUT_Arbiter.state_in[3] == 0 & DUT_Arbiter.RTS_FF == 1) ##2 (DUT_Arbiter.state[2] == 1) |-> (Grant_L == 0)
+endproperty
+
+
+
+
+property property_63;
+@(posedge clk)
+(DUT_Arbiter.state_in[1] == 1 & DUT_Arbiter.state[1] == 0 & DUT_Arbiter.state_in[2] == 1) ##1 (DCTS == 1) ##2 (DUT_Arbiter.state[1] == 1 & DUT_Arbiter.state[0] == 0 & DUT_Arbiter.state[3] == 1) |-> (Grant_L == 1)
+endproperty
+
+
+
+
+property property_64;
+@(posedge clk)
+(DUT_Arbiter.state[1] == 0) ##1 (DUT_Arbiter.RTS_FF == 1) ##2 (DUT_Arbiter.state[1] == 1 & DUT_Arbiter.state[0] == 0 & DUT_Arbiter.state[4] == 0) |-> (Grant_L == 1)
+endproperty
+
+
+
+
+property property_65;
+@(posedge clk)
+(DUT_Arbiter.state_in[1] == 1 & DUT_Arbiter.state[1] == 0 & DUT_Arbiter.state[0] == 1 & DCTS == 1) ##1 (DCTS == 1) ##2 (DUT_Arbiter.state[1] == 1 & DUT_Arbiter.state[0] == 0 & DUT_Arbiter.state[3] == 1) |-> (Grant_L == 1)
+endproperty
+
+
+
+
+property property_66;
+@(posedge clk)
+(DUT_Arbiter.RTS_FF_in == 0 & DUT_Arbiter.state_in[4] == 0) ##2 (DUT_Arbiter.state[3] == 0 & DUT_Arbiter.state[2] == 1) |-> (Grant_L == 0)
+endproperty
+
+
+
+
+property property_67;
+@(posedge clk)
+(DUT_Arbiter.state_in[2] == 0 & DUT_Arbiter.RTS_FF_in == 1) ##2 (DUT_Arbiter.state[2] == 1 & DUT_Arbiter.state[4] == 0) |-> (Grant_L == 0)
+endproperty
+
+
+
+
+property property_68;
+@(posedge clk)
+(DCTS == 1 & DUT_Arbiter.state_in[4] == 1 & DUT_Arbiter.state_in[3] == 0 & DUT_Arbiter.state[0] == 1) ##1 (DCTS == 0) ##2 (DUT_Arbiter.state[2] == 0) |-> (Grant_L == 0)
+endproperty
+
+
+
+
+property property_69;
+@(posedge clk)
+(DUT_Arbiter.state_in[1] == 1 & DUT_Arbiter.state_in[4] == 0 & DUT_Arbiter.state[0] == 1 & DUT_Arbiter.state[1] == 1 & DCTS == 1) ##1 (DCTS == 0) ##2 (DUT_Arbiter.state[1] == 1 & DUT_Arbiter.state[0] == 0) |-> (Grant_L == 1)
+endproperty
+
+
+
+
+property property_70;
+@(posedge clk)
+(DUT_Arbiter.RTS_FF_in == 0 & DCTS == 0 & DUT_Arbiter.state[1] == 0) ##2 (DUT_Arbiter.state[3] == 0 & DUT_Arbiter.state[4] == 0) |-> (Grant_L == 0)
+endproperty
+
+
+
+
+property property_71;
+@(posedge clk)
+(DUT_Arbiter.state_in[1] == 1 & DUT_Arbiter.state[1] == 0 & DUT_Arbiter.state[0] == 1 & DUT_Arbiter.state_in[4] == 0) ##1 (DCTS == 1) ##2 (DUT_Arbiter.state[1] == 1 & DUT_Arbiter.state[0] == 0 & DUT_Arbiter.state[3] == 1) |-> (Grant_L == 1)
+endproperty
+
+
+
+
+property property_72;
+@(posedge clk)
+(DUT_Arbiter.state[1] == 0 & DUT_Arbiter.state_in[2] == 1) ##1 (DUT_Arbiter.RTS_FF == 1) ##2 (DUT_Arbiter.state[1] == 1 & DUT_Arbiter.state[0] == 0) |-> (Grant_L == 1)
+endproperty
+
+
+
+
+property property_73;
+@(posedge clk)
+(DUT_Arbiter.state_in[3] == 1) ##1 (DCTS == 1) ##2 (DUT_Arbiter.state[3] == 0) |-> (Grant_L == 0)
+endproperty
+
+
+
+
+property property_74;
+@(posedge clk)
+(DUT_Arbiter.state[0] == 1 & DUT_Arbiter.state_in[3] == 0 & DUT_Arbiter.state_in[1] == 0 & DUT_Arbiter.state_in[4] == 0) |=> ##1 (Grant_L == 0)
+endproperty
+
+
+
+
+property property_75;
+@(posedge clk)
+(DCTS == 1 & DUT_Arbiter.state_in[4] == 1 & DUT_Arbiter.state[1] == 1 & DUT_Arbiter.RTS_FF_in == 0) ##2 (DUT_Arbiter.state[2] == 0) |-> (Grant_L == 0)
+endproperty
+
+
+
+
+property property_76;
+@(posedge clk)
+(DUT_Arbiter.state[0] == 1 & DUT_Arbiter.state_in[3] == 0 & DUT_Arbiter.state[1] == 0 & DUT_Arbiter.state_in[1] == 0) ##2 (DUT_Arbiter.state[3] == 0) |-> (Grant_L == 0)
+endproperty
+
+
+
+
+property property_77;
+@(posedge clk)
+(DUT_Arbiter.state[1] == 0) ##1 (DCTS == 1) ##2 (DUT_Arbiter.state[3] == 0 & DUT_Arbiter.state[2] == 1) |-> (Grant_L == 0)
+endproperty
+
+
+
+
+property property_78;
+@(posedge clk)
+(DUT_Arbiter.RTS_FF_in == 0 & DUT_Arbiter.state[1] == 1 & DUT_Arbiter.state_in[3] == 1 & DCTS == 1) |=> ##1 (Grant_L == 0)
+endproperty
+
+
+
+
+property property_79;
+@(posedge clk)
+(DUT_Arbiter.state_in[1] == 0 & DUT_Arbiter.state[3] == 1) |=> ##1 (Grant_L == 0)
+endproperty
+
+
+
+
+property property_80;
+@(posedge clk)
+(DUT_Arbiter.RTS_FF_in == 0 & DUT_Arbiter.state[4] == 0 & DUT_Arbiter.state_in[1] == 0) ##2 (DUT_Arbiter.state[3] == 0) |-> (Grant_L == 0)
+endproperty
+
+
+
+
+property property_81;
+@(posedge clk)
+(DUT_Arbiter.state[1] == 1 & DUT_Arbiter.RTS_FF_in == 1) ##2 (DUT_Arbiter.state[3] == 1) |-> (Grant_L == 0)
+endproperty
+
+
+
+
+property property_82;
+@(posedge clk)
+(DUT_Arbiter.state_in[1] == 0 & DUT_Arbiter.RTS_FF_in == 1) |=> ##1 (Grant_L == 0)
+endproperty
+
+
+
+
+property property_83;
+@(posedge clk)
+(DUT_Arbiter.state[1] == 1 & DUT_Arbiter.RTS_FF_in == 1) ##1 (DUT_Arbiter.RTS_FF == 0) |=> (Grant_L == 0)
+endproperty
+
+
+
+
+property property_84;
+@(posedge clk)
+(DUT_Arbiter.RTS_FF_in == 1) ##1 (DUT_Arbiter.RTS_FF == 0) |=> (Grant_L == 0)
+endproperty
+
+
+
+
+property property_85;
+@(posedge clk)
+(DUT_Arbiter.RTS_FF_in == 1) ##1 (DCTS == 1) |=> (Grant_L == 0)
+endproperty
+
+property property_86;
+@(posedge clk)
+(rst == 1) |=> (Grant_N == 0)
+endproperty
+
+
+
+
+property property_87;
+@(posedge clk)
+(DUT_Arbiter.state[1] == 1) |-> (Grant_N == 0)
+endproperty
+
+
+
+
+property property_88;
+@(posedge clk)
+(DUT_Arbiter.state[0] == 1) |-> (Grant_N == 0)
+endproperty
+
+
+
+
+property property_89;
+@(posedge clk)
+(DUT_Arbiter.state[2] == 0) |-> (Grant_N == 0)
+endproperty
+
+
+
+
+property property_90;
+@(posedge clk)
+(DUT_Arbiter.RTS_FF == 1) ##2 (DUT_Arbiter.state[4] == 0) |-> (Grant_N == 0)
+endproperty
+
+
+
+
+property property_91;
+@(posedge clk)
+(DUT_Arbiter.state_in[3] == 0 & DUT_Arbiter.state[2] == 1 & DCTS == 1) ##2 (DUT_Arbiter.state[2] == 1 & DUT_Arbiter.state[0] == 0 & DUT_Arbiter.state[1] == 0 & DUT_Arbiter.state[4] == 0) |-> (Grant_N == 1)
+endproperty
+
+
+
+
+property property_92;
+@(posedge clk)
+(DUT_Arbiter.state_in[2] == 1 & DUT_Arbiter.RTS_FF_in == 0 & DUT_Arbiter.RTS_FF == 1) ##2 (DUT_Arbiter.state[2] == 1 & DUT_Arbiter.state[0] == 0 & DUT_Arbiter.state[1] == 0 & DUT_Arbiter.state[3] == 1) |-> (Grant_N == 1)
+endproperty
+
+
+
+
+property property_93;
+@(posedge clk)
+(DUT_Arbiter.RTS_FF == 1 & DCTS == 0) ##1 (DUT_Arbiter.state[2] == 1 & DUT_Arbiter.state[0] == 0 & DUT_Arbiter.state[1] == 0 & DUT_Arbiter.state[4] == 0 & DUT_Arbiter.state[3] == 1) |-> (Grant_N == 1)
+endproperty
+
+
+
+
+property property_94;
+@(posedge clk)
+(DUT_Arbiter.state_in[4] == 0 & DUT_Arbiter.state_in[1] == 1 & DCTS == 0) |=> ##1 (Grant_N == 0)
+endproperty
+
+
+
+
+property property_95;
+@(posedge clk)
+(DUT_Arbiter.state_in[4] == 1 & DCTS == 0 & DUT_Arbiter.RTS_FF == 0) ##1 (DUT_Arbiter.RTS_FF == 1 & DCTS == 0) ##2 (DUT_Arbiter.state[2] == 1 & DUT_Arbiter.state[0] == 0 & DUT_Arbiter.state[1] == 0) |-> (Grant_N == 1)
+endproperty
+
+
+
+
+property property_96;
+@(posedge clk)
+(DUT_Arbiter.state_in[2] == 1 & DUT_Arbiter.RTS_FF_in == 0 & DUT_Arbiter.state_in[4] == 0 & DUT_Arbiter.state_in[3] == 0 & DUT_Arbiter.state_in[1] == 0) ##2 (DUT_Arbiter.state[2] == 1 & DUT_Arbiter.state[0] == 0 & DUT_Arbiter.state[1] == 0 & DUT_Arbiter.state[3] == 1) |-> (Grant_N == 1)
+endproperty
+
+
+
+
+property property_97;
+@(posedge clk)
+(DUT_Arbiter.state[2] == 0 & DUT_Arbiter.state_in[1] == 1 & DUT_Arbiter.state_in[4] == 1 & DUT_Arbiter.state_in[3] == 1 & DCTS == 1) ##2 (DUT_Arbiter.state[2] == 1 & DUT_Arbiter.state[3] == 0) |-> (Grant_N == 1)
+endproperty
+
+
+
+
+property property_98;
+@(posedge clk)
+(DUT_Arbiter.state_in[3] == 1 & DUT_Arbiter.RTS_FF == 1) ##1 (DUT_Arbiter.RTS_FF == 1 & DCTS == 0) ##2 (DUT_Arbiter.state[2] == 1 & DUT_Arbiter.state[0] == 0 & DUT_Arbiter.state[1] == 0) |-> (Grant_N == 1)
+endproperty
+
+
+
+
+property property_99;
+@(posedge clk)
+(DCTS == 1 & DUT_Arbiter.state_in[4] == 0) ##1 (DUT_Arbiter.RTS_FF == 1 & DCTS == 0) ##2 (DUT_Arbiter.state[2] == 1 & DUT_Arbiter.state[0] == 0 & DUT_Arbiter.state[1] == 0) |-> (Grant_N == 1)
+endproperty
+
+
+
+
+property property_100;
+@(posedge clk)
+(DUT_Arbiter.state_in[4] == 0 & DUT_Arbiter.state_in[1] == 1 & DUT_Arbiter.state_in[2] == 0) |=> ##1 (Grant_N == 0)
+endproperty
+
+
+
+
+property property_101;
+@(posedge clk)
+(DUT_Arbiter.state_in[0] == 1) |=> ##1 (Grant_N == 0)
+endproperty
+
+
+
+
+property property_102;
+@(posedge clk)
+(DUT_Arbiter.state[2] == 0 & DCTS == 0) ##2 (DUT_Arbiter.state[4] == 0) |-> (Grant_N == 0)
+endproperty
+
+
+
+
+property property_103;
+@(posedge clk)
+(DUT_Arbiter.state_in[3] == 0 & DUT_Arbiter.state[2] == 1 & DUT_Arbiter.state[4] == 0) ##2 (DUT_Arbiter.state[2] == 1 & DUT_Arbiter.state[0] == 0 & DUT_Arbiter.state[1] == 0 & DUT_Arbiter.state[4] == 1) |-> (Grant_N == 1)
+endproperty
+
+
+
+
+property property_104;
+@(posedge clk)
+(DUT_Arbiter.RTS_FF == 1 & DUT_Arbiter.state_in[2] == 1 & DUT_Arbiter.RTS_FF_in == 0) ##2 (DUT_Arbiter.state[3] == 0) |-> (Grant_N == 0)
+endproperty
+
+
+
+
+property property_105;
+@(posedge clk)
+(DUT_Arbiter.RTS_FF_in == 1 & DCTS == 0 & DUT_Arbiter.state_in[3] == 1) ##2 (DUT_Arbiter.state[3] == 0) |-> (Grant_N == 0)
+endproperty
+
+
+
+
+property property_106;
+@(posedge clk)
+(DUT_Arbiter.state[2] == 1 & DUT_Arbiter.state[0] == 1 & DUT_Arbiter.state_in[4] == 1 & DUT_Arbiter.state_in[0] == 0 & DCTS == 0) ##1 (DCTS == 0) ##2 (DUT_Arbiter.state[2] == 1 & DUT_Arbiter.state[0] == 0 & DUT_Arbiter.state[1] == 0) |-> (Grant_N == 1)
+endproperty
+
+
+
+
+property property_107;
+@(posedge clk)
+(DUT_Arbiter.state[2] == 1 & DCTS == 1 & DUT_Arbiter.state[0] == 1 & DUT_Arbiter.state_in[2] == 1 & DUT_Arbiter.state_in[3] == 1) ##1 (DCTS == 0) ##2 (DUT_Arbiter.state[2] == 1 & DUT_Arbiter.state[0] == 0 & DUT_Arbiter.state[1] == 0) |-> (Grant_N == 1)
+endproperty
+
+
+
+
+property property_108;
+@(posedge clk)
+(DUT_Arbiter.state[2] == 1 & DCTS == 1 & DUT_Arbiter.state[0] == 1 & DUT_Arbiter.state_in[4] == 1 & DUT_Arbiter.state_in[1] == 1) ##1 (DCTS == 0) ##2 (DUT_Arbiter.state[2] == 1 & DUT_Arbiter.state[0] == 0 & DUT_Arbiter.state[1] == 0) |-> (Grant_N == 1)
+endproperty
+
+
+
+
+property property_109;
+@(posedge clk)
+(DUT_Arbiter.state[2] == 1 & DUT_Arbiter.state_in[3] == 0 & DUT_Arbiter.RTS_FF_in == 0 & DUT_Arbiter.state[1] == 1 & DCTS == 0) ##2 (DUT_Arbiter.state[2] == 1 & DUT_Arbiter.state[0] == 0 & DUT_Arbiter.state[1] == 0 & DUT_Arbiter.state[3] == 1) |-> (Grant_N == 1)
+endproperty
+
+
+
+
+property property_110;
+@(posedge clk)
+(DUT_Arbiter.state[2] == 0 & DUT_Arbiter.state_in[1] == 0 & DCTS == 0) |=> ##1 (Grant_N == 0)
+endproperty
+
+
+
+
+property property_111;
+@(posedge clk)
+(DUT_Arbiter.state_in[3] == 1 & DCTS == 0) ##1 (DCTS == 1) |=> (Grant_N == 0)
+endproperty
+
+
+
+
+property property_112;
+@(posedge clk)
+(DUT_Arbiter.RTS_FF == 1) ##1 (DCTS == 1) |=> (Grant_N == 0)
+endproperty
+
+
+
+
+property property_113;
+@(posedge clk)
+(DUT_Arbiter.state[1] == 1 & DUT_Arbiter.state_in[1] == 0) ##2 (DUT_Arbiter.state[4] == 0) |-> (Grant_N == 0)
+endproperty
+
+
+
+
+property property_114;
+@(posedge clk)
+(DUT_Arbiter.RTS_FF_in == 1 & DUT_Arbiter.RTS_FF == 1 & DUT_Arbiter.state_in[3] == 0 & DUT_Arbiter.state_in[4] == 0) |=> ##1 (Grant_N == 0)
+endproperty
+
+
+
+
+property property_115;
+@(posedge clk)
+(DUT_Arbiter.state[2] == 0 & DUT_Arbiter.state_in[1] == 1 & DUT_Arbiter.state_in[4] == 1 & DUT_Arbiter.RTS_FF_in == 0 & DUT_Arbiter.RTS_FF == 1) ##2 (DUT_Arbiter.state[2] == 1) |-> (Grant_N == 1)
+endproperty
+
+
+
+
+property property_116;
+@(posedge clk)
+(DUT_Arbiter.state_in[4] == 0 & DCTS == 0 & DUT_Arbiter.RTS_FF_in == 0) |=> ##1 (Grant_N == 0)
+endproperty
+
+
+
+
+property property_117;
+@(posedge clk)
+(DUT_Arbiter.state[2] == 0 & DUT_Arbiter.state_in[1] == 0 & DUT_Arbiter.state_in[2] == 0) |=> ##1 (Grant_N == 0)
+endproperty
+
+
+
+
+property property_118;
+@(posedge clk)
+(DUT_Arbiter.state[2] == 0 & DUT_Arbiter.state[1] == 0 & DCTS == 0) |=> ##1 (Grant_N == 0)
+endproperty
+
+
+
+
+property property_119;
+@(posedge clk)
+(DUT_Arbiter.state_in[2] == 1 & DUT_Arbiter.state_in[3] == 1) ##1 (DCTS == 1) |=> (Grant_N == 0)
+endproperty
+
+
+
+
+property property_120;
+@(posedge clk)
+(DUT_Arbiter.state_in[3] == 1 & DUT_Arbiter.state_in[1] == 0) ##1 (DCTS == 1) |=> (Grant_N == 0)
+endproperty
+
+
+
+
+property property_121;
+@(posedge clk)
+(DUT_Arbiter.state[2] == 0 & DUT_Arbiter.state[1] == 0) ##2 (DUT_Arbiter.state[3] == 1) |-> (Grant_N == 0)
+endproperty
+
+
+
+
+property property_122;
+@(posedge clk)
+(DUT_Arbiter.RTS_FF == 1 & DUT_Arbiter.state[1] == 0 & DUT_Arbiter.RTS_FF_in == 0) |=> ##1 (Grant_N == 0)
+endproperty
+
+
+
+
+property property_123;
+@(posedge clk)
+(DUT_Arbiter.state[2] == 0 & DUT_Arbiter.state[1] == 0 & DUT_Arbiter.state_in[2] == 1) |=> ##1 (Grant_N == 0)
+endproperty
+
+
+
+
+property property_124;
+@(posedge clk)
+(DUT_Arbiter.state[2] == 0 & DUT_Arbiter.state[1] == 0 & DUT_Arbiter.state_in[1] == 0) |=> ##1 (Grant_N == 0)
+endproperty
+
+
+
+
+property property_125;
+@(posedge clk)
+(DUT_Arbiter.state_in[4] == 0 & DUT_Arbiter.state_in[3] == 1 & DUT_Arbiter.RTS_FF_in == 0) |=> ##1 (Grant_N == 0)
+endproperty
+
+
+
+
+property property_126;
+@(posedge clk)
+(DUT_Arbiter.state[2] == 1) ##1 (DCTS == 1) ##2 (DUT_Arbiter.state[4] == 0) |-> (Grant_N == 0)
+endproperty
+
+
+
+
+property property_127;
+@(posedge clk)
+(DUT_Arbiter.state[2] == 0 & DUT_Arbiter.RTS_FF_in == 1) ##2 (DUT_Arbiter.state[4] == 0) |-> (Grant_N == 0)
+endproperty
+
+
+
+
+property property_128;
+@(posedge clk)
+(DUT_Arbiter.RTS_FF_in == 1 & DUT_Arbiter.state_in[4] == 1 & DUT_Arbiter.state[1] == 1) |=> ##1 (Grant_N == 0)
+endproperty
+
+
+
+
+property property_129;
+@(posedge clk)
+(DUT_Arbiter.state[2] == 1 & DUT_Arbiter.state[3] == 0) ##1 (DCTS == 1) |=> (Grant_N == 0)
+endproperty
+
+
+
+
+property property_130;
+@(posedge clk)
+(DUT_Arbiter.state[2] == 0 & DUT_Arbiter.state[1] == 0 & DUT_Arbiter.RTS_FF_in == 1) |=> ##1 (Grant_N == 0)
+endproperty
+
+
+
+
+property property_131;
+@(posedge clk)
+(DUT_Arbiter.RTS_FF_in == 1) ##1 (DUT_Arbiter.RTS_FF == 0) |=> (Grant_N == 0)
+endproperty
+
+
+
+
+property property_132;
+@(posedge clk)
+(DUT_Arbiter.RTS_FF_in == 1) ##1 (DCTS == 1) |=> (Grant_N == 0)
+endproperty
+
+property property_133;
+@(posedge clk)
+(rst == 1) |=> (Grant_S == 0)
+endproperty
+
+
+
+
+property property_134;
+@(posedge clk)
+(DUT_Arbiter.state[2] == 1) |-> (Grant_S == 0)
+endproperty
+
+
+
+
+property property_135;
+@(posedge clk)
+(DUT_Arbiter.state[1] == 1) |-> (Grant_S == 0)
+endproperty
+
+
+
+
+property property_136;
+@(posedge clk)
+(DUT_Arbiter.state[4] == 1) |-> (Grant_S == 0)
+endproperty
+
+
+
+
+property property_137;
+@(posedge clk)
+(DUT_Arbiter.state[3] == 1) |-> (Grant_S == 0)
+endproperty
+
+
+
+
+property property_138;
+@(posedge clk)
+(DUT_Arbiter.state[0] == 1) |-> (Grant_S == 0)
+endproperty
+
+
+
+
+property property_139;
+@(posedge clk)
+(DUT_Arbiter.RTS_FF == 1 & DUT_Arbiter.state_in[2] == 0 & DUT_Arbiter.state_in[4] == 0) ##1 (DCTS == 0) ##2 (DUT_Arbiter.state[4] == 0 & DUT_Arbiter.state[0] == 0 & DUT_Arbiter.state[1] == 0 & DUT_Arbiter.state[2] == 0) |-> (Grant_S == 1)
+endproperty
+
+
+
+
+property property_140;
+@(posedge clk)
+(DUT_Arbiter.state_in[2] == 1 & DCTS == 0) |=> ##1 (Grant_S == 0)
+endproperty
+
+
+
+
+property property_141;
+@(posedge clk)
+(DUT_Arbiter.state[2] == 1 & DUT_Arbiter.state_in[1] == 1) ##1 (DCTS == 0) ##2 (DUT_Arbiter.state[4] == 0 & DUT_Arbiter.state[0] == 0 & DUT_Arbiter.state[1] == 0 & DUT_Arbiter.state[3] == 0 & DUT_Arbiter.state[2] == 0) |-> (Grant_S == 1)
+endproperty
+
+
+
+
+property property_142;
+@(posedge clk)
+(DUT_Arbiter.state_in[2] == 1 & DUT_Arbiter.state_in[3] == 0) |=> ##1 (Grant_S == 0)
+endproperty
+
+
+
+
+property property_143;
+@(posedge clk)
+(DUT_Arbiter.state_in[0] == 1) |=> ##1 (Grant_S == 0)
+endproperty
+
+
+
+
+property property_144;
+@(posedge clk)
+(DUT_Arbiter.state[1] == 1 & DUT_Arbiter.state_in[4] == 0 & DCTS == 1 & DUT_Arbiter.state_in[2] == 0 & DUT_Arbiter.state_in[1] == 0) ##1 (DCTS == 0) ##2 (DUT_Arbiter.state[4] == 0 & DUT_Arbiter.state[0] == 0 & DUT_Arbiter.state[3] == 0) |-> (Grant_S == 1)
+endproperty
+
+
+
+
+property property_145;
+@(posedge clk)
+(DUT_Arbiter.state[2] == 1 & DUT_Arbiter.state_in[1] == 1 & DUT_Arbiter.state_in[4] == 0) ##2 (DUT_Arbiter.state[4] == 0 & DUT_Arbiter.state[2] == 0) |-> (Grant_S == 1)
+endproperty
+
+
+
+
+property property_146;
+@(posedge clk)
+(DUT_Arbiter.state_in[3] == 0) ##1 (DCTS == 0 & DUT_Arbiter.RTS_FF == 1) ##2 (DUT_Arbiter.state[4] == 0 & DUT_Arbiter.state[0] == 0 & DUT_Arbiter.state[1] == 0) |-> (Grant_S == 1)
+endproperty
+
+
+
+
+property property_147;
+@(posedge clk)
+(DUT_Arbiter.state[4] == 1 & DUT_Arbiter.RTS_FF == 1 & DUT_Arbiter.state_in[2] == 0) |=> ##1 (Grant_S == 0)
+endproperty
+
+
+
+
+property property_148;
+@(posedge clk)
+(DUT_Arbiter.state[3] == 1 & DUT_Arbiter.RTS_FF == 1) |=> ##1 (Grant_S == 0)
+endproperty
+
+
+
+
+property property_149;
+@(posedge clk)
+(DUT_Arbiter.state[4] == 1) ##1 (DCTS == 0 & DUT_Arbiter.RTS_FF == 1 & rst == 0) ##2 (DUT_Arbiter.state[4] == 0) |-> (Grant_S == 1)
+endproperty
+
+
+
+
+property property_150;
+@(posedge clk)
+(DUT_Arbiter.state[4] == 1 & DUT_Arbiter.state_in[1] == 1 & DUT_Arbiter.state[2] == 1) ##2 (DUT_Arbiter.state[4] == 0) |-> (Grant_S == 1)
+endproperty
+
+
+
+
+property property_151;
+@(posedge clk)
+(DUT_Arbiter.state[4] == 1 & DUT_Arbiter.state[0] == 1 & DCTS == 0) ##1 (DCTS == 1) ##2 (DUT_Arbiter.state[4] == 0) |-> (Grant_S == 1)
+endproperty
+
+
+
+
+property property_152;
+@(posedge clk)
+(DUT_Arbiter.state[3] == 1 & DCTS == 1) ##1 (DCTS == 1) |=> (Grant_S == 0)
+endproperty
+
+
+
+
+property property_153;
+@(posedge clk)
+(DUT_Arbiter.state[3] == 1 & DUT_Arbiter.state_in[2] == 1) |=> ##1 (Grant_S == 0)
+endproperty
+
+
+
+
+property property_154;
+@(posedge clk)
+(DUT_Arbiter.state_in[1] == 1 & DUT_Arbiter.state[1] == 1) |=> ##1 (Grant_S == 0)
+endproperty
+
+
+
+
+property property_155;
+@(posedge clk)
+(DUT_Arbiter.state[4] == 1 & DUT_Arbiter.state[0] == 1 & DUT_Arbiter.state[1] == 1 & DUT_Arbiter.state_in[3] == 1) ##2 (DUT_Arbiter.state[4] == 0) |-> (Grant_S == 1)
+endproperty
+
+
+
+
+property property_156;
+@(posedge clk)
+(DUT_Arbiter.state[4] == 1 & DUT_Arbiter.state[0] == 1 & DUT_Arbiter.state[3] == 1 & DUT_Arbiter.state_in[1] == 0) ##1 (DCTS == 0) ##2 (DUT_Arbiter.state[4] == 0 & DUT_Arbiter.state[3] == 0) |-> (Grant_S == 1)
+endproperty
+
+
+
+
+property property_157;
+@(posedge clk)
+(DUT_Arbiter.state[4] == 1 & DUT_Arbiter.state[2] == 1 & DUT_Arbiter.state_in[2] == 1) ##1 (DCTS == 0) ##2 (DUT_Arbiter.state[4] == 0) |-> (Grant_S == 1)
+endproperty
+
+
+
+
+property property_158;
+@(posedge clk)
+(DUT_Arbiter.state_in[1] == 1 & DUT_Arbiter.state[2] == 0 & DUT_Arbiter.state[3] == 0) |=> ##1 (Grant_S == 0)
+endproperty
+
+
+
+
+property property_159;
+@(posedge clk)
+(DUT_Arbiter.state[3] == 1 & DUT_Arbiter.state[2] == 1) |=> ##1 (Grant_S == 0)
+endproperty
+
+
+
+
+property property_160;
+@(posedge clk)
+(DUT_Arbiter.state_in[2] == 1 & DUT_Arbiter.RTS_FF_in == 1) |=> ##1 (Grant_S == 0)
+endproperty
+
+
+
+
+property property_161;
+@(posedge clk)
+(DUT_Arbiter.state[3] == 1 & DUT_Arbiter.RTS_FF_in == 1) |=> ##1 (Grant_S == 0)
+endproperty
+
+
+
+
+property property_162;
+@(posedge clk)
+(DUT_Arbiter.RTS_FF_in == 1) ##1 (DCTS == 1) |=> (Grant_S == 0)
+endproperty
+
+
+property property_163;
+@(posedge clk)
+(rst == 1) |=> (Grant_W == 0)
+endproperty
+
+
+
+
+property property_164;
+@(posedge clk)
+(DUT_Arbiter.state[1] == 1) |-> (Grant_W == 0)
+endproperty
+
+
+
+
+property property_165;
+@(posedge clk)
+(DUT_Arbiter.state[0] == 1) |-> (Grant_W == 0)
+endproperty
+
+
+
+
+property property_166;
+@(posedge clk)
+(DUT_Arbiter.state[3] == 1) |-> (Grant_W == 0)
+endproperty
+
+
+
+
+property property_167;
+@(posedge clk)
+(DUT_Arbiter.state[2] == 1) |-> (Grant_W == 0)
+endproperty
+
+
+
+
+property property_168;
+@(posedge clk)
+(DUT_Arbiter.state[4] == 0) |-> (Grant_W == 0)
+endproperty
+
+
+
+
+property property_169;
+@(posedge clk)
+(DUT_Arbiter.state[4] == 0 & DUT_Arbiter.RTS_FF == 1 & DUT_Arbiter.state_in[3] == 0) ##2 (DUT_Arbiter.state[0] == 0 & DUT_Arbiter.state[1] == 0 & DUT_Arbiter.state[3] == 0 & DUT_Arbiter.state[2] == 0 & DUT_Arbiter.state[4] == 1) |-> (Grant_W == 1)
+endproperty
+
+
+
+
+property property_170;
+@(posedge clk)
+(DUT_Arbiter.state[4] == 0 & DUT_Arbiter.RTS_FF == 1 & DUT_Arbiter.state_in[2] == 0) ##2 (DUT_Arbiter.state[0] == 0 & DUT_Arbiter.state[1] == 0 & DUT_Arbiter.state[4] == 1) |-> (Grant_W == 1)
+endproperty
+
+
+
+
+property property_171;
+@(posedge clk)
+(DUT_Arbiter.RTS_FF_in == 0 & DUT_Arbiter.state[1] == 1 & DUT_Arbiter.state_in[2] == 0 & DCTS == 1) ##2 (DUT_Arbiter.state[0] == 0 & DUT_Arbiter.state[1] == 0 & DUT_Arbiter.state[3] == 0 & DUT_Arbiter.state[2] == 0 & DUT_Arbiter.state[4] == 1) |-> (Grant_W == 1)
+endproperty
+
+
+
+
+property property_172;
+@(posedge clk)
+(DUT_Arbiter.state_in[0] == 1) |=> ##1 (Grant_W == 0)
+endproperty
+
+
+
+
+property property_173;
+@(posedge clk)
+(DUT_Arbiter.state[0] == 1 & DUT_Arbiter.state[4] == 0 & DUT_Arbiter.state[2] == 0 & DCTS == 0) ##2 (DUT_Arbiter.state[0] == 0 & DUT_Arbiter.state[1] == 0 & DUT_Arbiter.state[3] == 0 & DUT_Arbiter.state[2] == 0 & DUT_Arbiter.state[4] == 1) |-> (Grant_W == 1)
+endproperty
+
+
+
+
+property property_174;
+@(posedge clk)
+(DUT_Arbiter.state[4] == 1 & DCTS == 1 & DUT_Arbiter.state_in[2] == 1) |=> ##1 (Grant_W == 0)
+endproperty
+
+
+
+
+property property_175;
+@(posedge clk)
+(DUT_Arbiter.state[4] == 0 & DUT_Arbiter.state_in[1] == 1) ##1 (DCTS == 0) ##2 (DUT_Arbiter.state[0] == 0 & DUT_Arbiter.state[4] == 1) |-> (Grant_W == 1)
+endproperty
+
+
+
+
+property property_176;
+@(posedge clk)
+(DUT_Arbiter.state[4] == 1 & DUT_Arbiter.state_in[3] == 1 & DUT_Arbiter.state[1] == 0 & DCTS == 0) |=> ##1 (Grant_W == 0)
+endproperty
+
+
+
+
+property property_177;
+@(posedge clk)
+(DUT_Arbiter.RTS_FF_in == 1 & DCTS == 0) |=> ##1 (Grant_W == 0)
+endproperty
+
+
+
+
+property property_178;
+@(posedge clk)
+(DUT_Arbiter.state[4] == 1 & DUT_Arbiter.state_in[1] == 1) |=> ##1 (Grant_W == 0)
+endproperty
+
+
+
+
+property property_179;
+@(posedge clk)
+(DUT_Arbiter.state[2] == 1 & DUT_Arbiter.state_in[1] == 1) |=> ##1 (Grant_W == 0)
+endproperty
+
+
+
+
+property property_180;
+@(posedge clk)
+(DUT_Arbiter.state[4] == 1 & DUT_Arbiter.state[2] == 0 & DUT_Arbiter.state_in[2] == 1 & DUT_Arbiter.state[1] == 1) |=> ##1 (Grant_W == 0)
+endproperty
+
+
+
+
+property property_181;
+@(posedge clk)
+(DUT_Arbiter.state[4] == 0 & DUT_Arbiter.RTS_FF_in == 1) ##1 (DCTS == 0) ##2 (DUT_Arbiter.state[0] == 0 & DUT_Arbiter.state[4] == 1) |-> (Grant_W == 1)
+endproperty
+
+
+
+
+property property_182;
+@(posedge clk)
+(DUT_Arbiter.RTS_FF_in == 1 & DUT_Arbiter.state_in[2] == 1) |=> ##1 (Grant_W == 0)
+endproperty
+
+
+
+
+property property_183;
+@(posedge clk)
+(DUT_Arbiter.RTS_FF_in == 1 & DUT_Arbiter.state_in[1] == 1) |=> ##1 (Grant_W == 0)
+endproperty
+
+
+
+
+property property_184;
+@(posedge clk)
+(DUT_Arbiter.state[4] == 1 & DUT_Arbiter.state[3] == 1 & DUT_Arbiter.RTS_FF_in == 1) |=> ##1 (Grant_W == 0)
+endproperty
+
+
+
+
+property property_185;
+@(posedge clk)
+(DUT_Arbiter.RTS_FF_in == 1 & DUT_Arbiter.state[1] == 1) |=> ##1 (Grant_W == 0)
+endproperty
+
+
+
+
+property property_186;
+@(posedge clk)
+(DUT_Arbiter.RTS_FF_in == 1) ##1 (DUT_Arbiter.RTS_FF == 0) |=> (Grant_W == 0)
+endproperty
+
+
+property property_187;
+@(posedge clk)
+(DUT_Arbiter.state[0] == 1) |=> (DUT_Arbiter.RTS == 0)
+endproperty
+
+
+
+
+property property_188;
+@(posedge clk)
+(DUT_Arbiter.RTS_FF == 1) |-> (DUT_Arbiter.RTS == 1)
+endproperty
+
+
+
+
+property property_189;
+@(posedge clk)
+(DUT_Arbiter.RTS_FF == 0) |-> (DUT_Arbiter.RTS == 0)
+endproperty
+
+
+property_1_assert : assert property (property_1) else $error ("property_1 not held!");
+property_2_assert : assert property (property_2) else $error ("property_2 not held!");
+property_3_assert : assert property (property_3) else $error ("property_3 not held!");
+property_4_assert : assert property (property_4) else $error ("property_4 not held!");
+property_5_assert : assert property (property_5) else $error ("property_5 not held!");
+// property_6_assert : assert property (property_6) else $error ("property_6 not held!");
+property_7_assert : assert property (property_7) else $error ("property_7 not held!");
+// property_8_assert : assert property (property_8) else $error ("property_8 not held!");
+property_9_assert : assert property (property_9) else $error ("property_9 not held!");
+property_10_assert : assert property (property_10) else $error ("property_10 not held!");
+property_11_assert : assert property (property_11) else $error ("property_11 not held!");
+property_12_assert : assert property (property_12) else $error ("property_12 not held!");
+property_13_assert : assert property (property_13) else $error ("property_13 not held!");
+property_14_assert : assert property (property_14) else $error ("property_14 not held!");
+// property_15_assert : assert property (property_15) else $error ("property_15 not held!");
+property_16_assert : assert property (property_16) else $error ("property_16 not held!");
+property_17_assert : assert property (property_17) else $error ("property_17 not held!");
+property_18_assert : assert property (property_18) else $error ("property_18 not held!");
+property_19_assert : assert property (property_19) else $error ("property_19 not held!");
+property_20_assert : assert property (property_20) else $error ("property_20 not held!");
+// property_21_assert : assert property (property_21) else $error ("property_21 not held!");
+property_22_assert : assert property (property_22) else $error ("property_22 not held!");
+property_23_assert : assert property (property_23) else $error ("property_23 not held!");
+// property_24_assert : assert property (property_24) else $error ("property_24 not held!");
+// property_25_assert : assert property (property_25) else $error ("property_25 not held!");
+property_26_assert : assert property (property_26) else $error ("property_26 not held!");
+property_27_assert : assert property (property_27) else $error ("property_27 not held!");
+property_28_assert : assert property (property_28) else $error ("property_28 not held!");
+property_29_assert : assert property (property_29) else $error ("property_29 not held!");
+property_30_assert : assert property (property_30) else $error ("property_30 not held!");
+// property_31_assert : assert property (property_31) else $error ("property_31 not held!");
+property_32_assert : assert property (property_32) else $error ("property_32 not held!");
+property_33_assert : assert property (property_33) else $error ("property_33 not held!");
+property_34_assert : assert property (property_34) else $error ("property_34 not held!");
+// property_35_assert : assert property (property_35) else $error ("property_35 not held!");
+property_36_assert : assert property (property_36) else $error ("property_36 not held!");
+property_37_assert : assert property (property_37) else $error ("property_37 not held!");
+property_38_assert : assert property (property_38) else $error ("property_38 not held!");
+property_39_assert : assert property (property_39) else $error ("property_39 not held!");
+property_40_assert : assert property (property_40) else $error ("property_40 not held!");
+property_41_assert : assert property (property_41) else $error ("property_41 not held!");
+property_42_assert : assert property (property_42) else $error ("property_42 not held!");
+property_43_assert : assert property (property_43) else $error ("property_43 not held!");
+property_44_assert : assert property (property_44) else $error ("property_44 not held!");
+property_45_assert : assert property (property_45) else $error ("property_45 not held!");
+property_46_assert : assert property (property_46) else $error ("property_46 not held!");
+property_47_assert : assert property (property_47) else $error ("property_47 not held!");
+property_48_assert : assert property (property_48) else $error ("property_48 not held!");
+property_49_assert : assert property (property_49) else $error ("property_49 not held!");
+property_50_assert : assert property (property_50) else $error ("property_50 not held!");
+property_51_assert : assert property (property_51) else $error ("property_51 not held!");
+// property_52_assert : assert property (property_52) else $error ("property_52 not held!");
+property_53_assert : assert property (property_53) else $error ("property_53 not held!");
+// property_54_assert : assert property (property_54) else $error ("property_54 not held!");
+// property_55_assert : assert property (property_55) else $error ("property_55 not held!");
+property_56_assert : assert property (property_56) else $error ("property_56 not held!");
+property_57_assert : assert property (property_57) else $error ("property_57 not held!");
+property_58_assert : assert property (property_58) else $error ("property_58 not held!");
+property_59_assert : assert property (property_59) else $error ("property_59 not held!");
+property_60_assert : assert property (property_60) else $error ("property_60 not held!");
+property_61_assert : assert property (property_61) else $error ("property_61 not held!");
+property_62_assert : assert property (property_62) else $error ("property_62 not held!");
+property_63_assert : assert property (property_63) else $error ("property_63 not held!");
+// property_64_assert : assert property (property_64) else $error ("property_64 not held!");
+property_65_assert : assert property (property_65) else $error ("property_65 not held!");
+property_66_assert : assert property (property_66) else $error ("property_66 not held!");
+property_67_assert : assert property (property_67) else $error ("property_67 not held!");
+property_68_assert : assert property (property_68) else $error ("property_68 not held!");
+property_69_assert : assert property (property_69) else $error ("property_69 not held!");
+// property_70_assert : assert property (property_70) else $error ("property_70 not held!");
+property_71_assert : assert property (property_71) else $error ("property_71 not held!");
+// property_72_assert : assert property (property_72) else $error ("property_72 not held!");
+// property_73_assert : assert property (property_73) else $error ("property_73 not held!");
+// property_74_assert : assert property (property_74) else $error ("property_74 not held!");
+property_75_assert : assert property (property_75) else $error ("property_75 not held!");
+// property_76_assert : assert property (property_76) else $error ("property_76 not held!");
+property_77_assert : assert property (property_77) else $error ("property_77 not held!");
+property_78_assert : assert property (property_78) else $error ("property_78 not held!");
+property_79_assert : assert property (property_79) else $error ("property_79 not held!");
+// property_80_assert : assert property (property_80) else $error ("property_80 not held!");
+property_81_assert : assert property (property_81) else $error ("property_81 not held!");
+property_82_assert : assert property (property_82) else $error ("property_82 not held!");
+property_83_assert : assert property (property_83) else $error ("property_83 not held!");
+property_84_assert : assert property (property_84) else $error ("property_84 not held!");
+property_85_assert : assert property (property_85) else $error ("property_85 not held!");
+property_86_assert : assert property (property_86) else $error ("property_86 not held!");
+property_87_assert : assert property (property_87) else $error ("property_87 not held!");
+property_88_assert : assert property (property_88) else $error ("property_88 not held!");
+property_89_assert : assert property (property_89) else $error ("property_89 not held!");
+// property_90_assert : assert property (property_90) else $error ("property_90 not held!");
+// property_91_assert : assert property (property_91) else $error ("property_91 not held!");
+property_92_assert : assert property (property_92) else $error ("property_92 not held!");
+property_93_assert : assert property (property_93) else $error ("property_93 not held!");
+// property_94_assert : assert property (property_94) else $error ("property_94 not held!");
+property_95_assert : assert property (property_95) else $error ("property_95 not held!");
+property_96_assert : assert property (property_96) else $error ("property_96 not held!");
+property_97_assert : assert property (property_97) else $error ("property_97 not held!");
+property_98_assert : assert property (property_98) else $error ("property_98 not held!");
+// property_99_assert : assert property (property_99) else $error ("property_99 not held!");
+// property_100_assert : assert property (property_100) else $error ("property_100 not held!");
+property_101_assert : assert property (property_101) else $error ("property_101 not held!");
+// property_102_assert : assert property (property_102) else $error ("property_102 not held!");
+property_103_assert : assert property (property_103) else $error ("property_103 not held!");
+// property_104_assert : assert property (property_104) else $error ("property_104 not held!");
+property_105_assert : assert property (property_105) else $error ("property_105 not held!");
+property_106_assert : assert property (property_106) else $error ("property_106 not held!");
+property_107_assert : assert property (property_107) else $error ("property_107 not held!");
+property_108_assert : assert property (property_108) else $error ("property_108 not held!");
+property_109_assert : assert property (property_109) else $error ("property_109 not held!");
+// property_110_assert : assert property (property_110) else $error ("property_110 not held!");
+property_111_assert : assert property (property_111) else $error ("property_111 not held!");
+// property_112_assert : assert property (property_112) else $error ("property_112 not held!");
+// property_113_assert : assert property (property_113) else $error ("property_113 not held!");
+// property_114_assert : assert property (property_114) else $error ("property_114 not held!");
+property_115_assert : assert property (property_115) else $error ("property_115 not held!");
+// property_116_assert : assert property (property_116) else $error ("property_116 not held!");
+// property_117_assert : assert property (property_117) else $error ("property_117 not held!");
+// property_118_assert : assert property (property_118) else $error ("property_118 not held!");
+property_119_assert : assert property (property_119) else $error ("property_119 not held!");
+property_120_assert : assert property (property_120) else $error ("property_120 not held!");
+property_121_assert : assert property (property_121) else $error ("property_121 not held!");
+// property_122_assert : assert property (property_122) else $error ("property_122 not held!");
+// property_123_assert : assert property (property_123) else $error ("property_123 not held!");
+// property_124_assert : assert property (property_124) else $error ("property_124 not held!");
+property_125_assert : assert property (property_125) else $error ("property_125 not held!");
+// property_126_assert : assert property (property_126) else $error ("property_126 not held!");
+// property_127_assert : assert property (property_127) else $error ("property_127 not held!");
+property_128_assert : assert property (property_128) else $error ("property_128 not held!");
+// property_129_assert : assert property (property_129) else $error ("property_129 not held!");
+property_130_assert : assert property (property_130) else $error ("property_130 not held!");
+property_131_assert : assert property (property_131) else $error ("property_131 not held!");
+property_132_assert : assert property (property_132) else $error ("property_132 not held!");
+property_133_assert : assert property (property_133) else $error ("property_133 not held!");
+property_134_assert : assert property (property_134) else $error ("property_134 not held!");
+property_135_assert : assert property (property_135) else $error ("property_135 not held!");
+property_136_assert : assert property (property_136) else $error ("property_136 not held!");
+property_137_assert : assert property (property_137) else $error ("property_137 not held!");
+property_138_assert : assert property (property_138) else $error ("property_138 not held!");
+// property_139_assert : assert property (property_139) else $error ("property_139 not held!");
+property_140_assert : assert property (property_140) else $error ("property_140 not held!");
+property_141_assert : assert property (property_141) else $error ("property_141 not held!");
+property_142_assert : assert property (property_142) else $error ("property_142 not held!");
+property_143_assert : assert property (property_143) else $error ("property_143 not held!");
+// property_144_assert : assert property (property_144) else $error ("property_144 not held!");
+// property_145_assert : assert property (property_145) else $error ("property_145 not held!");
+// property_146_assert : assert property (property_146) else $error ("property_146 not held!");
+property_147_assert : assert property (property_147) else $error ("property_147 not held!");
+// property_148_assert : assert property (property_148) else $error ("property_148 not held!");
+// property_149_assert : assert property (property_149) else $error ("property_149 not held!");
+property_150_assert : assert property (property_150) else $error ("property_150 not held!");
+property_151_assert : assert property (property_151) else $error ("property_151 not held!");
+property_152_assert : assert property (property_152) else $error ("property_152 not held!");
+property_153_assert : assert property (property_153) else $error ("property_153 not held!");
+property_154_assert : assert property (property_154) else $error ("property_154 not held!");
+property_155_assert : assert property (property_155) else $error ("property_155 not held!");
+property_156_assert : assert property (property_156) else $error ("property_156 not held!");
+property_157_assert : assert property (property_157) else $error ("property_157 not held!");
+// property_158_assert : assert property (property_158) else $error ("property_158 not held!");
+property_159_assert : assert property (property_159) else $error ("property_159 not held!");
+property_160_assert : assert property (property_160) else $error ("property_160 not held!");
+property_161_assert : assert property (property_161) else $error ("property_161 not held!");
+property_162_assert : assert property (property_162) else $error ("property_162 not held!");
+property_163_assert : assert property (property_163) else $error ("property_163 not held!");
+property_164_assert : assert property (property_164) else $error ("property_164 not held!");
+property_165_assert : assert property (property_165) else $error ("property_165 not held!");
+property_166_assert : assert property (property_166) else $error ("property_166 not held!");
+property_167_assert : assert property (property_167) else $error ("property_167 not held!");
+property_168_assert : assert property (property_168) else $error ("property_168 not held!");
+// property_169_assert : assert property (property_169) else $error ("property_169 not held!");
+// property_170_assert : assert property (property_170) else $error ("property_170 not held!");
+property_171_assert : assert property (property_171) else $error ("property_171 not held!");
+property_172_assert : assert property (property_172) else $error ("property_172 not held!");
+// property_173_assert : assert property (property_173) else $error ("property_173 not held!");
+property_174_assert : assert property (property_174) else $error ("property_174 not held!");
+// property_175_assert : assert property (property_175) else $error ("property_175 not held!");
+property_176_assert : assert property (property_176) else $error ("property_176 not held!");
+// property_177_assert : assert property (property_177) else $error ("property_177 not held!");
+property_178_assert : assert property (property_178) else $error ("property_178 not held!");
+property_179_assert : assert property (property_179) else $error ("property_179 not held!");
+property_180_assert : assert property (property_180) else $error ("property_180 not held!");
+// property_181_assert : assert property (property_181) else $error ("property_181 not held!");
+property_182_assert : assert property (property_182) else $error ("property_182 not held!");
+property_183_assert : assert property (property_183) else $error ("property_183 not held!");
+property_184_assert : assert property (property_184) else $error ("property_184 not held!");
+// property_185_assert : assert property (property_185) else $error ("property_185 not held!");
+property_186_assert : assert property (property_186) else $error ("property_186 not held!");
+property_187_assert : assert property (property_187) else $error ("property_187 not held!");
+property_188_assert : assert property (property_188) else $error ("property_188 not held!");
+// property_189_assert : assert property (property_189) else $error ("property_189 not held!");

@@ -1,0 +1,84 @@
+strict digraph "" {
+	flit_id	 [complexity=1,
+		importance=0.087584821288,
+		rank=0.087584821288];
+	Nport	 [complexity=0,
+		importance=0.0689011785977,
+		rank=0.0];
+	flit_id -> Nport;
+	"[1]Rne"	 [complexity=11,
+		importance=0.0893781065504,
+		rank=0.00812528241368];
+	"[1]Rne" -> Nport;
+	"[1]x_cur"	 [complexity=14,
+		importance=0.125744779241,
+		rank=0.00898176994579];
+	"[1]E1"	 [complexity=11,
+		importance=0.0998879955009,
+		rank=0.00908072686372];
+	"[1]x_cur" -> "[1]E1";
+	"[1]W1"	 [complexity=11,
+		importance=0.0998879955009,
+		rank=0.00908072686372];
+	"[1]x_cur" -> "[1]W1";
+	"[1]rst"	 [complexity=17,
+		importance=0.173121517549,
+		rank=0.0101836186793];
+	"[1]Cx"	 [complexity=13,
+		importance=0.11986448743,
+		rank=0.00922034518695];
+	"[1]rst" -> "[1]Cx";
+	"[1]cur_addr"	 [complexity=16,
+		importance=0.154437874858,
+		rank=0.00965236717866];
+	"[1]rst" -> "[1]cur_addr";
+	"[1]Rxy"	 [complexity=13,
+		importance=0.118071202168,
+		rank=0.00908240016676];
+	"[1]rst" -> "[1]Rxy";
+	"[1]Cn"	 [complexity=11,
+		importance=0.0911713918129,
+		rank=0.00828830834663];
+	"[1]Cx" -> "[1]Cn";
+	"[1]E1" -> Nport;
+	"[1]Rnw"	 [complexity=11,
+		importance=0.0893781065504,
+		rank=0.00812528241368];
+	"[1]Rnw" -> Nport;
+	"[1]x_dst"	 [complexity=14,
+		importance=0.123242716224,
+		rank=0.00880305115885];
+	"[1]x_dst" -> "[1]E1";
+	"[1]x_dst" -> "[1]W1";
+	"[1]W1" -> Nport;
+	"[1]cur_addr" -> "[1]x_cur";
+	"[1]y_cur"	 [complexity=14,
+		importance=0.125744779241,
+		rank=0.00898176994579];
+	"[1]cur_addr" -> "[1]y_cur";
+	"[1]Cn" -> Nport;
+	rst	 [complexity=3,
+		importance=0.225387178483,
+		rank=0.0751290594944];
+	rst -> Nport;
+	"[1]N1"	 [complexity=11,
+		importance=0.0998879955009,
+		rank=0.00908072686372];
+	"[1]y_cur" -> "[1]N1";
+	"[1]Rxy" -> "[1]Rne";
+	"[1]Rxy" -> "[1]Rnw";
+	"[1]dst_addr"	 [complexity=16,
+		importance=0.141926358914,
+		rank=0.00887039743214];
+	"[1]dst_addr" -> "[1]x_dst";
+	"[1]y_dst"	 [complexity=14,
+		importance=0.123242716224,
+		rank=0.00880305115885];
+	"[1]dst_addr" -> "[1]y_dst";
+	"[1]y_dst" -> "[1]N1";
+	empty	 [complexity=2,
+		importance=0.156485999886,
+		rank=0.0782429999428];
+	empty -> Nport;
+	"[1]N1" -> Nport;
+}

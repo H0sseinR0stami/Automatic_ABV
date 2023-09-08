@@ -1,0 +1,55 @@
+[2]RTS_FF_in
+Importance: 0.17023
+Complexity: 5
+Rank: 0.03405
+
+[1]rst
+Importance: 0.70004
+Complexity: 2
+Rank: 0.35002
+
+[1]RTS_FF
+Importance: 0.11018
+Complexity: 3
+Rank: 0.03673
+
+Grant_E
+Importance: 0.04004
+Complexity: 0
+Rank: 0.0
+
+[2]DCTS
+Importance: 0.91453
+Complexity: 5
+Rank: 0.18291
+
+[2]state_in
+Importance: 0.44122
+Complexity: 3
+Rank: 0.14707
+
+[2]RTS_FF
+Importance: 0.95258
+Complexity: 5
+Rank: 0.19052
+
+state
+Importance: 0.33397
+Complexity: 1
+Rank: 0.33397
+
+[2]state
+Importance: 0.60444
+Complexity: 7
+Rank: 0.08635
+
+[2]IDLE
+Importance: 0.54279
+Complexity: 7
+Rank: 0.07754
+
+[1]DCTS
+Importance: 0.07213
+Complexity: 3
+Rank: 0.02404
+

@@ -1,0 +1,24 @@
+Assertion report generated on: 23-Mar-2023 04:19:03 PM
+
+Assertion summary report for design: LBDR
+#########################################
+
+Target | Total | Passed | Failed | Vacuous | Hit | Miss
+------ | ----- | ------ | ------ | ------- | --- | ----
+Eport  |  383  |   0    |   0    |   383   | 0.0 | 1.0 
+Lport  |  104  |   0    |   0    |   104   | 0.0 | 1.0 
+Nport  |  336  |   0    |   0    |   336   | 0.0 | 1.0 
+Sport  |  304  |   0    |   0    |   304   | 0.0 | 1.0 
+Wport  |  380  |   0    |   0    |   380   | 0.0 | 1.0 
+
+
+Resource usage summary report for the desing: LBDR
+##################################################
+
+      Phase       | Time (in [H]H:MM:SS:UUUUUU) | Memory (in MB)
+----------------- | --------------------------- | --------------
+V Parse & Ranking |       0:00:02.215956        |     388.57    
+   Simulation     |       0:00:02.057392        |     460.82    
+     D Parse      |       0:31:11.219008        |     643.47    
+     Mining       |       1:23:09.484897        |     992.18    
+     Overall      |       1:54:44.163263        |     992.18    

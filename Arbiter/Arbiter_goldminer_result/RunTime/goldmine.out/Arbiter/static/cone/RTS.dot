@@ -1,0 +1,38 @@
+strict digraph "" {
+	"[1]state"	 [complexity=6,
+		importance=0.591130371242,
+		rank=0.0985217285403];
+	"[1]RTS_FF_in"	 [complexity=4,
+		importance=0.165796330861,
+		rank=0.0414490827153];
+	"[1]state" -> "[1]RTS_FF_in";
+	"[1]IDLE"	 [complexity=6,
+		importance=0.529484307799,
+		rank=0.0882473846331];
+	"[1]IDLE" -> "[1]RTS_FF_in";
+	"[1]RTS_FF"	 [complexity=6,
+		importance=0.401736625882,
+		rank=0.0669561043137];
+	"[1]RTS_FF" -> "[1]RTS_FF_in";
+	RTS_FF	 [complexity=2,
+		importance=0.105746483938,
+		rank=0.0528732419692];
+	RTS	 [complexity=0,
+		importance=0.0356025197786,
+		rank=0.0];
+	RTS_FF -> RTS;
+	"[1]RTS_FF_in" -> RTS_FF;
+	rst	 [complexity=3,
+		importance=0.243588283092,
+		rank=0.0811960943641];
+	rst -> RTS_FF;
+	"[2]rst"	 [complexity=7,
+		importance=0.83556856698,
+		rank=0.11936693814];
+	"[2]rst" -> "[1]state";
+	"[2]rst" -> "[1]RTS_FF";
+	"[1]DCTS"	 [complexity=6,
+		importance=0.363687976938,
+		rank=0.0606146628229];
+	"[1]DCTS" -> "[1]RTS_FF_in";
+}

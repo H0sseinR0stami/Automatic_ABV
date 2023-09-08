@@ -1,0 +1,12 @@
+strict digraph "" {
+	node [label="\N"];
+	"60:AS"	 [ast="<pyverilog.vparser.ast.Assign object at 0x7fdf564d13d0>",
+		def_var="['Cw']",
+		fillcolor=deepskyblue,
+		label="60:AS
+Cw = Cx[2];",
+		statements="[]",
+		style=filled,
+		typ=Assign,
+		use_var="['Cx']"];
+}

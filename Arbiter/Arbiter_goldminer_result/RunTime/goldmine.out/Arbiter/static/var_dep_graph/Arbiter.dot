@@ -1,0 +1,37 @@
+strict digraph "" {
+	IDLE -> RTS_FF_in	 [weight=3.0];
+	Req_S -> next_state	 [weight=22.0];
+	Req_W -> next_state	 [weight=23.0];
+	RTS_FF_in -> RTS_FF	 [weight=1.0];
+	state -> Grant_L	 [weight=6.0];
+	state -> Grant_N	 [weight=6.0];
+	state -> Grant_E	 [weight=6.0];
+	state -> RTS_FF_in	 [weight=3.0];
+	state -> state_in	 [weight=1.0];
+	state -> next_state	 [weight=36.0];
+	state -> Grant_W	 [weight=6.0];
+	state -> Xbar_sel	 [weight=36.0];
+	state -> Grant_S	 [weight=6.0];
+	DCTS -> Grant_L	 [weight=1.0];
+	DCTS -> Grant_N	 [weight=1.0];
+	DCTS -> Grant_E	 [weight=1.0];
+	DCTS -> RTS_FF_in	 [weight=2.0];
+	DCTS -> state_in	 [weight=2.0];
+	DCTS -> Grant_W	 [weight=1.0];
+	DCTS -> Grant_S	 [weight=1.0];
+	RTS_FF -> Grant_L	 [weight=1.0];
+	RTS_FF -> Grant_N	 [weight=1.0];
+	RTS_FF -> Grant_E	 [weight=1.0];
+	RTS_FF -> RTS_FF_in	 [weight=2.0];
+	RTS_FF -> state_in	 [weight=2.0];
+	RTS_FF -> RTS	 [weight=1.0];
+	RTS_FF -> Grant_W	 [weight=1.0];
+	RTS_FF -> Grant_S	 [weight=1.0];
+	state_in -> state	 [weight=1.0];
+	Req_E -> next_state	 [weight=24.0];
+	rst -> state	 [weight=2.0];
+	rst -> RTS_FF	 [weight=2.0];
+	next_state -> state_in	 [weight=1.0];
+	Req_L -> next_state	 [weight=26.0];
+	Req_N -> next_state	 [weight=25.0];
+}

@@ -1,0 +1,425 @@
+strict digraph "compose( ,  )" {
+	node [label="\N"];
+	"69:BL"	 [ast="<pyverilog.vparser.ast.Block object at 0x7fdf571f2e90>",
+		fillcolor=turquoise,
+		label="69:BL",
+		statements="[]",
+		style=filled,
+		typ=Block];
+	"70:IF"	 [ast="<pyverilog.vparser.ast.IfStatement object at 0x7fdf571f2cd0>",
+		fillcolor=springgreen,
+		label="70:IF",
+		statements="[]",
+		style=filled,
+		typ=IfStatement];
+	"69:BL" -> "70:IF"	 [cond="[]",
+		lineno=None];
+	"43:AS"	 [ast="<pyverilog.vparser.ast.Assign object at 0x7fdf57947cd0>",
+		def_var="['Rxy']",
+		fillcolor=deepskyblue,
+		label="43:AS
+Rxy = 'd60;",
+		statements="[]",
+		style=filled,
+		typ=Assign,
+		use_var="[]"];
+	"53:AS"	 [ast="<pyverilog.vparser.ast.Assign object at 0x7fdf571e7150>",
+		def_var="['Rws']",
+		fillcolor=deepskyblue,
+		label="53:AS
+Rws = Rxy[5];",
+		statements="[]",
+		style=filled,
+		typ=Assign,
+		use_var="['Rxy']"];
+	"43:AS" -> "53:AS";
+	"50:AS"	 [ast="<pyverilog.vparser.ast.Assign object at 0x7fdf57d86a50>",
+		def_var="['Ren']",
+		fillcolor=deepskyblue,
+		label="50:AS
+Ren = Rxy[2];",
+		statements="[]",
+		style=filled,
+		typ=Assign,
+		use_var="['Rxy']"];
+	"43:AS" -> "50:AS";
+	"54:AS"	 [ast="<pyverilog.vparser.ast.Assign object at 0x7fdf571e7390>",
+		def_var="['Rse']",
+		fillcolor=deepskyblue,
+		label="54:AS
+Rse = Rxy[6];",
+		statements="[]",
+		style=filled,
+		typ=Assign,
+		use_var="['Rxy']"];
+	"43:AS" -> "54:AS";
+	"51:AS"	 [ast="<pyverilog.vparser.ast.Assign object at 0x7fdf57d86c90>",
+		def_var="['Res']",
+		fillcolor=deepskyblue,
+		label="51:AS
+Res = Rxy[3];",
+		statements="[]",
+		style=filled,
+		typ=Assign,
+		use_var="['Rxy']"];
+	"43:AS" -> "51:AS";
+	"49:AS"	 [ast="<pyverilog.vparser.ast.Assign object at 0x7fdf57d86810>",
+		def_var="['Rnw']",
+		fillcolor=deepskyblue,
+		label="49:AS
+Rnw = Rxy[1];",
+		statements="[]",
+		style=filled,
+		typ=Assign,
+		use_var="['Rxy']"];
+	"43:AS" -> "49:AS";
+	"55:AS"	 [ast="<pyverilog.vparser.ast.Assign object at 0x7fdf571e75d0>",
+		def_var="['Rsw']",
+		fillcolor=deepskyblue,
+		label="55:AS
+Rsw = Rxy[7];",
+		statements="[]",
+		style=filled,
+		typ=Assign,
+		use_var="['Rxy']"];
+	"43:AS" -> "55:AS";
+	"52:AS"	 [ast="<pyverilog.vparser.ast.Assign object at 0x7fdf57d86ed0>",
+		def_var="['Rwn']",
+		fillcolor=deepskyblue,
+		label="52:AS
+Rwn = Rxy[4];",
+		statements="[]",
+		style=filled,
+		typ=Assign,
+		use_var="['Rxy']"];
+	"43:AS" -> "52:AS";
+	"48:AS"	 [ast="<pyverilog.vparser.ast.Assign object at 0x7fdf57d865d0>",
+		def_var="['Rne']",
+		fillcolor=deepskyblue,
+		label="48:AS
+Rne = Rxy[0];",
+		statements="[]",
+		style=filled,
+		typ=Assign,
+		use_var="['Rxy']"];
+	"43:AS" -> "48:AS";
+	"44:AS"	 [ast="<pyverilog.vparser.ast.Assign object at 0x7fdf57d86090>",
+		def_var="['Cx']",
+		fillcolor=deepskyblue,
+		label="44:AS
+Cx = 'd15;",
+		statements="[]",
+		style=filled,
+		typ=Assign,
+		use_var="[]"];
+	"61:AS"	 [ast="<pyverilog.vparser.ast.Assign object at 0x7fdf571e7ed0>",
+		def_var="['Cs']",
+		fillcolor=deepskyblue,
+		label="61:AS
+Cs = Cx[3];",
+		statements="[]",
+		style=filled,
+		typ=Assign,
+		use_var="['Cx']"];
+	"44:AS" -> "61:AS";
+	"58:AS"	 [ast="<pyverilog.vparser.ast.Assign object at 0x7fdf571e7810>",
+		def_var="['Cn']",
+		fillcolor=deepskyblue,
+		label="58:AS
+Cn = Cx[0];",
+		statements="[]",
+		style=filled,
+		typ=Assign,
+		use_var="['Cx']"];
+	"44:AS" -> "58:AS";
+	"59:AS"	 [ast="<pyverilog.vparser.ast.Assign object at 0x7fdf571e7a50>",
+		def_var="['Ce']",
+		fillcolor=deepskyblue,
+		label="59:AS
+Ce = Cx[1];",
+		statements="[]",
+		style=filled,
+		typ=Assign,
+		use_var="['Cx']"];
+	"44:AS" -> "59:AS";
+	"60:AS"	 [ast="<pyverilog.vparser.ast.Assign object at 0x7fdf571e7c90>",
+		def_var="['Cw']",
+		fillcolor=deepskyblue,
+		label="60:AS
+Cw = Cx[2];",
+		statements="[]",
+		style=filled,
+		typ=Assign,
+		use_var="['Cx']"];
+	"44:AS" -> "60:AS";
+	"91:AL"	 [ast="<pyverilog.vparser.ast.Always object at 0x7fdf57186390>",
+		clk_sens=True,
+		fillcolor=gold,
+		label="91:AL",
+		sens="['clk']",
+		statements="[]",
+		style=filled,
+		typ=Always,
+		use_var="['flit_id', 'Cw', 'Cn', 'Res', 'S1', 'Rne', 'Rnw', 'Cs', 'Rws', 'Ren', 'Rwn', 'W1', 'Rse', 'rst', 'N1', 'Rsw', 'E1', 'empty', 'Ce']"];
+	"61:AS" -> "91:AL";
+	"58:AS" -> "91:AL";
+	"59:AS" -> "91:AL";
+	"91:BL"	 [ast="<pyverilog.vparser.ast.Block object at 0x7fdf57186450>",
+		fillcolor=turquoise,
+		label="91:BL",
+		statements="[]",
+		style=filled,
+		typ=Block];
+	"91:AL" -> "91:BL"	 [cond="[]",
+		lineno=None];
+	"37:AS"	 [ast="<pyverilog.vparser.ast.Assign object at 0x7fdf57d1ab90>",
+		def_var="['Wport']",
+		fillcolor=deepskyblue,
+		label="37:AS
+Wport = 0;",
+		statements="[]",
+		style=filled,
+		typ=Assign,
+		use_var="[]"];
+	"53:AS" -> "91:AL";
+	"70:BL"	 [ast="<pyverilog.vparser.ast.Block object at 0x7fdf571e67d0>",
+		fillcolor=turquoise,
+		label="70:BL
+Rxy <= Rxy_rst;
+Cx <= Cx_rst;
+cur_addr <= cur_addr_rst;
+Nport <= 0;
+Eport <= 0;
+Wport <= 0;
+Sport <= 0;
+Lport <= 0;",
+		statements="[<pyverilog.vparser.ast.NonblockingSubstitution object at 0x7fdf571e6050>, <pyverilog.vparser.ast.NonblockingSubstitution object \
+at 0x7fdf571e6190>, <pyverilog.vparser.ast.NonblockingSubstitution object at 0x7fdf571e6310>, <pyverilog.vparser.ast.NonblockingSubstitution \
+object at 0x7fdf571e6450>, <pyverilog.vparser.ast.NonblockingSubstitution object at 0x7fdf571e6590>, <pyverilog.vparser.ast.NonblockingSubstitution \
+object at 0x7fdf571e66d0>, <pyverilog.vparser.ast.NonblockingSubstitution object at 0x7fdf571e6810>, <pyverilog.vparser.ast.NonblockingSubstitution \
+object at 0x7fdf571e6950>]",
+		style=filled,
+		typ=Block];
+	"Leaf_69:AL"	 [def_var="['Lport', 'Nport', 'cur_addr', 'Rxy', 'Cx', 'Wport', 'Sport', 'Eport']",
+		label="Leaf_69:AL"];
+	"70:BL" -> "Leaf_69:AL"	 [cond="[]",
+		lineno=None];
+	"95:BL"	 [ast="<pyverilog.vparser.ast.Block object at 0x7fdf57d10290>",
+		fillcolor=turquoise,
+		label="95:BL
+Nport <= (N1 & ~E1 & ~W1 | N1 & E1 & Rne | N1 & W1 & Rnw) & Cn;
+Eport <= (E1 & ~N1 & ~S1 | E1 & N1 & Ren | E1 & S1 & Res) & \
+Ce;
+Wport <= (W1 & ~N1 & ~S1 | W1 & N1 & Rwn | W1 & S1 & Rws) & Cw;
+Sport <= (S1 & ~E1 & ~W1 | S1 & E1 & Rse | S1 & W1 & Rsw) & \
+Cs;
+Lport <= ~N1 & ~E1 & ~W1 & ~S1;",
+		statements="[<pyverilog.vparser.ast.NonblockingSubstitution object at 0x7fdf57186e90>, <pyverilog.vparser.ast.NonblockingSubstitution object \
+at 0x7fdf57d3e690>, <pyverilog.vparser.ast.NonblockingSubstitution object at 0x7fdf57d3ecd0>, <pyverilog.vparser.ast.NonblockingSubstitution \
+object at 0x7fdf57d10350>, <pyverilog.vparser.ast.NonblockingSubstitution object at 0x7fdf57d10490>]",
+		style=filled,
+		typ=Block];
+	"Leaf_91:AL"	 [def_var="['Lport', 'Nport', 'Sport', 'Eport', 'Wport']",
+		label="Leaf_91:AL"];
+	"95:BL" -> "Leaf_91:AL"	 [cond="[]",
+		lineno=None];
+	"86:AS"	 [ast="<pyverilog.vparser.ast.Assign object at 0x7fdf571861d0>",
+		def_var="['S1']",
+		fillcolor=deepskyblue,
+		label="86:AS
+S1 = y_cur < y_dst;",
+		statements="[]",
+		style=filled,
+		typ=Assign,
+		use_var="['y_cur', 'y_dst']"];
+	"86:AS" -> "91:AL";
+	"84:AS"	 [ast="<pyverilog.vparser.ast.Assign object at 0x7fdf571e6d10>",
+		def_var="['E1']",
+		fillcolor=deepskyblue,
+		label="84:AS
+E1 = x_cur < x_dst;",
+		statements="[]",
+		style=filled,
+		typ=Assign,
+		use_var="['x_cur', 'x_dst']"];
+	"84:AS" -> "91:AL";
+	"60:AS" -> "91:AL";
+	"50:AS" -> "91:AL";
+	"39:AS"	 [ast="<pyverilog.vparser.ast.Assign object at 0x7fdf5824a9d0>",
+		def_var="['Sport']",
+		fillcolor=deepskyblue,
+		label="39:AS
+Sport = 0;",
+		statements="[]",
+		style=filled,
+		typ=Assign,
+		use_var="[]"];
+	"67:AS"	 [ast="<pyverilog.vparser.ast.Assign object at 0x7fdf571f2c10>",
+		def_var="['y_dst']",
+		fillcolor=deepskyblue,
+		label="67:AS
+y_dst = dst_addr[3:2];",
+		statements="[]",
+		style=filled,
+		typ=Assign,
+		use_var="['dst_addr']"];
+	"67:AS" -> "86:AS";
+	"83:AS"	 [ast="<pyverilog.vparser.ast.Assign object at 0x7fdf571e6ad0>",
+		def_var="['N1']",
+		fillcolor=deepskyblue,
+		label="83:AS
+N1 = y_dst < y_cur;",
+		statements="[]",
+		style=filled,
+		typ=Assign,
+		use_var="['y_dst', 'y_cur']"];
+	"67:AS" -> "83:AS";
+	"85:AS"	 [ast="<pyverilog.vparser.ast.Assign object at 0x7fdf571e6f50>",
+		def_var="['W1']",
+		fillcolor=deepskyblue,
+		label="85:AS
+W1 = x_dst < x_cur;",
+		statements="[]",
+		style=filled,
+		typ=Assign,
+		use_var="['x_dst', 'x_cur']"];
+	"85:AS" -> "91:AL";
+	"54:AS" -> "91:AL";
+	"38:AS"	 [ast="<pyverilog.vparser.ast.Assign object at 0x7fdf57d1acd0>",
+		def_var="['Eport']",
+		fillcolor=deepskyblue,
+		label="38:AS
+Eport = 0;",
+		statements="[]",
+		style=filled,
+		typ=Assign,
+		use_var="[]"];
+	"69:AL"	 [ast="<pyverilog.vparser.ast.Always object at 0x7fdf571f2dd0>",
+		clk_sens=True,
+		fillcolor=gold,
+		label="69:AL",
+		sens="['clk']",
+		statements="[]",
+		style=filled,
+		typ=Always,
+		use_var="['rst', 'Cx_rst', 'cur_addr_rst', 'Rxy_rst']"];
+	"69:AL" -> "69:BL"	 [cond="[]",
+		lineno=None];
+	"92:IF"	 [ast="<pyverilog.vparser.ast.IfStatement object at 0x7fdf57186810>",
+		fillcolor=springgreen,
+		label="92:IF",
+		statements="[]",
+		style=filled,
+		typ=IfStatement];
+	"95:IF"	 [ast="<pyverilog.vparser.ast.IfStatement object at 0x7fdf57186950>",
+		fillcolor=springgreen,
+		label="95:IF",
+		statements="[]",
+		style=filled,
+		typ=IfStatement];
+	"92:IF" -> "95:IF"	 [cond="['rst', 'empty']",
+		label="!((rst || empty))",
+		lineno=92];
+	"92:BL"	 [ast="<pyverilog.vparser.ast.Block object at 0x7fdf571865d0>",
+		fillcolor=turquoise,
+		label="92:BL
+{ Nport, Eport, Wport, Sport, Lport } <= 0;",
+		statements="[<pyverilog.vparser.ast.NonblockingSubstitution object at 0x7fdf57186790>]",
+		style=filled,
+		typ=Block];
+	"92:IF" -> "92:BL"	 [cond="['rst', 'empty']",
+		label="(rst || empty)",
+		lineno=92];
+	"45:AS"	 [ast="<pyverilog.vparser.ast.Assign object at 0x7fdf57d86310>",
+		def_var="['cur_addr']",
+		fillcolor=deepskyblue,
+		label="45:AS
+cur_addr = 'd5;",
+		statements="[]",
+		style=filled,
+		typ=Assign,
+		use_var="[]"];
+	"65:AS"	 [ast="<pyverilog.vparser.ast.Assign object at 0x7fdf571f2590>",
+		def_var="['y_cur']",
+		fillcolor=deepskyblue,
+		label="65:AS
+y_cur = cur_addr[3:2];",
+		statements="[]",
+		style=filled,
+		typ=Assign,
+		use_var="['cur_addr']"];
+	"45:AS" -> "65:AS";
+	"64:AS"	 [ast="<pyverilog.vparser.ast.Assign object at 0x7fdf571f2250>",
+		def_var="['x_cur']",
+		fillcolor=deepskyblue,
+		label="64:AS
+x_cur = cur_addr[1:0];",
+		statements="[]",
+		style=filled,
+		typ=Assign,
+		use_var="['cur_addr']"];
+	"45:AS" -> "64:AS";
+	"70:IF" -> "70:BL"	 [cond="['rst']",
+		label=rst,
+		lineno=70];
+	"91:BL" -> "92:IF"	 [cond="[]",
+		lineno=None];
+	"83:AS" -> "91:AL";
+	"36:AS"	 [ast="<pyverilog.vparser.ast.Assign object at 0x7fdf57d25c90>",
+		def_var="['Nport']",
+		fillcolor=deepskyblue,
+		label="36:AS
+Nport = 0;",
+		statements="[]",
+		style=filled,
+		typ=Assign,
+		use_var="[]"];
+	"51:AS" -> "91:AL";
+	"65:AS" -> "86:AS";
+	"65:AS" -> "83:AS";
+	"Leaf_69:AL" -> "61:AS";
+	"Leaf_69:AL" -> "58:AS";
+	"Leaf_69:AL" -> "59:AS";
+	"Leaf_69:AL" -> "53:AS";
+	"Leaf_69:AL" -> "60:AS";
+	"Leaf_69:AL" -> "50:AS";
+	"Leaf_69:AL" -> "54:AS";
+	"Leaf_69:AL" -> "51:AS";
+	"Leaf_69:AL" -> "65:AS";
+	"Leaf_69:AL" -> "49:AS";
+	"Leaf_69:AL" -> "64:AS";
+	"Leaf_69:AL" -> "55:AS";
+	"Leaf_69:AL" -> "52:AS";
+	"Leaf_69:AL" -> "48:AS";
+	"40:AS"	 [ast="<pyverilog.vparser.ast.Assign object at 0x7fdf57d8fc50>",
+		def_var="['Lport']",
+		fillcolor=deepskyblue,
+		label="40:AS
+Lport = 0;",
+		statements="[]",
+		style=filled,
+		typ=Assign,
+		use_var="[]"];
+	"49:AS" -> "91:AL";
+	"64:AS" -> "84:AS";
+	"64:AS" -> "85:AS";
+	"66:AS"	 [ast="<pyverilog.vparser.ast.Assign object at 0x7fdf571f28d0>",
+		def_var="['x_dst']",
+		fillcolor=deepskyblue,
+		label="66:AS
+x_dst = dst_addr[1:0];",
+		statements="[]",
+		style=filled,
+		typ=Assign,
+		use_var="['dst_addr']"];
+	"66:AS" -> "84:AS";
+	"66:AS" -> "85:AS";
+	"55:AS" -> "91:AL";
+	"52:AS" -> "91:AL";
+	"95:IF" -> "95:BL"	 [cond="['flit_id']",
+		label="(flit_id == 3'b001)",
+		lineno=95];
+	"92:BL" -> "Leaf_91:AL"	 [cond="[]",
+		lineno=None];
+	"48:AS" -> "91:AL";
+}

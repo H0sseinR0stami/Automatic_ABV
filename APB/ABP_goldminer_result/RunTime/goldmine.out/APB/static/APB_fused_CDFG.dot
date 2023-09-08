@@ -1,0 +1,183 @@
+strict digraph "compose( ,  )" {
+	node [label="\N"];
+	"79:IF"	 [ast="<pyverilog.vparser.ast.IfStatement object at 0x7fe42d3c2d10>",
+		fillcolor=springgreen,
+		label="79:IF",
+		statements="[]",
+		style=filled,
+		typ=IfStatement];
+	"83:IF"	 [ast="<pyverilog.vparser.ast.IfStatement object at 0x7fe42d346410>",
+		fillcolor=springgreen,
+		label="83:IF",
+		statements="[]",
+		style=filled,
+		typ=IfStatement];
+	"79:IF" -> "83:IF"	 [cond="['PADDR', 'PSELx', 'PWRITE', 'PREADY']",
+		label="!(((PADDR == 32'd8) && (PSELx == 1'b1) && (PWRITE == 1'b1) && (PREADY == 1'b1)))",
+		lineno=79];
+	"80:BL"	 [ast="<pyverilog.vparser.ast.Block object at 0x7fe42d3c2a50>",
+		fillcolor=turquoise,
+		label="80:BL
+INTERNAL_I2C_REGISTER_CONFIG <= PWDATA[13:0];",
+		statements="[<pyverilog.vparser.ast.NonblockingSubstitution object at 0x7fe42d3c2c50>]",
+		style=filled,
+		typ=Block];
+	"79:IF" -> "80:BL"	 [cond="['PADDR', 'PSELx', 'PWRITE', 'PREADY']",
+		label="((PADDR == 32'd8) && (PSELx == 1'b1) && (PWRITE == 1'b1) && (PREADY == 1'b1))",
+		lineno=79];
+	"61:AS"	 [ast="<pyverilog.vparser.ast.Assign object at 0x7fe42d3c3ed0>",
+		def_var="['INT_TX']",
+		fillcolor=deepskyblue,
+		label="61:AS
+INT_TX = TX_EMPTY;",
+		statements="[]",
+		style=filled,
+		typ=Assign,
+		use_var="['TX_EMPTY']"];
+	"70:IF"	 [ast="<pyverilog.vparser.ast.IfStatement object at 0x7fe42d3c2510>",
+		fillcolor=springgreen,
+		label="70:IF",
+		statements="[]",
+		style=filled,
+		typ=IfStatement];
+	"76:BL"	 [ast="<pyverilog.vparser.ast.Block object at 0x7fe42d3c25d0>",
+		fillcolor=turquoise,
+		label="76:BL",
+		statements="[]",
+		style=filled,
+		typ=Block];
+	"70:IF" -> "76:BL"	 [cond="['PRESETn']",
+		label="!((!PRESETn))",
+		lineno=70];
+	"71:BL"	 [ast="<pyverilog.vparser.ast.Block object at 0x7fe42d3c23d0>",
+		fillcolor=turquoise,
+		label="71:BL
+INTERNAL_I2C_REGISTER_CONFIG <= 14'd0;
+INTERNAL_I2C_REGISTER_TIMEOUT <= 14'd0;",
+		statements="[<pyverilog.vparser.ast.NonblockingSubstitution object at 0x7fe42d3c2410>, <pyverilog.vparser.ast.NonblockingSubstitution object \
+at 0x7fe42d3c2550>]",
+		style=filled,
+		typ=Block];
+	"70:IF" -> "71:BL"	 [cond="['PRESETn']",
+		label="(!PRESETn)",
+		lineno=70];
+	"58:AS"	 [ast="<pyverilog.vparser.ast.Assign object at 0x7fe42d3c3d90>",
+		def_var="['PSLVERR']",
+		fillcolor=deepskyblue,
+		label="58:AS
+PSLVERR = ERROR;",
+		statements="[]",
+		style=filled,
+		typ=Assign,
+		use_var="['ERROR']"];
+	"68:BL"	 [ast="<pyverilog.vparser.ast.Block object at 0x7fe42d3c2210>",
+		fillcolor=turquoise,
+		label="68:BL",
+		statements="[]",
+		style=filled,
+		typ=Block];
+	"68:BL" -> "70:IF"	 [cond="[]",
+		lineno=None];
+	"88:BL"	 [ast="<pyverilog.vparser.ast.Block object at 0x7fe42d346450>",
+		fillcolor=turquoise,
+		label="88:BL
+INTERNAL_I2C_REGISTER_CONFIG <= INTERNAL_I2C_REGISTER_CONFIG;",
+		statements="[<pyverilog.vparser.ast.NonblockingSubstitution object at 0x7fe42d346590>]",
+		style=filled,
+		typ=Block];
+	"83:IF" -> "88:BL"	 [cond="['PADDR', 'PSELx', 'PWRITE', 'PREADY']",
+		label="!(((PADDR == 32'd12) && (PSELx == 1'b1) && (PWRITE == 1'b1) && (PREADY == 1'b1)))",
+		lineno=83];
+	"84:BL"	 [ast="<pyverilog.vparser.ast.Block object at 0x7fe42d346190>",
+		fillcolor=turquoise,
+		label="84:BL
+INTERNAL_I2C_REGISTER_TIMEOUT <= PWDATA[13:0];",
+		statements="[<pyverilog.vparser.ast.NonblockingSubstitution object at 0x7fe42d346390>]",
+		style=filled,
+		typ=Block];
+	"83:IF" -> "84:BL"	 [cond="['PADDR', 'PSELx', 'PWRITE', 'PREADY']",
+		label="((PADDR == 32'd12) && (PSELx == 1'b1) && (PWRITE == 1'b1) && (PREADY == 1'b1))",
+		lineno=83];
+	"Leaf_67:AL"	 [def_var="['INTERNAL_I2C_REGISTER_TIMEOUT', 'INTERNAL_I2C_REGISTER_CONFIG']",
+		label="Leaf_67:AL"];
+	"88:BL" -> "Leaf_67:AL"	 [cond="[]",
+		lineno=None];
+	"67:AL"	 [ast="<pyverilog.vparser.ast.Always object at 0x7fe42d3c21d0>",
+		clk_sens=True,
+		fillcolor=gold,
+		label="67:AL",
+		sens="['PCLK']",
+		statements="[]",
+		style=filled,
+		typ=Always,
+		use_var="['PWDATA', 'PWRITE', 'PSELx', 'PREADY', 'PADDR', 'PRESETn', 'INTERNAL_I2C_REGISTER_CONFIG']"];
+	"67:AL" -> "68:BL"	 [cond="[]",
+		lineno=None];
+	"84:BL" -> "Leaf_67:AL"	 [cond="[]",
+		lineno=None];
+	"76:BL" -> "79:IF"	 [cond="[]",
+		lineno=None];
+	"49:AS"	 [ast="<pyverilog.vparser.ast.Assign object at 0x7fe42d3c3650>",
+		def_var="['PREADY']",
+		fillcolor=deepskyblue,
+		label="49:AS
+PREADY = (((WR_ENA == 1'b1) | (RD_ENA == 1'b1) | (PADDR == 32'd8) | (PADDR == 32'd12)) & ((PENABLE == 1'b1) & (PSELx == 1'\
+b1)))? 1'b1 : 1'b0;",
+		statements="[]",
+		style=filled,
+		typ=Assign,
+		use_var="['WR_ENA', 'RD_ENA', 'PADDR', 'PADDR', 'PENABLE', 'PSELx']"];
+	"49:AS" -> "67:AL";
+	"64:AS"	 [ast="<pyverilog.vparser.ast.Assign object at 0x7fe42d3c2050>",
+		def_var="['INT_RX']",
+		fillcolor=deepskyblue,
+		label="64:AS
+INT_RX = RX_EMPTY;",
+		statements="[]",
+		style=filled,
+		typ=Assign,
+		use_var="['RX_EMPTY']"];
+	"Leaf_67:AL" -> "67:AL";
+	"46:AS"	 [ast="<pyverilog.vparser.ast.Assign object at 0x7fe42cf85c90>",
+		def_var="['RD_ENA']",
+		fillcolor=deepskyblue,
+		label="46:AS
+RD_ENA = ((PWRITE == 1'b0) & (PENABLE == 1'b1) & (PADDR == 32'd4) & (PSELx == 1'b1))? 1'b1 : 1'b0;",
+		statements="[]",
+		style=filled,
+		typ=Assign,
+		use_var="['PWRITE', 'PENABLE', 'PADDR', 'PSELx']"];
+	"46:AS" -> "49:AS";
+	"52:AS"	 [ast="<pyverilog.vparser.ast.Assign object at 0x7fe42d3c3950>",
+		def_var="['WRITE_DATA_ON_TX']",
+		fillcolor=deepskyblue,
+		label="52:AS
+WRITE_DATA_ON_TX = (PADDR == 32'd0)? PWDATA : PWDATA;",
+		statements="[]",
+		style=filled,
+		typ=Assign,
+		use_var="['PADDR', 'PWDATA', 'PWDATA']"];
+	"80:BL" -> "Leaf_67:AL"	 [cond="[]",
+		lineno=None];
+	"71:BL" -> "Leaf_67:AL"	 [cond="[]",
+		lineno=None];
+	"43:AS"	 [ast="<pyverilog.vparser.ast.Assign object at 0x7fe42cf85b50>",
+		def_var="['WR_ENA']",
+		fillcolor=deepskyblue,
+		label="43:AS
+WR_ENA = ((PWRITE == 1'b1) & (PENABLE == 1'b1) & (PADDR == 32'd0) & (PSELx == 1'b1))? 1'b1 : 1'b0;",
+		statements="[]",
+		style=filled,
+		typ=Assign,
+		use_var="['PWRITE', 'PENABLE', 'PADDR', 'PSELx']"];
+	"43:AS" -> "49:AS";
+	"55:AS"	 [ast="<pyverilog.vparser.ast.Assign object at 0x7fe42d3c3c10>",
+		def_var="['PRDATA']",
+		fillcolor=deepskyblue,
+		label="55:AS
+PRDATA = (PADDR == 32'd4)? READ_DATA_ON_RX : READ_DATA_ON_RX;",
+		statements="[]",
+		style=filled,
+		typ=Assign,
+		use_var="['PADDR', 'READ_DATA_ON_RX', 'READ_DATA_ON_RX']"];
+}

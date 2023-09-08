@@ -1,0 +1,3052 @@
+Report file generated at: Mar-23-2023 03:23:22 PM
+
+#############################
+# Detailed Assertion Report #
+#############################
+
+
+a137: (Rxy[6] == 1 & W1 == 1) ##1 (flit_id[1] == 1 & rst == 1 & empty == 0) |-> (Nport == 0)
+IRank: : 0.02291
+Importance: : 0.68742
+Complexity: : 30
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a87: (Rxy[5] == 1 & x_dst[0] == 1) ##1 (rst == 0 & flit_id[1] == 0 & flit_id[0] == 1) |-> (Nport == 0)
+IRank: : 0.02006
+Importance: : 0.64187
+Complexity: : 32
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a143: (Rxy[2] == 0 & x_dst[0] == 1) ##1 (rst == 0 & flit_id[1] == 0 & flit_id[0] == 0) |-> (Nport == 0)
+IRank: : 0.02006
+Importance: : 0.64187
+Complexity: : 32
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a121: (E1 == 1 & Rnw == 1) ##1 (empty == 1 & flit_id[0] == 1 & flit_id[1] == 0) |-> (Nport == 0)
+IRank: : 0.02004
+Importance: : 0.52092
+Complexity: : 26
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a51: (dst_addr[2] == 0 & Cx[2] == 1) ##1 (flit_id[1] == 1 & rst == 1 & flit_id[0] == 1) |-> (Nport == 0)
+IRank: : 0.01948
+Importance: : 0.66235
+Complexity: : 34
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a11: (N1 == 0 & Rxy[6] == 1) ##1 (rst == 0 & flit_id[0] == 0) |-> (Nport == 0)
+IRank: : 0.01896
+Importance: : 0.53093
+Complexity: : 28
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a73: (Rxy[5] == 1 & Rxy[6] == 0) ##1 (flit_id[1] == 1 & flit_id[0] == 1 & empty == 0) |-> (Nport == 0)
+IRank: : 0.01893
+Importance: : 0.5678
+Complexity: : 30
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a134: (dst_addr[1] == 0 & W1 == 0) ##1 (empty == 1 & flit_id[1] == 0 & flit_id[0] == 0) |-> (Nport == 0)
+IRank: : 0.0185
+Importance: : 0.57347
+Complexity: : 31
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a196: (Cx[1] == 1 & Rxy[6] == 0) ##1 (flit_id[0] == 0 & rst == 0) |-> (Nport == 0)
+IRank: : 0.01836
+Importance: : 0.55091
+Complexity: : 30
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a16: (N1 == 0 & Rnw == 1) ##1 (empty == 0 & flit_id[0] == 0) |-> (Nport == 0)
+IRank: : 0.01733
+Importance: : 0.43334
+Complexity: : 25
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a61: (W1 == 1 & Cx[1] == 0) ##1 (flit_id[0] == 0 & empty == 0) |-> (Nport == 0)
+IRank: : 0.01718
+Importance: : 0.46382
+Complexity: : 27
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a185: (cur_addr[2] == 1 & W1 == 0 & Rxy[4] == 0) ##1 (rst == 0 & flit_id[1] == 0 & flit_id[0] == 0) |-> (Nport == 0)
+IRank: : 0.01718
+Importance: : 0.77295
+Complexity: : 45
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a80: (Rxy[5] == 1 & Rxy[6] == 1 & Rxy[2] == 1) ##1 (flit_id[1] == 1 & rst == 1 & flit_id[0] == 1) |-> (Nport == 0)
+IRank: : 0.01715
+Importance: : 0.75477
+Complexity: : 44
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a28: (Rxy[1] == 0 & W1 == 1) ##1 (rst == 0) |-> (Nport == 0)
+IRank: : 0.01642
+Importance: : 0.44335
+Complexity: : 27
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a136: (Rxy[6] == 1 & W1 == 1 & Rnw == 0) ##1 (flit_id[1] == 1 & rst == 1) |-> (Nport == 0)
+IRank: : 0.01591
+Importance: : 0.62031
+Complexity: : 39
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a59: (Rxy[2] == 1 & Rxy[6] == 1 & N1 == 0) ##1 (flit_id[1] == 1 & rst == 1) |-> (Nport == 0)
+IRank: : 0.01583
+Importance: : 0.649
+Complexity: : 41
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a132: (cur_addr[2] == 1 & Rnw == 1 & Rxy[5] == 1) ##1 (flit_id[0] == 1 & empty == 0 & flit_id[1] == 0) |-> (Nport == 0)
+IRank: : 0.01576
+Importance: : 0.69354
+Complexity: : 44
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a104: (Cx[2] == 1 & Rxy[3] == 1 & x_dst[0] == 1) ##1 (flit_id[0] == 0 & flit_id[1] == 1 & empty == 0) |-> (Nport == 0)
+IRank: : 0.01575
+Importance: : 0.69283
+Complexity: : 44
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a48: (W1 == 0 & Cx[2] == 1 & x_cur[0] == 1) ##1 (rst == 0 & flit_id[0] == 0) |-> (Nport == 0)
+IRank: : 0.01568
+Importance: : 0.65847
+Complexity: : 42
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a184: (Rxy[2] == 0 & x_cur[0] == 0 & W1 == 1) ##1 (flit_id[1] == 1 & rst == 0) |-> (Nport == 0)
+IRank: : 0.01564
+Importance: : 0.65668
+Complexity: : 42
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a2: (N1 == 0) ##1 (flit_id[1] == 0) |-> (Nport == 0)
+IRank: : 0.01562
+Importance: : 0.18747
+Complexity: : 12
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a68: (Cx[2] == 1 & Cx[1] == 0 & Rxy[5] == 0) ##1 (flit_id[1] == 1 & rst == 0) |-> (Nport == 0)
+IRank: : 0.0156
+Importance: : 0.67077
+Complexity: : 43
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a135: (Rxy[6] == 1 & E1 == 1 & cur_addr[1] == 1) ##1 (flit_id[1] == 1 & rst == 1) |-> (Nport == 0)
+IRank: : 0.01558
+Importance: : 0.68537
+Complexity: : 44
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a167: (cur_addr[2] == 1 & Rne == 0 & Rnw == 0) ##1 (flit_id[0] == 0 & rst == 1) |-> (Nport == 0)
+IRank: : 0.01538
+Importance: : 0.64617
+Complexity: : 42
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a123: (dst_addr[1] == 1 & Rxy[2] == 0 & N1 == 0) ##1 (flit_id[0] == 1 & rst == 0) |-> (Nport == 0)
+IRank: : 0.01529
+Importance: : 0.67286
+Complexity: : 44
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a72: (Rxy[3] == 1 & E1 == 1) ##1 (flit_id[1] == 0 & flit_id[0] == 0) |-> (Nport == 0)
+IRank: : 0.01512
+Importance: : 0.39313
+Complexity: : 26
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a233: (x_dst[0] == 1 & cur_addr[1] == 0 & Rne == 0) ##1 (rst == 0 & flit_id[0] == 1) |-> (Nport == 0)
+IRank: : 0.01511
+Importance: : 0.68003
+Complexity: : 45
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a179: (cur_addr[2] == 1 & Rxy[3] == 1 & y_dst[0] == 1) ##1 (flit_id[0] == 0 & rst == 1) |-> (Nport == 0)
+IRank: : 0.01508
+Importance: : 0.70872
+Complexity: : 47
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a124: (dst_addr[1] == 1 & x_cur[0] == 0 & Rne == 0) ##1 (flit_id[0] == 1 & rst == 0) |-> (Nport == 0)
+IRank: : 0.01489
+Importance: : 0.67002
+Complexity: : 45
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a57: (cur_addr[1] == 1 & E1 == 1) ##1 (flit_id[1] == 0 & flit_id[0] == 0) |-> (Nport == 0)
+IRank: : 0.01481
+Importance: : 0.4295
+Complexity: : 29
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a7: (N1 == 0 & Rne == 0) ##1 (empty == 0) |-> (Nport == 0)
+IRank: : 0.01441
+Importance: : 0.34575
+Complexity: : 24
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a191: (Rxy[5] == 1 & E1 == 1 & Rxy[6] == 1 & Cx[1] == 1) ##1 (flit_id[1] == 1 & rst == 1) |-> (Nport == 0)
+IRank: : 0.01424
+Importance: : 0.76887
+Complexity: : 54
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a15: (N1 == 0 & Rnw == 1 & x_cur[0] == 0) ##1 (rst == 0) |-> (Nport == 0)
+IRank: : 0.01386
+Importance: : 0.5404
+Complexity: : 39
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a228: (dst_addr[2] == 0 & Rxy[2] == 0 & Rxy[3] == 1) ##1 (empty == 0 & flit_id[1] == 1) |-> (Nport == 0)
+IRank: : 0.01383
+Importance: : 0.62214
+Complexity: : 45
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a223: (dst_addr[2] == 0 & Rxy[2] == 0 & Rnw == 1) ##1 (empty == 0 & flit_id[1] == 1) |-> (Nport == 0)
+IRank: : 0.0138
+Importance: : 0.59345
+Complexity: : 43
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a205: (cur_addr[2] == 1 & Rxy[3] == 1 & Rne == 0 & x_dst[0] == 0) ##1 (flit_id[0] == 0 & rst == 1) |-> (Nport == 0)
+IRank: : 0.01376
+Importance: : 0.7981
+Complexity: : 58
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a229: (dst_addr[2] == 0 & x_cur[0] == 0 & Rne == 0) ##1 (empty == 0 & flit_id[1] == 1) |-> (Nport == 0)
+IRank: : 0.01366
+Importance: : 0.60112
+Complexity: : 44
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a222: (dst_addr[1] == 0 & x_dst[0] == 0 & cur_addr[1] == 1 & Rne == 0) ##1 (rst == 1 & flit_id[1] == 1) |-> (Nport == 0)
+IRank: : 0.01347
+Importance: : 0.82196
+Complexity: : 61
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a41: (dst_addr[1] == 1 & dst_addr[2] == 0 & x_dst[0] == 0) ##1 (empty == 0 & flit_id[0] == 1) |-> (Nport == 0)
+IRank: : 0.01329
+Importance: : 0.65117
+Complexity: : 49
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a107: (E1 == 0 & W1 == 0 & Cx[1] == 1 & y_dst[0] == 1) ##1 (empty == 1 & flit_id[0] == 1) |-> (Nport == 0)
+IRank: : 0.01321
+Importance: : 0.68695
+Complexity: : 52
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a158: (Cx[2] == 1 & Cx[1] == 0 & W1 == 1) ##1 (flit_id[1] == 1 & flit_id[0] == 0) |-> (Nport == 0)
+IRank: : 0.0132
+Importance: : 0.51479
+Complexity: : 39
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a78: (E1 == 0 & Rxy[1] == 0 & Cx[1] == 1) ##1 (flit_id[0] == 0 & flit_id[1] == 0) |-> (Nport == 0)
+IRank: : 0.01315
+Importance: : 0.51299
+Complexity: : 39
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a102: (Cx[2] == 1 & Rxy[3] == 1 & N1 == 0) ##1 (flit_id[0] == 0 & flit_id[1] == 1) |-> (Nport == 0)
+IRank: : 0.01315
+Importance: : 0.51299
+Complexity: : 39
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a168: (Rne == 1 & Rxy[5] == 1 & Cx[1] == 0 & Cx[2] == 1) ##1 (empty == 0 & flit_id[1] == 0) |-> (Nport == 0)
+IRank: : 0.01304
+Importance: : 0.69125
+Complexity: : 53
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a116: (Rxy[5] == 1 & W1 == 1 & Rnw == 0) ##1 (flit_id[1] == 1 & flit_id[0] == 1) |-> (Nport == 0)
+IRank: : 0.01304
+Importance: : 0.48251
+Complexity: : 37
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a142: (cur_addr[2] == 1 & Rxy[5] == 1 & E1 == 1) ##1 (flit_id[0] == 1 & flit_id[1] == 0) |-> (Nport == 0)
+IRank: : 0.01304
+Importance: : 0.54757
+Complexity: : 42
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a220: (Rxy[6] == 1 & Rxy[2] == 0 & x_dst[0] == 1 & Rxy[3] == 0 & Rnw == 0) ##1 (rst == 0 & flit_id[0] == 0) |-> (Nport == 0)
+IRank: : 0.01294
+Importance: : 0.87981
+Complexity: : 68
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a92: (Rxy[3] == 1 & Rxy[4] == 0 & Rxy[6] == 0) ##1 (flit_id[0] == 0 & flit_id[1] == 0) |-> (Nport == 0)
+IRank: : 0.01291
+Importance: : 0.52938
+Complexity: : 41
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a31: (Rxy[1] == 0 & Rxy[3] == 1 & Rxy[2] == 0) ##1 (flit_id[0] == 0 & flit_id[1] == 0) |-> (Nport == 0)
+IRank: : 0.01291
+Importance: : 0.52938
+Complexity: : 41
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a165: (Rxy[4] == 0 & Rne == 0 & Cx[1] == 0) ##1 (flit_id[0] == 0 & flit_id[1] == 1) |-> (Nport == 0)
+IRank: : 0.01288
+Importance: : 0.50248
+Complexity: : 39
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a181: (Rxy[1] == 0 & Rxy[3] == 0 & cur_addr[2] == 0) ##1 (flit_id[1] == 1 & flit_id[0] == 1) |-> (Nport == 0)
+IRank: : 0.01286
+Importance: : 0.56575
+Complexity: : 44
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a178: (cur_addr[2] == 1 & Rxy[6] == 0 & Rxy[3] == 1) ##1 (flit_id[0] == 0 & flit_id[1] == 0) |-> (Nport == 0)
+IRank: : 0.01286
+Importance: : 0.56575
+Complexity: : 44
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a169: (E1 == 1 & Rxy[5] == 1 & Rxy[6] == 1 & Cx[2] == 0) ##1 (rst == 1) |-> (Nport == 0)
+IRank: : 0.01285
+Importance: : 0.68128
+Complexity: : 53
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a224: (Rxy[3] == 1 & W1 == 1 & cur_addr[2] == 1 & Rxy[2] == 1) ##1 (rst == 1) |-> (Nport == 0)
+IRank: : 0.01278
+Importance: : 0.71586
+Complexity: : 56
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a103: (dst_addr[1] == 1 & Rxy[5] == 1 & Rxy[3] == 1 & Rxy[2] == 0) ##1 (empty == 0 & flit_id[0] == 1) |-> (Nport == 0)
+IRank: : 0.01276
+Importance: : 0.74021
+Complexity: : 58
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a230: (Rxy[4] == 0 & Rxy[2] == 0 & dst_addr[1] == 0 & Rne == 1) ##1 (empty == 0 & flit_id[1] == 0) |-> (Nport == 0)
+IRank: : 0.01271
+Importance: : 0.71152
+Complexity: : 56
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a241: (Rxy[1] == 0 & dst_addr[2] == 0 & Cx[1] == 0 & E1 == 1) ##1 (rst == 1) |-> (Nport == 0)
+IRank: : 0.01259
+Importance: : 0.70514
+Complexity: : 56
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a161: (Rne == 1 & x_cur[0] == 1 & Rxy[6] == 1 & Rxy[5] == 0) ##1 (rst == 1) |-> (Nport == 0)
+IRank: : 0.01253
+Importance: : 0.67665
+Complexity: : 54
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a275: (N1 == 1 & rst == 0 & Cx[0] == 1 & Rnw == 1 & E1 == 0 & Cx[1] == 1 & Rne == 0 & cur_addr[1] == 0 & x_cur[0] == 0) ##1 (empty == 0 & rst == 1 & flit_id[0] == 0) |-> (Nport == 1)
+IRank: : 0.01253
+Importance: : 1.54102
+Complexity: : 123
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a100: (Cx[2] == 1 & x_cur[0] == 1 & dst_addr[1] == 0) ##1 (flit_id[0] == 0 & flit_id[1] == 0) |-> (Nport == 0)
+IRank: : 0.0125
+Importance: : 0.56271
+Complexity: : 45
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a215: (Cx[1] == 1 & x_dst[0] == 1 & y_dst[0] == 1 & Cx[2] == 1) ##1 (rst == 1) |-> (Nport == 0)
+IRank: : 0.01248
+Importance: : 0.7116
+Complexity: : 57
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a314: (N1 == 1 & rst == 0 & Cx[0] == 1 & Rne == 1 & E1 == 1 & y_dst[0] == 1 & cur_addr[1] == 1 & Cx[1] == 1) ##1 (rst == 0 & flit_id[0] == 1 & flit_id[1] == 1) |-> (Nport == 1)
+IRank: : 0.01243
+Importance: : 1.38024
+Complexity: : 111
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a112: (y_dst[0] == 0 & dst_addr[2] == 1 & Rxy[5] == 0) ##1 (flit_id[0] == 0 & flit_id[1] == 1) |-> (Nport == 0)
+IRank: : 0.01241
+Importance: : 0.55841
+Complexity: : 45
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a40: (dst_addr[1] == 1 & Cx[1] == 1 & y_dst[0] == 1 & Cx[2] == 0) ##1 (rst == 1) |-> (Nport == 0)
+IRank: : 0.01238
+Importance: : 0.73029
+Complexity: : 59
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a105: (y_dst[0] == 1 & Rne == 0 & E1 == 1) ##1 (empty == 1) |-> (Nport == 0)
+IRank: : 0.01234
+Importance: : 0.46899
+Complexity: : 38
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a249: (N1 == 1 & rst == 0 & Cx[0] == 1 & Rnw == 1 & W1 == 1 & cur_addr[1] == 0 & Rne == 0) ##1 (flit_id[1] == 0 & empty == 0 & flit_id[0] == 1) |-> (Nport == 1)
+IRank: : 0.01232
+Importance: : 1.15761
+Complexity: : 94
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a106: (Rxy[2] == 1 & dst_addr[1] == 0 & E1 == 1) ##1 (empty == 1) |-> (Nport == 0)
+IRank: : 0.01229
+Importance: : 0.51637
+Complexity: : 42
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a315: (N1 == 1 & rst == 0 & Cx[0] == 1 & Rne == 1 & E1 == 1 & y_dst[0] == 1 & cur_addr[1] == 1 & cur_addr[2] == 1) ##1 (empty == 1 & rst == 0) |-> (Nport == 1)
+IRank: : 0.01225
+Importance: : 1.39613
+Complexity: : 114
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a325: (N1 == 1 & rst == 0 & Cx[0] == 1 & E1 == 0 & W1 == 0 & Cx[1] == 1 & Rxy[5] == 0 & Rne == 1 & dst_addr[1] == 0 & Rxy[4] == 1) ##1 (flit_id[0] == 1 & empty == 0 & rst == 0) |-> (Nport == 1)
+IRank: : 0.01222
+Importance: : 1.64942
+Complexity: : 135
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a18: (Rxy[1] == 0 & W1 == 1) ##1 (flit_id[0] == 0) |-> (Nport == 0)
+IRank: : 0.01222
+Importance: : 0.30554
+Complexity: : 25
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a308: (N1 == 1 & rst == 0 & Cx[0] == 1 & W1 == 0 & E1 == 0 & Rne == 0 & cur_addr[1] == 1 & Rnw == 0 & Cx[1] == 1) ##1 (rst == 1 & flit_id[1] == 0 & flit_id[0] == 1) |-> (Nport == 1)
+IRank: : 0.01215
+Importance: : 1.44627
+Complexity: : 119
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a188: (Rxy[5] == 1 & E1 == 1 & Rxy[1] == 0 & Rxy[4] == 1) ##1 (flit_id[1] == 1 & flit_id[0] == 1) |-> (Nport == 0)
+IRank: : 0.0121
+Importance: : 0.62927
+Complexity: : 52
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a117: (Rxy[5] == 1 & W1 == 1 & Cx[2] == 0 & Rne == 0) ##1 (flit_id[1] == 1 & flit_id[0] == 1) |-> (Nport == 0)
+IRank: : 0.01205
+Importance: : 0.60237
+Complexity: : 50
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a60: (W1 == 1 & Rnw == 0) ##1 (flit_id[0] == 0) |-> (Nport == 0)
+IRank: : 0.01204
+Importance: : 0.27685
+Complexity: : 23
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a20: (Rne == 0 & E1 == 1) ##1 (flit_id[0] == 1) |-> (Nport == 0)
+IRank: : 0.01204
+Importance: : 0.27685
+Complexity: : 23
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a25: (E1 == 1 & Rne == 0) ##1 (flit_id[1] == 0) |-> (Nport == 0)
+IRank: : 0.01204
+Importance: : 0.27685
+Complexity: : 23
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a210: (Rxy[3] == 0 & Rxy[2] == 1 & Rxy[4] == 1 & Cx[1] == 0) ##1 (flit_id[1] == 1 & flit_id[0] == 0) |-> (Nport == 0)
+IRank: : 0.01202
+Importance: : 0.64925
+Complexity: : 54
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a331: (N1 == 1 & rst == 0 & Cx[0] == 1 & Rxy[6] == 1 & cur_addr[1] == 1 & Rnw == 1 & Rxy[3] == 1 & x_dst[0] == 0 & cur_addr[2] == 0) ##1 (flit_id[1] == 0 & rst == 1 & flit_id[0] == 1) |-> (Nport == 1)
+IRank: : 0.01202
+Importance: : 1.55107
+Complexity: : 129
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a152: (Rxy[5] == 1 & Rxy[3] == 0 & Rxy[4] == 1 & Cx[2] == 0) ##1 (flit_id[1] == 1 & flit_id[0] == 1) |-> (Nport == 0)
+IRank: : 0.01202
+Importance: : 0.64925
+Complexity: : 54
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a213: (Rxy[4] == 0 & Rnw == 0 & Rxy[3] == 1 & E1 == 1) ##1 (flit_id[1] == 1 & flit_id[0] == 0) |-> (Nport == 0)
+IRank: : 0.01201
+Importance: : 0.60058
+Complexity: : 50
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a320: (N1 == 1 & rst == 0 & Cx[0] == 1 & Rnw == 1 & Rxy[2] == 0 & Rxy[4] == 1 & dst_addr[1] == 1 & Rne == 1 & cur_addr[1] == 0 & dst_addr[2] == 0) ##1 (flit_id[0] == 0 & empty == 1 & rst == 0) |-> (Nport == 1)
+IRank: : 0.012
+Importance: : 1.71552
+Complexity: : 143
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a206: (Rne == 1 & cur_addr[1] == 0 & Cx[1] == 0 & Cx[2] == 1) ##1 (flit_id[0] == 0 & flit_id[1] == 0) |-> (Nport == 0)
+IRank: : 0.01198
+Importance: : 0.65871
+Complexity: : 55
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a235: (dst_addr[1] == 1 & cur_addr[2] == 1 & Cx[1] == 0 & W1 == 1) ##1 (flit_id[0] == 1 & flit_id[1] == 0) |-> (Nport == 0)
+IRank: : 0.01192
+Importance: : 0.69129
+Complexity: : 58
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a149: (Rxy[5] == 1 & Rxy[3] == 0 & Rnw == 0 & Rxy[2] == 1) ##1 (flit_id[1] == 1 & flit_id[0] == 1) |-> (Nport == 0)
+IRank: : 0.0119
+Importance: : 0.61876
+Complexity: : 52
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a47: (x_dst[0] == 1 & Cx[2] == 1 & Rne == 1 & x_cur[0] == 1 & W1 == 1) ##1 (rst == 1) |-> (Nport == 0)
+IRank: : 0.01187
+Importance: : 0.78351
+Complexity: : 66
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a146: (Rxy[5] == 1 & Rxy[3] == 0 & Rnw == 0 & x_cur[0] == 1) ##1 (flit_id[1] == 1 & flit_id[0] == 1) |-> (Nport == 0)
+IRank: : 0.01182
+Importance: : 0.62643
+Complexity: : 53
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a153: (Rxy[5] == 1 & Rxy[3] == 0 & Rne == 1 & x_cur[0] == 1) ##1 (flit_id[1] == 1 & flit_id[0] == 1) |-> (Nport == 0)
+IRank: : 0.01182
+Importance: : 0.62643
+Complexity: : 53
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a182: (cur_addr[2] == 1 & Cx[1] == 0 & Rxy[6] == 1 & W1 == 1) ##1 (empty == 0) |-> (Nport == 0)
+IRank: : 0.0118
+Importance: : 0.64875
+Complexity: : 55
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a145: (Rxy[5] == 1 & Rxy[3] == 0 & Rnw == 0 & Rne == 0) ##1 (flit_id[1] == 1 & flit_id[0] == 1) |-> (Nport == 0)
+IRank: : 0.0118
+Importance: : 0.59007
+Complexity: : 50
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a200: (Rne == 1 & Rxy[1] == 0 & Rxy[2] == 0 & y_dst[0] == 1 & x_cur[0] == 0) ##1 (rst == 0) |-> (Nport == 0)
+IRank: : 0.01176
+Importance: : 0.7999
+Complexity: : 68
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a129: (Rne == 1 & dst_addr[1] == 1 & Cx[1] == 1 & Cx[2] == 1) ##1 (flit_id[0] == 1 & flit_id[1] == 0) |-> (Nport == 0)
+IRank: : 0.01175
+Importance: : 0.6462
+Complexity: : 55
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a289: (N1 == 1 & rst == 0 & Cx[0] == 1 & Rnw == 1 & Rne == 1 & E1 == 1 & cur_addr[1] == 1 & Rxy[3] == 1) ##1 (rst == 0 & flit_id[1] == 0) |-> (Nport == 1)
+IRank: : 0.01175
+Importance: : 1.257
+Complexity: : 107
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a133: (Rxy[4] == 0 & Rxy[3] == 1 & Rxy[5] == 0 & E1 == 1) ##1 (empty == 1) |-> (Nport == 0)
+IRank: : 0.01174
+Importance: : 0.61059
+Complexity: : 52
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a324: (N1 == 1 & rst == 0 & Cx[0] == 1 & E1 == 0 & W1 == 0 & y_dst[0] == 1 & Rxy[3] == 1 & Rxy[6] == 0 & cur_addr[2] == 1 & Rxy[2] == 0) ##1 (empty == 0 & rst == 0) |-> (Nport == 1)
+IRank: : 0.01173
+Importance: : 1.60642
+Complexity: : 137
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a108: (x_dst[0] == 0 & cur_addr[2] == 1 & Rxy[4] == 0 & dst_addr[1] == 1) ##1 (flit_id[0] == 0 & flit_id[1] == 1) |-> (Nport == 0)
+IRank: : 0.01169
+Importance: : 0.71285
+Complexity: : 61
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a316: (N1 == 1 & rst == 0 & Cx[0] == 1 & E1 == 0 & W1 == 0 & cur_addr[1] == 1 & Rne == 0 & x_cur[0] == 1 & Cx[1] == 0) ##1 (empty == 1 & flit_id[1] == 0 & flit_id[0] == 0) |-> (Nport == 1)
+IRank: : 0.01168
+Importance: : 1.41373
+Complexity: : 121
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a226: (dst_addr[1] == 0 & Rne == 1 & Rxy[5] == 1 & y_dst[0] == 1 & cur_addr[2] == 1) ##1 (rst == 1) |-> (Nport == 0)
+IRank: : 0.01168
+Importance: : 0.85244
+Complexity: : 73
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a318: (N1 == 1 & rst == 0 & Cx[0] == 1 & Rnw == 1 & Cx[1] == 1 & W1 == 1 & Rxy[5] == 1 & Rxy[6] == 0 & Cx[2] == 0 & dst_addr[2] == 0) ##1 (empty == 0 & rst == 1) |-> (Nport == 1)
+IRank: : 0.01163
+Importance: : 1.58181
+Complexity: : 136
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a114: (Rxy[5] == 1 & Rne == 1 & x_cur[0] == 1 & dst_addr[2] == 0) ##1 (flit_id[1] == 1 & flit_id[0] == 0) |-> (Nport == 0)
+IRank: : 0.01161
+Importance: : 0.65029
+Complexity: : 56
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a216: (y_dst[0] == 0 & x_cur[0] == 0 & dst_addr[2] == 1 & Rne == 1 & Rxy[6] == 0) ##1 (rst == 0) |-> (Nport == 0)
+IRank: : 0.0116
+Importance: : 0.82375
+Complexity: : 71
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a203: (y_dst[0] == 0 & dst_addr[2] == 1 & Cx[1] == 0 & Rne == 0) ##1 (flit_id[0] == 0 & flit_id[1] == 1) |-> (Nport == 0)
+IRank: : 0.0116
+Importance: : 0.64958
+Complexity: : 56
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a89: (y_dst[0] == 1 & Cx[2] == 1 & x_cur[0] == 1 & E1 == 1) ##1 (empty == 1) |-> (Nport == 0)
+IRank: : 0.01158
+Importance: : 0.62523
+Complexity: : 54
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a313: (N1 == 1 & rst == 0 & Cx[0] == 1 & Rne == 1 & E1 == 1 & cur_addr[2] == 1 & dst_addr[2] == 1 & x_dst[0] == 0 & Cx[1] == 1 & Rxy[4] == 0) ##1 (empty == 1 & rst == 1) |-> (Nport == 1)
+IRank: : 0.01158
+Importance: : 1.62156
+Complexity: : 140
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a323: (N1 == 1 & rst == 0 & Cx[0] == 1 & E1 == 0 & W1 == 0 & Cx[1] == 1 & Rxy[1] == 0 & Rxy[3] == 1 & dst_addr[2] == 0 & Rxy[6] == 1 & x_cur[0] == 1) ##1 (flit_id[0] == 1 & rst == 0 & flit_id[1] == 1) |-> (Nport == 1)
+IRank: : 0.01157
+Importance: : 1.73496
+Complexity: : 150
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a186: (Rxy[1] == 0 & y_dst[0] == 0 & dst_addr[2] == 1 & Rne == 0) ##1 (flit_id[1] == 1 & flit_id[0] == 0) |-> (Nport == 0)
+IRank: : 0.01157
+Importance: : 0.64779
+Complexity: : 56
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a273: (N1 == 1 & rst == 0 & Cx[0] == 1 & Rnw == 1 & E1 == 0 & Rxy[3] == 0 & x_cur[0] == 0 & dst_addr[2] == 1 & Rxy[2] == 0) ##1 (flit_id[0] == 1 & empty == 1 & flit_id[1] == 0) |-> (Nport == 1)
+IRank: : 0.01153
+Importance: : 1.41761
+Complexity: : 123
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a138: (W1 == 1 & x_dst[0] == 0 & Rxy[2] == 1 & y_dst[0] == 1) ##1 (empty == 1) |-> (Nport == 0)
+IRank: : 0.0115
+Importance: : 0.62093
+Complexity: : 54
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a321: (N1 == 1 & rst == 0 & Cx[0] == 1 & E1 == 0 & W1 == 0 & Cx[2] == 1 & Rxy[5] == 0 & cur_addr[1] == 0 & Rne == 1 & Cx[1] == 0) ##1 (flit_id[0] == 1 & empty == 0 & flit_id[1] == 1) |-> (Nport == 1)
+IRank: : 0.01147
+Importance: : 1.52592
+Complexity: : 133
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a328: (N1 == 1 & rst == 0 & Cx[0] == 1 & Rne == 1 & Cx[1] == 1 & dst_addr[1] == 0 & x_dst[0] == 0 & W1 == 0 & Rnw == 0) ##1 (empty == 0 & flit_id[0] == 1 & flit_id[1] == 1) |-> (Nport == 1)
+IRank: : 0.01147
+Importance: : 1.38821
+Complexity: : 121
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a281: (N1 == 1 & rst == 0 & Cx[0] == 1 & Rnw == 1 & E1 == 0 & Rxy[3] == 0 & cur_addr[1] == 0 & dst_addr[1] == 1 & W1 == 1) ##1 (flit_id[0] == 1 & rst == 0) |-> (Nport == 1)
+IRank: : 0.01146
+Importance: : 1.40944
+Complexity: : 123
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a302: (N1 == 1 & rst == 0 & Cx[0] == 1 & W1 == 0 & E1 == 0 & Rxy[1] == 0 & Cx[1] == 1 & Rxy[3] == 1 & Cx[2] == 0 & y_dst[0] == 0) ##1 (flit_id[0] == 1 & empty == 0 & flit_id[1] == 1) |-> (Nport == 1)
+IRank: : 0.01145
+Importance: : 1.52342
+Complexity: : 133
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a151: (Rxy[5] == 1 & Rnw == 1 & cur_addr[2] == 1 & Rxy[3] == 1 & x_cur[0] == 0) ##1 (flit_id[1] == 1 & flit_id[0] == 1) |-> (Nport == 0)
+IRank: : 0.01132
+Importance: : 0.78087
+Complexity: : 69
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a90: (Rxy[3] == 1 & cur_addr[1] == 0 & N1 == 0) ##1 (flit_id[0] == 0) |-> (Nport == 0)
+IRank: : 0.01122
+Importance: : 0.45998
+Complexity: : 41
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a238: (Rxy[6] == 1 & Rne == 1 & x_dst[0] == 1 & y_dst[0] == 0 & W1 == 1) ##1 (flit_id[1] == 1 & flit_id[0] == 1) |-> (Nport == 0)
+IRank: : 0.01122
+Importance: : 0.72899
+Complexity: : 65
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a160: (Rne == 1 & dst_addr[1] == 1 & Cx[2] == 1 & E1 == 0 & x_cur[0] == 0) ##1 (flit_id[1] == 1 & flit_id[0] == 0) |-> (Nport == 0)
+IRank: : 0.01122
+Importance: : 0.75197
+Complexity: : 67
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a26: (N1 == 0 & cur_addr[2] == 0 & Rxy[2] == 0) ##1 (flit_id[0] == 1) |-> (Nport == 0)
+IRank: : 0.01122
+Importance: : 0.45998
+Complexity: : 41
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a252: (N1 == 1 & rst == 0 & Cx[0] == 1 & Rnw == 1 & W1 == 1 & cur_addr[1] == 0 & y_dst[0] == 1 & Rxy[2] == 0) ##1 (empty == 0 & flit_id[1] == 0) |-> (Nport == 1)
+IRank: : 0.01121
+Importance: : 1.22196
+Complexity: : 109
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a9: (N1 == 0 & Rxy[6] == 1 & Cx[2] == 0) ##1 (flit_id[0] == 0) |-> (Nport == 0)
+IRank: : 0.01119
+Importance: : 0.42541
+Complexity: : 38
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a239: (W1 == 0 & cur_addr[2] == 1 & Rxy[4] == 0 & x_dst[0] == 0 & Cx[1] == 0) ##1 (empty == 0) |-> (Nport == 0)
+IRank: : 0.01119
+Importance: : 0.77199
+Complexity: : 69
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a317: (N1 == 1 & rst == 0 & Cx[0] == 1 & Rne == 1 & cur_addr[1] == 0 & x_cur[0] == 0 & Rxy[5] == 0 & Rxy[2] == 1 & Cx[2] == 0 & dst_addr[1] == 1) ##1 (rst == 0 & flit_id[0] == 0) |-> (Nport == 1)
+IRank: : 0.01116
+Importance: : 1.57334
+Complexity: : 141
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a271: (N1 == 1 & rst == 0 & Cx[0] == 1 & Rnw == 1 & E1 == 0 & Rxy[3] == 0 & cur_addr[1] == 0 & Rxy[4] == 0 & x_dst[0] == 1 & dst_addr[1] == 0) ##1 (flit_id[0] == 1 & rst == 0) |-> (Nport == 1)
+IRank: : 0.01116
+Importance: : 1.55086
+Complexity: : 139
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a8: (N1 == 0 & Rxy[5] == 1 & Rxy[2] == 1) ##1 (flit_id[0] == 0) |-> (Nport == 0)
+IRank: : 0.01115
+Importance: : 0.42362
+Complexity: : 38
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a30: (Rxy[1] == 0 & Rxy[3] == 1 & N1 == 0) ##1 (flit_id[0] == 0) |-> (Nport == 0)
+IRank: : 0.01115
+Importance: : 0.42362
+Complexity: : 38
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a292: (N1 == 1 & rst == 0 & Cx[0] == 1 & Rne == 1 & cur_addr[1] == 0 & cur_addr[2] == 1 & Rxy[5] == 1 & Cx[1] == 1 & dst_addr[2] == 0 & dst_addr[1] == 0) ##1 (flit_id[1] == 0 & rst == 1) |-> (Nport == 1)
+IRank: : 0.01114
+Importance: : 1.62589
+Complexity: : 146
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a306: (N1 == 1 & rst == 0 & Cx[0] == 1 & Rnw == 1 & E1 == 0 & Cx[1] == 1 & Cx[2] == 1 & Rxy[4] == 0 & W1 == 1 & x_dst[0] == 1 & Rxy[6] == 0) ##1 (rst == 0 & flit_id[0] == 1) |-> (Nport == 1)
+IRank: : 0.01107
+Importance: : 1.59411
+Complexity: : 144
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a38: (N1 == 0 & Rnw == 1 & cur_addr[1] == 0) ##1 (flit_id[0] == 0) |-> (Nport == 0)
+IRank: : 0.01106
+Importance: : 0.43129
+Complexity: : 39
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a12: (N1 == 0 & Rxy[5] == 1 & x_cur[0] == 0) ##1 (flit_id[0] == 1) |-> (Nport == 0)
+IRank: : 0.01106
+Importance: : 0.43129
+Complexity: : 39
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a159: (Rne == 1 & x_cur[0] == 1 & cur_addr[2] == 1 & x_dst[0] == 1 & W1 == 1) ##1 (empty == 1) |-> (Nport == 0)
+IRank: : 0.01102
+Importance: : 0.74918
+Complexity: : 68
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a81: (W1 == 1 & dst_addr[1] == 1 & cur_addr[1] == 0) ##1 (flit_id[0] == 0) |-> (Nport == 0)
+IRank: : 0.011
+Importance: : 0.48384
+Complexity: : 44
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a83: (W1 == 1 & Rxy[4] == 1 & x_dst[0] == 1) ##1 (flit_id[0] == 0) |-> (Nport == 0)
+IRank: : 0.01099
+Importance: : 0.42879
+Complexity: : 39
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a319: (N1 == 1 & rst == 0 & Cx[0] == 1 & Rne == 1 & Cx[1] == 1 & dst_addr[1] == 0 & cur_addr[2] == 0 & Rxy[3] == 1 & E1 == 1) ##1 (empty == 0 & flit_id[0] == 1) |-> (Nport == 1)
+IRank: : 0.01097
+Importance: : 1.36051
+Complexity: : 124
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a193: (Rxy[1] == 0 & W1 == 1 & Rne == 1) ##1 (flit_id[1] == 1) |-> (Nport == 0)
+IRank: : 0.01097
+Importance: : 0.39492
+Complexity: : 36
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a301: (N1 == 1 & rst == 0 & Cx[0] == 1 & Rnw == 1 & cur_addr[1] == 1 & cur_addr[2] == 0 & Rxy[5] == 1 & x_cur[0] == 1 & y_dst[0] == 0) ##1 (empty == 1 & flit_id[1] == 0) |-> (Nport == 1)
+IRank: : 0.01096
+Importance: : 1.40226
+Complexity: : 128
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a293: (N1 == 1 & rst == 0 & Cx[0] == 1 & E1 == 0 & W1 == 0 & Rxy[1] == 0 & Rxy[3] == 1 & Rxy[2] == 1 & cur_addr[2] == 0 & Cx[1] == 0) ##1 (flit_id[0] == 1 & empty == 0) |-> (Nport == 1)
+IRank: : 0.01093
+Importance: : 1.46524
+Complexity: : 134
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a33: (dst_addr[2] == 0 & Rxy[6] == 0 & cur_addr[1] == 1) ##1 (flit_id[1] == 0) |-> (Nport == 0)
+IRank: : 0.01091
+Importance: : 0.50202
+Complexity: : 46
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a5: (N1 == 0 & dst_addr[1] == 0 & Rxy[1] == 0) ##1 (flit_id[0] == 0) |-> (Nport == 0)
+IRank: : 0.01091
+Importance: : 0.44747
+Complexity: : 41
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a32: (Rne == 0 & E1 == 1 & x_cur[0] == 1) ##1 (flit_id[0] == 0) |-> (Nport == 0)
+IRank: : 0.01088
+Importance: : 0.4026
+Complexity: : 37
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a17: (N1 == 0 & Rne == 0 & x_cur[0] == 0) ##1 (flit_id[0] == 1) |-> (Nport == 0)
+IRank: : 0.01088
+Importance: : 0.4026
+Complexity: : 37
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a13: (N1 == 0 & x_cur[0] == 1 & Rnw == 0) ##1 (flit_id[0] == 0) |-> (Nport == 0)
+IRank: : 0.01088
+Importance: : 0.4026
+Complexity: : 37
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a270: (N1 == 1 & rst == 0 & Cx[0] == 1 & Rne == 1 & E1 == 1 & x_dst[0] == 0 & Cx[1] == 1 & x_cur[0] == 0 & dst_addr[2] == 0) ##1 (empty == 1 & flit_id[0] == 0) |-> (Nport == 1)
+IRank: : 0.01087
+Importance: : 1.33699
+Complexity: : 123
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a154: (Rxy[4] == 0 & Rne == 0 & Rxy[6] == 0) ##1 (flit_id[0] == 0) |-> (Nport == 0)
+IRank: : 0.01087
+Importance: : 0.41311
+Complexity: : 38
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a290: (N1 == 1 & rst == 0 & Cx[0] == 1 & Rnw == 1 & E1 == 0 & Cx[1] == 1 & cur_addr[2] == 0 & cur_addr[1] == 0 & x_dst[0] == 1 & Rxy[6] == 1) ##1 (empty == 0 & flit_id[0] == 0) |-> (Nport == 1)
+IRank: : 0.01084
+Importance: : 1.49627
+Complexity: : 138
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a44: (dst_addr[1] == 1 & W1 == 1 & x_cur[0] == 0) ##1 (flit_id[1] == 1) |-> (Nport == 0)
+IRank: : 0.01084
+Importance: : 0.45514
+Complexity: : 42
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a19: (N1 == 0 & x_cur[0] == 1 & dst_addr[1] == 0) ##1 (flit_id[0] == 1) |-> (Nport == 0)
+IRank: : 0.01084
+Importance: : 0.45514
+Complexity: : 42
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a309: (N1 == 1 & rst == 0 & Cx[0] == 1 & Rnw == 1 & Rxy[2] == 0 & Rxy[4] == 1 & x_dst[0] == 1 & dst_addr[2] == 0 & dst_addr[1] == 0) ##1 (flit_id[0] == 0 & empty == 1) |-> (Nport == 1)
+IRank: : 0.01078
+Importance: : 1.36956
+Complexity: : 127
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a333: (rst == 0 & N1 == 1 & Cx[0] == 1 & Rne == 1 & E1 == 1 & Cx[2] == 0 & dst_addr[2] == 1 & Rxy[4] == 0 & cur_addr[2] == 1 & x_cur[0] == 1) ##1 (empty == 1 & flit_id[0] == 1) |-> (Nport == 1)
+IRank: : 0.01077
+Importance: : 1.48626
+Complexity: : 138
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a212: (E1 == 1 & Rxy[6] == 1 & Cx[2] == 1 & cur_addr[1] == 1) ##1 (flit_id[1] == 1) |-> (Nport == 0)
+IRank: : 0.01074
+Importance: : 0.57985
+Complexity: : 54
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a96: (Rxy[3] == 1 & cur_addr[1] == 0 & Rxy[2] == 1 & W1 == 1) ##1 (flit_id[0] == 0) |-> (Nport == 0)
+IRank: : 0.0107
+Importance: : 0.57805
+Complexity: : 54
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a77: (Rxy[3] == 1 & cur_addr[2] == 1 & Rxy[4] == 0 & E1 == 1) ##1 (flit_id[1] == 0) |-> (Nport == 0)
+IRank: : 0.0107
+Importance: : 0.57805
+Complexity: : 54
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a173: (Cx[2] == 1 & Cx[1] == 0 & Rxy[2] == 1 & N1 == 0) ##1 (flit_id[1] == 1) |-> (Nport == 0)
+IRank: : 0.01069
+Importance: : 0.54527
+Complexity: : 51
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a232: (Cx[2] == 0 & cur_addr[1] == 0 & x_cur[0] == 0 & E1 == 0) ##1 (flit_id[0] == 0) |-> (Nport == 0)
+IRank: : 0.01068
+Importance: : 0.58752
+Complexity: : 55
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a304: (N1 == 1 & rst == 0 & Cx[0] == 1 & W1 == 0 & E1 == 0 & Rxy[1] == 0 & Cx[1] == 1 & Rxy[3] == 1 & x_cur[0] == 0 & Cx[2] == 0 & Rne == 0) ##1 (flit_id[0] == 1 & empty == 0) |-> (Nport == 1)
+IRank: : 0.01068
+Importance: : 1.52772
+Complexity: : 143
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a76: (Rxy[4] == 1 & Rxy[1] == 0 & cur_addr[1] == 0 & Rxy[2] == 0) ##1 (flit_id[0] == 1) |-> (Nport == 0)
+IRank: : 0.01065
+Importance: : 0.59624
+Complexity: : 56
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a122: (Rxy[5] == 1 & Rxy[4] == 0 & cur_addr[1] == 1 & Rxy[6] == 0) ##1 (flit_id[0] == 0) |-> (Nport == 0)
+IRank: : 0.01065
+Importance: : 0.59624
+Complexity: : 56
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a66: (Rxy[2] == 1 & Rxy[5] == 1 & Rxy[3] == 0 & cur_addr[2] == 0) ##1 (flit_id[1] == 1) |-> (Nport == 0)
+IRank: : 0.01065
+Importance: : 0.59624
+Complexity: : 56
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a141: (Rxy[2] == 0 & dst_addr[2] == 0 & dst_addr[1] == 0) ##1 (flit_id[1] == 0) |-> (Nport == 0)
+IRank: : 0.01064
+Importance: : 0.48951
+Complexity: : 46
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a113: (Rxy[5] == 1 & Rxy[6] == 1 & Rxy[4] == 1 & W1 == 1) ##1 (flit_id[0] == 0) |-> (Nport == 0)
+IRank: : 0.01062
+Importance: : 0.54169
+Complexity: : 51
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a291: (N1 == 1 & rst == 0 & Cx[0] == 1 & Rne == 1 & cur_addr[1] == 0 & cur_addr[2] == 1 & Rxy[5] == 1 & Rxy[3] == 0 & Rxy[6] == 0 & x_cur[0] == 0 & dst_addr[1] == 0) ##1 (flit_id[0] == 0 & empty == 0) |-> (Nport == 1)
+IRank: : 0.01062
+Importance: : 1.65708
+Complexity: : 156
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a283: (N1 == 1 & rst == 0 & Cx[0] == 1 & Rnw == 1 & E1 == 0 & Cx[1] == 1 & x_dst[0] == 1 & x_cur[0] == 0 & Rxy[2] == 1 & Rxy[5] == 0) ##1 (rst == 0) |-> (Nport == 1)
+IRank: : 0.01062
+Importance: : 1.41252
+Complexity: : 133
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a274: (N1 == 1 & rst == 0 & Cx[0] == 1 & Rne == 1 & E1 == 1 & Rxy[4] == 0 & Rxy[3] == 0 & Rxy[6] == 0 & x_dst[0] == 0 & x_cur[0] == 1) ##1 (rst == 1) |-> (Nport == 1)
+IRank: : 0.01061
+Importance: : 1.41073
+Complexity: : 133
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a97: (Rxy[3] == 1 & Rxy[1] == 0 & Rxy[2] == 0 & Cx[1] == 0) ##1 (flit_id[0] == 0) |-> (Nport == 0)
+IRank: : 0.0106
+Importance: : 0.56166
+Complexity: : 53
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a262: (N1 == 1 & rst == 0 & Cx[0] == 1 & Rnw == 1 & W1 == 1 & x_cur[0] == 0 & dst_addr[1] == 1 & Cx[2] == 0) ##1 (flit_id[1] == 0 & flit_id[0] == 0) |-> (Nport == 1)
+IRank: : 0.0106
+Importance: : 1.14485
+Complexity: : 108
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a58: (cur_addr[1] == 1 & x_cur[0] == 1 & Rxy[5] == 0 & Rxy[4] == 1) ##1 (flit_id[0] == 1) |-> (Nport == 0)
+IRank: : 0.01059
+Importance: : 0.60391
+Complexity: : 57
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a267: (N1 == 1 & rst == 0 & Cx[0] == 1 & Rne == 1 & E1 == 1 & Rxy[4] == 0 & Rxy[3] == 0 & Rxy[6] == 0 & x_cur[0] == 1 & Rnw == 1) ##1 (rst == 1) |-> (Nport == 1)
+IRank: : 0.01059
+Importance: : 1.37686
+Complexity: : 130
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a251: (N1 == 1 & rst == 0 & Cx[0] == 1 & Rnw == 1 & Rne == 1 & Cx[2] == 0 & cur_addr[2] == 0 & x_dst[0] == 0 & Rxy[3] == 0 & x_cur[0] == 1) ##1 (rst == 0) |-> (Nport == 1)
+IRank: : 0.01058
+Importance: : 1.43838
+Complexity: : 136
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a79: (Rxy[4] == 1 & Rxy[2] == 1 & Rxy[3] == 0 & Rxy[5] == 0) ##1 (flit_id[0] == 0) |-> (Nport == 0)
+IRank: : 0.01056
+Importance: : 0.55987
+Complexity: : 53
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a197: (x_cur[0] == 0 & y_dst[0] == 0 & cur_addr[2] == 0 & W1 == 1) ##1 (flit_id[0] == 0) |-> (Nport == 0)
+IRank: : 0.01055
+Importance: : 0.5909
+Complexity: : 56
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a176: (Rxy[2] == 0 & x_dst[0] == 1 & Rxy[1] == 0 & cur_addr[2] == 0) ##1 (flit_id[1] == 0) |-> (Nport == 0)
+IRank: : 0.01055
+Importance: : 0.60141
+Complexity: : 57
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a164: (Rxy[2] == 0 & x_dst[0] == 1 & cur_addr[1] == 0 & Rxy[4] == 1) ##1 (flit_id[0] == 1) |-> (Nport == 0)
+IRank: : 0.01055
+Importance: : 0.60141
+Complexity: : 57
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a91: (Rxy[3] == 1 & Rxy[1] == 0 & Rxy[2] == 0 & x_cur[0] == 1) ##1 (flit_id[0] == 0) |-> (Nport == 0)
+IRank: : 0.01051
+Importance: : 0.56754
+Complexity: : 54
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a86: (E1 == 0 & Rxy[1] == 0 & Cx[1] == 1 & Rne == 0) ##1 (flit_id[0] == 0) |-> (Nport == 0)
+IRank: : 0.01051
+Importance: : 0.51479
+Complexity: : 49
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a198: (E1 == 1 & Cx[1] == 0 & Rxy[5] == 1 & dst_addr[2] == 0) ##1 (flit_id[0] == 0) |-> (Nport == 0)
+IRank: : 0.01051
+Importance: : 0.56733
+Complexity: : 54
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a95: (Rxy[6] == 1 & x_dst[0] == 0 & Rxy[1] == 0 & Cx[1] == 0) ##1 (flit_id[0] == 1) |-> (Nport == 0)
+IRank: : 0.0105
+Importance: : 0.56683
+Complexity: : 54
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a207: (Rne == 1 & Rxy[1] == 0 & Cx[1] == 0 & Cx[2] == 0) ##1 (flit_id[1] == 0) |-> (Nport == 0)
+IRank: : 0.01049
+Importance: : 0.53476
+Complexity: : 51
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a269: (N1 == 1 & rst == 0 & Cx[0] == 1 & Rnw == 1 & W1 == 1 & cur_addr[2] == 0 & Rxy[3] == 1 & Rxy[6] == 0 & Rne == 0) ##1 (flit_id[1] == 0 & flit_id[0] == 1) |-> (Nport == 1)
+IRank: : 0.01049
+Importance: : 1.23727
+Complexity: : 118
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a294: (N1 == 1 & rst == 0 & Cx[0] == 1 & Rnw == 1 & E1 == 0 & cur_addr[2] == 0 & y_dst[0] == 0 & Cx[2] == 0 & x_dst[0] == 1) ##1 (flit_id[0] == 1 & flit_id[1] == 0) |-> (Nport == 1)
+IRank: : 0.01048
+Importance: : 1.2781
+Complexity: : 122
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a183: (cur_addr[2] == 1 & y_dst[0] == 0 & dst_addr[2] == 1 & W1 == 1) ##1 (flit_id[0] == 0) |-> (Nport == 0)
+IRank: : 0.01047
+Importance: : 0.60708
+Complexity: : 58
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a46: (dst_addr[1] == 1 & N1 == 0 & Rxy[6] == 1 & Rxy[3] == 0) ##1 (flit_id[0] == 1) |-> (Nport == 0)
+IRank: : 0.01047
+Importance: : 0.56554
+Complexity: : 54
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a195: (x_cur[0] == 0 & cur_addr[1] == 0 & Rxy[6] == 1 & Rne == 0) ##1 (flit_id[0] == 1) |-> (Nport == 0)
+IRank: : 0.01046
+Importance: : 0.57522
+Complexity: : 55
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a202: (y_dst[0] == 0 & Rxy[3] == 1 & Rxy[4] == 0 & Rxy[6] == 0) ##1 (flit_id[0] == 0) |-> (Nport == 0)
+IRank: : 0.01046
+Importance: : 0.56504
+Complexity: : 54
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a109: (Rnw == 1 & cur_addr[2] == 1 & Cx[2] == 0 & y_dst[0] == 1) ##1 (flit_id[0] == 1) |-> (Nport == 0)
+IRank: : 0.01045
+Importance: : 0.57451
+Complexity: : 55
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a144: (Rxy[5] == 1 & Rxy[3] == 0 & Rnw == 0 & Rxy[1] == 1) ##1 (flit_id[1] == 1) |-> (Nport == 0)
+IRank: : 0.01042
+Importance: : 0.53118
+Complexity: : 51
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a82: (Rxy[3] == 1 & Rxy[1] == 0 & Rxy[2] == 0 & Rne == 0) ##1 (flit_id[0] == 0) |-> (Nport == 0)
+IRank: : 0.01042
+Importance: : 0.53118
+Complexity: : 51
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a120: (dst_addr[1] == 1 & Rne == 1 & E1 == 0 & cur_addr[1] == 0) ##1 (flit_id[0] == 0) |-> (Nport == 0)
+IRank: : 0.01042
+Importance: : 0.57322
+Complexity: : 55
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a187: (Rxy[1] == 0 & Rxy[2] == 0 & Rxy[6] == 1 & Rne == 0) ##1 (flit_id[1] == 1) |-> (Nport == 0)
+IRank: : 0.01042
+Importance: : 0.53118
+Complexity: : 51
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a45: (dst_addr[1] == 1 & x_cur[0] == 1 & Rxy[5] == 0 & Cx[2] == 0) ##1 (flit_id[0] == 0) |-> (Nport == 0)
+IRank: : 0.01041
+Importance: : 0.59319
+Complexity: : 57
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a88: (x_dst[0] == 0 & W1 == 1 & dst_addr[1] == 1 & Cx[2] == 0) ##1 (flit_id[0] == 0) |-> (Nport == 0)
+IRank: : 0.01041
+Importance: : 0.57251
+Complexity: : 55
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a334: (rst == 0 & N1 == 1 & Cx[0] == 1 & Cx[2] == 1 & Rnw == 1 & Cx[1] == 1 & W1 == 1 & Rxy[4] == 0 & x_dst[0] == 1 & Rne == 0 & dst_addr[1] == 0) ##1 (rst == 0) |-> (Nport == 1)
+IRank: : 0.01041
+Importance: : 1.51987
+Complexity: : 146
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a155: (Rne == 1 & x_cur[0] == 1 & Rxy[3] == 1 & E1 == 1) ##1 (flit_id[1] == 0) |-> (Nport == 0)
+IRank: : 0.01041
+Importance: : 0.52067
+Complexity: : 50
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a43: (x_dst[0] == 1 & Cx[2] == 1 & Rxy[5] == 1 & y_dst[0] == 1) ##1 (flit_id[1] == 0) |-> (Nport == 0)
+IRank: : 0.0104
+Importance: : 0.57201
+Complexity: : 55
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a157: (Rne == 1 & Cx[2] == 1 & cur_addr[1] == 1 & Rnw == 0) ##1 (flit_id[1] == 0) |-> (Nport == 0)
+IRank: : 0.0104
+Importance: : 0.54064
+Complexity: : 52
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a265: (N1 == 1 & rst == 0 & Cx[0] == 1 & Rnw == 1 & E1 == 0 & cur_addr[2] == 0 & Cx[2] == 0 & Rxy[2] == 0 & cur_addr[1] == 1 & Rne == 1) ##1 (flit_id[0] == 1 & flit_id[1] == 0) |-> (Nport == 1)
+IRank: : 0.0104
+Importance: : 1.3935
+Complexity: : 134
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a177: (Rxy[1] == 0 & dst_addr[1] == 1 & cur_addr[2] == 0 & dst_addr[2] == 0) ##1 (flit_id[1] == 1) |-> (Nport == 0)
+IRank: : 0.01039
+Importance: : 0.64395
+Complexity: : 62
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a244: (Rxy[5] == 1 & dst_addr[2] == 0 & x_cur[0] == 0 & Rxy[4] == 1) ##1 (flit_id[1] == 0) |-> (Nport == 0)
+IRank: : 0.01038
+Importance: : 0.5914
+Complexity: : 57
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a163: (cur_addr[2] == 1 & E1 == 1 & Rxy[6] == 1 & Cx[2] == 1 & x_cur[0] == 1) ##1 (flit_id[0] == 1) |-> (Nport == 0)
+IRank: : 0.01038
+Importance: : 0.70559
+Complexity: : 68
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a218: (Cx[1] == 1 & Rxy[6] == 1 & Rxy[4] == 0 & cur_addr[1] == 0 & Rxy[3] == 0) ##1 (flit_id[0] == 1) |-> (Nport == 0)
+IRank: : 0.01038
+Importance: : 0.7161
+Complexity: : 69
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a85: (W1 == 0 & Rnw == 1 & dst_addr[1] == 0 & E1 == 1) ##1 (flit_id[0] == 1) |-> (Nport == 0)
+IRank: : 0.01037
+Importance: : 0.51867
+Complexity: : 50
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a214: (Rxy[3] == 0 & Rxy[1] == 0 & Rxy[5] == 1 & Rxy[6] == 1 & cur_addr[2] == 0) ##1 (flit_id[1] == 1) |-> (Nport == 0)
+IRank: : 0.01035
+Importance: : 0.71431
+Complexity: : 69
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a258: (N1 == 1 & rst == 0 & Cx[0] == 1 & Rnw == 1 & Rne == 1 & Rxy[2] == 0 & x_cur[0] == 0 & cur_addr[2] == 0 & Cx[1] == 0 & Rxy[4] == 0) ##1 (flit_id[1] == 0 & flit_id[0] == 0) |-> (Nport == 1)
+IRank: : 0.01032
+Importance: : 1.38299
+Complexity: : 134
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a69: (Rxy[5] == 1 & Rxy[2] == 1 & y_dst[0] == 1 & Rne == 1) ##1 (flit_id[1] == 0) |-> (Nport == 0)
+IRank: : 0.01031
+Importance: : 0.53635
+Complexity: : 52
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a194: (W1 == 0 & cur_addr[2] == 1 & Rnw == 1 & cur_addr[1] == 1 & x_cur[0] == 1) ##1 (flit_id[0] == 1) |-> (Nport == 0)
+IRank: : 0.01031
+Importance: : 0.71147
+Complexity: : 69
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a147: (Rxy[2] == 0 & dst_addr[2] == 0 & Cx[2] == 0 & Rne == 1) ##1 (flit_id[0] == 0) |-> (Nport == 0)
+IRank: : 0.01031
+Importance: : 0.55682
+Complexity: : 54
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a208: (Rxy[3] == 0 & Rxy[1] == 0 & Rxy[5] == 1 & Rxy[2] == 1 & E1 == 1) ##1 (flit_id[1] == 1) |-> (Nport == 0)
+IRank: : 0.01031
+Importance: : 0.65976
+Complexity: : 64
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a118: (Rne == 1 & Rxy[4] == 1 & Rxy[1] == 0 & y_dst[0] == 1) ##1 (flit_id[0] == 0) |-> (Nport == 0)
+IRank: : 0.01031
+Importance: : 0.53635
+Complexity: : 52
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a242: (Rxy[6] == 1 & Cx[2] == 1 & y_dst[0] == 1 & Rxy[4] == 0 & cur_addr[2] == 1) ##1 (flit_id[0] == 1) |-> (Nport == 0)
+IRank: : 0.0103
+Importance: : 0.72127
+Complexity: : 70
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a64: (W1 == 0 & Cx[1] == 1 & Rnw == 1 & Rxy[3] == 0 & cur_addr[1] == 1) ##1 (flit_id[0] == 0) |-> (Nport == 0)
+IRank: : 0.0103
+Importance: : 0.66922
+Complexity: : 65
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a110: (Rnw == 1 & W1 == 0 & Rne == 0 & Rxy[2] == 1) ##1 (flit_id[0] == 0) |-> (Nport == 0)
+IRank: : 0.0103
+Importance: : 0.4843
+Complexity: : 47
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a174: (cur_addr[2] == 1 & Rxy[5] == 1 & W1 == 1 & dst_addr[2] == 1 & Rxy[2] == 1) ##1 (flit_id[0] == 1) |-> (Nport == 0)
+IRank: : 0.01029
+Importance: : 0.71998
+Complexity: : 70
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a36: (cur_addr[1] == 1 & dst_addr[2] == 0 & x_dst[0] == 0 & Rne == 0) ##1 (flit_id[1] == 1) |-> (Nport == 0)
+IRank: : 0.01029
+Importance: : 0.59657
+Complexity: : 58
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a190: (Rxy[2] == 0 & E1 == 1 & Rxy[6] == 1 & Rxy[1] == 0 & x_cur[0] == 1) ##1 (flit_id[1] == 1) |-> (Nport == 0)
+IRank: : 0.01027
+Importance: : 0.66743
+Complexity: : 65
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a204: (y_dst[0] == 0 & x_cur[0] == 0 & Cx[2] == 1 & Rxy[1] == 0 & cur_addr[1] == 1) ##1 (flit_id[1] == 1) |-> (Nport == 0)
+IRank: : 0.01027
+Importance: : 0.72895
+Complexity: : 71
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a201: (y_dst[0] == 0 & x_cur[0] == 0 & cur_addr[1] == 0 & Cx[1] == 0 & Rxy[3] == 1) ##1 (flit_id[0] == 1) |-> (Nport == 0)
+IRank: : 0.01027
+Importance: : 0.72895
+Complexity: : 71
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a303: (N1 == 1 & rst == 0 & Cx[0] == 1 & W1 == 0 & E1 == 0 & Rxy[1] == 0 & Cx[1] == 1 & Rxy[5] == 0 & Rxy[4] == 0 & Rne == 0 & x_cur[0] == 0) ##1 (flit_id[0] == 1 & flit_id[1] == 1) |-> (Nport == 1)
+IRank: : 0.01026
+Importance: : 1.45702
+Complexity: : 142
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a211: (Cx[1] == 1 & dst_addr[1] == 0 & cur_addr[1] == 1 & Rxy[2] == 0 & x_cur[0] == 0) ##1 (flit_id[0] == 0) |-> (Nport == 0)
+IRank: : 0.01024
+Importance: : 0.74763
+Complexity: : 73
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a126: (cur_addr[2] == 1 & Rnw == 1 & Rxy[4] == 0 & Rxy[3] == 1 & Rxy[2] == 1) ##1 (flit_id[0] == 1) |-> (Nport == 0)
+IRank: : 0.01023
+Importance: : 0.68561
+Complexity: : 67
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a245: (N1 == 1 & rst == 0 & Cx[0] == 1 & Rxy[1] == 1 & Rnw == 0 & Cx[2] == 0) ##1 (flit_id[0] == 1) |-> (Nport == 1)
+IRank: : 0.01022
+Importance: : 0.80777
+Complexity: : 79
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a131: (cur_addr[2] == 1 & x_cur[0] == 1 & Rxy[3] == 0 & Rxy[2] == 0 & Rnw == 1) ##1 (flit_id[0] == 1) |-> (Nport == 0)
+IRank: : 0.0102
+Importance: : 0.69329
+Complexity: : 68
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a276: (N1 == 1 & rst == 0 & Cx[0] == 1 & Rnw == 1 & Rne == 1 & x_cur[0] == 0 & dst_addr[1] == 1 & Cx[2] == 0 & y_dst[0] == 1 & Cx[1] == 0) ##1 (flit_id[0] == 1 & flit_id[1] == 0) |-> (Nport == 1)
+IRank: : 0.0102
+Importance: : 1.37744
+Complexity: : 135
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a0: (rst == 1) |=> (Nport == 0)
+IRank: : 0.01018
+Importance: : 0.17312
+Complexity: : 17
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a237: (E1 == 1 & Cx[1] == 0 & y_dst[0] == 0 & x_cur[0] == 0 & x_dst[0] == 0) ##1 (flit_id[0] == 0) |-> (Nport == 0)
+IRank: : 0.01014
+Importance: : 0.67957
+Complexity: : 67
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a189: (Rxy[5] == 1 & Rxy[3] == 0 & Rnw == 0 & Cx[2] == 0 & x_cur[0] == 0) ##1 (flit_id[1] == 1) |-> (Nport == 0)
+IRank: : 0.01013
+Importance: : 0.65871
+Complexity: : 65
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a192: (Rxy[5] == 1 & Rne == 1 & Cx[1] == 0 & W1 == 1 & x_dst[0] == 0) ##1 (flit_id[1] == 1) |-> (Nport == 0)
+IRank: : 0.01013
+Importance: : 0.63803
+Complexity: : 63
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a332: (rst == 0 & N1 == 1 & Cx[0] == 1 & dst_addr[1] == 1 & E1 == 0 & Rne == 0 & x_dst[0] == 1 & dst_addr[2] == 0 & Rxy[5] == 0 & Cx[2] == 1) ##1 (empty == 1) |-> (Nport == 1)
+IRank: : 0.0101
+Importance: : 1.38366
+Complexity: : 137
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a42: (x_dst[0] == 1 & Cx[2] == 1 & Rne == 1 & x_cur[0] == 1 & W1 == 1) ##1 (flit_id[0] == 0) |-> (Nport == 0)
+IRank: : 0.01009
+Importance: : 0.6457
+Complexity: : 64
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a127: (Rne == 1 & dst_addr[1] == 1 & x_dst[0] == 1 & E1 == 0 & cur_addr[2] == 0) ##1 (flit_id[0] == 1) |-> (Nport == 0)
+IRank: : 0.01009
+Importance: : 0.69646
+Complexity: : 69
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a330: (N1 == 1 & rst == 0 & Cx[0] == 1 & Rxy[5] == 1 & Cx[2] == 1 & Rxy[3] == 0 & Rxy[2] == 0 & dst_addr[1] == 1 & W1 == 1 & y_dst[0] == 1 & Rnw == 1) ##1 (empty == 0) |-> (Nport == 1)
+IRank: : 0.01005
+Importance: : 1.47787
+Complexity: : 147
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a140: (cur_addr[2] == 1 & x_cur[0] == 1 & Rne == 1 & x_dst[0] == 1 & y_dst[0] == 1) ##1 (flit_id[0] == 1) |-> (Nport == 0)
+IRank: : 0.01005
+Importance: : 0.70363
+Complexity: : 70
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a209: (Rxy[3] == 0 & Rxy[1] == 0 & dst_addr[1] == 1 & dst_addr[2] == 0 & x_cur[0] == 1) ##1 (flit_id[1] == 1) |-> (Nport == 0)
+IRank: : 0.01005
+Importance: : 0.73332
+Complexity: : 73
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a148: (Rxy[5] == 1 & Rxy[3] == 0 & Rnw == 0 & Cx[2] == 0 & Rne == 0) ##1 (flit_id[1] == 1) |-> (Nport == 0)
+IRank: : 0.01004
+Importance: : 0.62235
+Complexity: : 62
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a236: (Rne == 1 & x_dst[0] == 1 & Rxy[2] == 0 & x_cur[0] == 1 & Rxy[4] == 0) ##1 (flit_id[1] == 0) |-> (Nport == 0)
+IRank: : 0.01003
+Importance: : 0.66209
+Complexity: : 66
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a248: (N1 == 1 & rst == 0 & Cx[0] == 1 & Rnw == 1 & W1 == 1 & cur_addr[1] == 0 & Rxy[6] == 0 & Rxy[4] == 0) ##1 (flit_id[1] == 0) |-> (Nport == 1)
+IRank: : 0.01
+Importance: : 1.06031
+Complexity: : 106
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a119: (y_dst[0] == 0 & Rne == 1 & Rxy[4] == 1 & dst_addr[2] == 0 & Cx[2] == 0) ##1 (flit_id[0] == 1) |-> (Nport == 0)
+IRank: : 0.01
+Importance: : 0.68007
+Complexity: : 68
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a285: (N1 == 1 & rst == 0 & Cx[0] == 1 & Rne == 1 & E1 == 1 & x_dst[0] == 0 & Rxy[5] == 1 & Rxy[2] == 0 & y_dst[0] == 0 & Rxy[6] == 0 & Rnw == 0) ##1 (empty == 1) |-> (Nport == 1)
+IRank: : 0.00999
+Importance: : 1.4287
+Complexity: : 143
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a250: (N1 == 1 & rst == 0 & Cx[0] == 1 & Rnw == 1 & W1 == 1 & cur_addr[1] == 0 & Rxy[2] == 0 & dst_addr[1] == 1) ##1 (flit_id[1] == 0) |-> (Nport == 1)
+IRank: : 0.00995
+Importance: : 1.08416
+Complexity: : 109
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a278: (N1 == 1 & rst == 0 & Cx[0] == 1 & Rne == 1 & E1 == 1 & Cx[2] == 0 & Cx[1] == 0 & Rxy[6] == 0 & cur_addr[1] == 1) ##1 (flit_id[0] == 1) |-> (Nport == 1)
+IRank: : 0.00993
+Importance: : 1.18196
+Complexity: : 119
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a253: (N1 == 1 & rst == 0 & Cx[0] == 1 & Rnw == 1 & W1 == 1 & cur_addr[1] == 0 & y_dst[0] == 1 & Rxy[2] == 0 & Cx[2] == 0) ##1 (flit_id[0] == 0) |-> (Nport == 1)
+IRank: : 0.00988
+Importance: : 1.18534
+Complexity: : 120
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a259: (N1 == 1 & rst == 0 & Cx[0] == 1 & Rnw == 1 & W1 == 1 & cur_addr[1] == 0 & y_dst[0] == 1 & Rxy[5] == 0 & Cx[1] == 0) ##1 (flit_id[0] == 1) |-> (Nport == 1)
+IRank: : 0.00988
+Importance: : 1.18534
+Complexity: : 120
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a261: (N1 == 1 & rst == 0 & Cx[0] == 1 & Rnw == 1 & W1 == 1 & Rxy[4] == 0 & cur_addr[2] == 0 & Cx[1] == 0 & x_dst[0] == 1) ##1 (flit_id[0] == 1) |-> (Nport == 1)
+IRank: : 0.00988
+Importance: : 1.18534
+Complexity: : 120
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a322: (N1 == 1 & rst == 0 & Cx[0] == 1 & E1 == 0 & W1 == 0 & Rxy[3] == 1 & x_cur[0] == 1 & Rxy[4] == 1 & cur_addr[1] == 1 & Rxy[6] == 0 & cur_addr[2] == 0) ##1 (flit_id[1] == 1) |-> (Nport == 1)
+IRank: : 0.00986
+Importance: : 1.46907
+Complexity: : 149
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a115: (dst_addr[1] == 1 & x_dst[0] == 1 & Rnw == 1 & Rxy[2] == 0 & Rne == 0) ##1 (flit_id[0] == 1) |-> (Nport == 0)
+IRank: : 0.00984
+Importance: : 0.64958
+Complexity: : 66
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a307: (N1 == 1 & rst == 0 & Cx[0] == 1 & W1 == 0 & E1 == 0 & Rxy[2] == 0 & Rxy[5] == 0 & x_cur[0] == 0 & cur_addr[1] == 1 & Cx[2] == 0 & Cx[1] == 0) ##1 (flit_id[0] == 1) |-> (Nport == 1)
+IRank: : 0.00984
+Importance: : 1.43629
+Complexity: : 146
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a312: (N1 == 1 & rst == 0 & Cx[0] == 1 & W1 == 0 & E1 == 0 & Rne == 0 & Rxy[6] == 0 & y_dst[0] == 1 & cur_addr[1] == 0 & Rxy[3] == 0) ##1 (flit_id[1] == 0) |-> (Nport == 1)
+IRank: : 0.0098
+Importance: : 1.28344
+Complexity: : 131
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a277: (N1 == 1 & rst == 0 & Cx[0] == 1 & Rnw == 1 & E1 == 0 & cur_addr[1] == 0 & dst_addr[1] == 1 & Rxy[5] == 0 & Cx[2] == 1 & W1 == 1) ##1 (flit_id[0] == 1) |-> (Nport == 1)
+IRank: : 0.0098
+Importance: : 1.30391
+Complexity: : 133
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a335: (rst == 0 & Cx[0] == 1 & N1 == 1 & dst_addr[1] == 1 & E1 == 0 & Rne == 0 & x_dst[0] == 1 & cur_addr[1] == 0 & Rxy[4] == 1 & Cx[1] == 1) ##1 (flit_id[0] == 1) |-> (Nport == 1)
+IRank: : 0.00976
+Importance: : 1.32727
+Complexity: : 136
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a256: (N1 == 1 & rst == 0 & Cx[0] == 1 & Rnw == 1 & Rne == 1 & Rxy[2] == 0 & cur_addr[2] == 0 & Cx[1] == 0 & Cx[2] == 0 & x_cur[0] == 1) ##1 (flit_id[1] == 0) |-> (Nport == 1)
+IRank: : 0.00975
+Importance: : 1.2972
+Complexity: : 133
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a254: (N1 == 1 & rst == 0 & Cx[0] == 1 & Rnw == 1 & Rne == 1 & x_cur[0] == 0 & Cx[2] == 0 & cur_addr[1] == 1 & Rxy[2] == 1 & E1 == 1) ##1 (flit_id[0] == 0) |-> (Nport == 1)
+IRank: : 0.00975
+Importance: : 1.27722
+Complexity: : 131
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a326: (N1 == 1 & rst == 0 & Cx[0] == 1 & E1 == 0 & W1 == 0 & Rne == 0 & Rxy[2] == 0 & Rxy[3] == 0 & Rxy[6] == 0 & Cx[1] == 1 & x_cur[0] == 1) ##1 (flit_id[0] == 1) |-> (Nport == 1)
+IRank: : 0.00971
+Importance: : 1.36944
+Complexity: : 141
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a296: (N1 == 1 & rst == 0 & Cx[0] == 1 & Rnw == 1 & E1 == 0 & Rxy[2] == 0 & x_dst[0] == 0 & dst_addr[2] == 1 & y_dst[0] == 0 & cur_addr[2] == 0 & cur_addr[1] == 0) ##1 (flit_id[0] == 1) |-> (Nport == 1)
+IRank: : 0.00971
+Importance: : 1.48508
+Complexity: : 153
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a288: (N1 == 1 & rst == 0 & Cx[0] == 1 & Rne == 1 & cur_addr[1] == 0 & x_cur[0] == 0 & Rxy[4] == 0 & Rxy[6] == 0 & dst_addr[2] == 1 & E1 == 0 & Rxy[2] == 0) ##1 (flit_id[1] == 1) |-> (Nport == 1)
+IRank: : 0.00971
+Importance: : 1.44605
+Complexity: : 149
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a327: (N1 == 1 & rst == 0 & Cx[0] == 1 & Rxy[5] == 1 & E1 == 0 & W1 == 0 & Cx[1] == 0 & Rne == 0 & Rxy[6] == 0 & dst_addr[1] == 0 & Cx[2] == 0) ##1 (flit_id[0] == 1) |-> (Nport == 1)
+IRank: : 0.0097
+Importance: : 1.38741
+Complexity: : 143
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a266: (N1 == 1 & rst == 0 & Cx[0] == 1 & Rnw == 1 & E1 == 0 & cur_addr[1] == 0 & Rne == 0 & Rxy[3] == 0 & x_cur[0] == 0 & Rxy[2] == 0 & Cx[1] == 0) ##1 (flit_id[1] == 0) |-> (Nport == 1)
+IRank: : 0.00969
+Importance: : 1.39529
+Complexity: : 144
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a264: (N1 == 1 & rst == 0 & Cx[0] == 1 & Rne == 1 & E1 == 1 & Rxy[4] == 0 & Rxy[3] == 0 & Rxy[6] == 0 & x_dst[0] == 0 & dst_addr[2] == 0) ##1 (flit_id[0] == 1) |-> (Nport == 1)
+IRank: : 0.00969
+Importance: : 1.28911
+Complexity: : 133
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a287: (N1 == 1 & rst == 0 & Cx[0] == 1 & Rne == 1 & x_cur[0] == 0 & cur_addr[2] == 1 & Rnw == 1 & Rxy[4] == 1 & Rxy[5] == 0 & Rxy[3] == 1 & W1 == 1) ##1 (flit_id[1] == 0) |-> (Nport == 1)
+IRank: : 0.00968
+Importance: : 1.3935
+Complexity: : 144
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a299: (N1 == 1 & rst == 0 & Cx[0] == 1 & E1 == 0 & W1 == 0 & Rxy[1] == 0 & Rxy[3] == 1 & Rxy[2] == 1 & Rxy[5] == 1 & y_dst[0] == 0 & dst_addr[2] == 1 & Cx[1] == 0) ##1 (flit_id[0] == 1) |-> (Nport == 1)
+IRank: : 0.00967
+Importance: : 1.53755
+Complexity: : 159
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a268: (N1 == 1 & rst == 0 & Cx[0] == 1 & Rne == 1 & E1 == 1 & Cx[2] == 0 & Rxy[4] == 0 & y_dst[0] == 1 & Rnw == 0 & Rxy[2] == 1) ##1 (flit_id[0] == 0) |-> (Nport == 1)
+IRank: : 0.00967
+Importance: : 1.23835
+Complexity: : 128
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a286: (N1 == 1 & rst == 0 & Cx[0] == 1 & Rne == 1 & Rnw == 1 & E1 == 1 & x_cur[0] == 0 & Cx[1] == 1 & x_dst[0] == 0 & y_dst[0] == 1) ##1 (flit_id[0] == 1) |-> (Nport == 1)
+IRank: : 0.00962
+Importance: : 1.2512
+Complexity: : 130
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a298: (N1 == 1 & rst == 0 & Cx[0] == 1 & Rne == 1 & E1 == 1 & Rxy[3] == 0 & Rxy[5] == 1 & Rnw == 1 & dst_addr[2] == 1 & Cx[1] == 0 & x_cur[0] == 1) ##1 (flit_id[1] == 0) |-> (Nport == 1)
+IRank: : 0.0096
+Importance: : 1.38278
+Complexity: : 144
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a260: (N1 == 1 & rst == 0 & Cx[0] == 1 & Rnw == 1 & Rne == 1 & Rxy[2] == 0 & dst_addr[2] == 1 & x_dst[0] == 0 & Cx[1] == 0 & dst_addr[1] == 1 & cur_addr[2] == 0) ##1 (flit_id[0] == 1) |-> (Nport == 1)
+IRank: : 0.0096
+Importance: : 1.45868
+Complexity: : 152
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a280: (N1 == 1 & rst == 0 & Cx[0] == 1 & Rnw == 1 & Rne == 1 & E1 == 1 & x_cur[0] == 0 & dst_addr[2] == 1 & Cx[2] == 0 & Rxy[3] == 1 & x_dst[0] == 1) ##1 (flit_id[0] == 0) |-> (Nport == 1)
+IRank: : 0.00957
+Importance: : 1.38795
+Complexity: : 145
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a67: (Cx[2] == 1 & E1 == 1 & cur_addr[1] == 1 & Cx[1] == 1) |=> (Nport == 0)
+IRank: : 0.00932
+Importance: : 0.49405
+Complexity: : 53
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a56: (cur_addr[1] == 1 & E1 == 1 & N1 == 0) |=> (Nport == 0)
+IRank: : 0.00932
+Importance: : 0.35421
+Complexity: : 38
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a23: (Rxy[1] == 0 & W1 == 1 & cur_addr[1] == 0) |=> (Nport == 0)
+IRank: : 0.00931
+Importance: : 0.3724
+Complexity: : 40
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a24: (Rxy[1] == 0 & W1 == 1 & cur_addr[2] == 0) |=> (Nport == 0)
+IRank: : 0.00931
+Importance: : 0.3724
+Complexity: : 40
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a62: (W1 == 0 & Cx[1] == 1 & cur_addr[1] == 1 & N1 == 0) |=> (Nport == 0)
+IRank: : 0.0093
+Importance: : 0.47408
+Complexity: : 51
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a54: (cur_addr[1] == 1 & E1 == 1 & x_cur[0] == 1) |=> (Nport == 0)
+IRank: : 0.00927
+Importance: : 0.38007
+Complexity: : 41
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a6: (N1 == 0 & y_cur[0] == 0 & cur_addr[2] == 1) |=> (Nport == 0)
+IRank: : 0.00927
+Importance: : 0.38007
+Complexity: : 41
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a300: (N1 == 1 & rst == 0 & Cx[0] == 1 & Rnw == 1 & E1 == 0 & Cx[1] == 1 & Cx[2] == 1 & y_dst[0] == 1 & W1 == 1 & cur_addr[2] == 1 & cur_addr[1] == 0 & Rxy[3] == 1) |=> (Nport == 1)
+IRank: : 0.00926
+Importance: : 1.47195
+Complexity: : 159
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a75: (Rxy[4] == 1 & Rxy[1] == 0 & cur_addr[1] == 0 & N1 == 0) |=> (Nport == 0)
+IRank: : 0.00925
+Importance: : 0.49047
+Complexity: : 53
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a74: (Rxy[3] == 1 & cur_addr[2] == 1 & Rxy[4] == 0 & N1 == 0) |=> (Nport == 0)
+IRank: : 0.00925
+Importance: : 0.49047
+Complexity: : 53
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a311: (N1 == 1 & rst == 0 & Cx[0] == 1 & Rne == 1 & E1 == 1 & Rxy[3] == 0 & Rxy[4] == 0 & Rxy[6] == 0 & cur_addr[2] == 1 & Cx[2] == 0 & Cx[1] == 0 & Rxy[2] == 1) |=> (Nport == 1)
+IRank: : 0.00923
+Importance: : 1.44859
+Complexity: : 157
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a231: (Cx[2] == 0 & Rxy[5] == 0 & Rxy[3] == 1 & x_cur[0] == 1 & cur_addr[1] == 1) |=> (Nport == 0)
+IRank: : 0.00922
+Importance: : 0.63619
+Complexity: : 69
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a329: (N1 == 1 & rst == 0 & Cx[0] == 1 & Rxy[5] == 1 & x_cur[0] == 1 & cur_addr[1] == 1 & cur_addr[2] == 0 & Rnw == 1 & y_dst[0] == 0 & x_dst[0] == 0 & Cx[2] == 0) |=> (Nport == 1)
+IRank: : 0.00922
+Importance: : 1.40129
+Complexity: : 152
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a1: (Cx[0] == 0) |=> (Nport == 0)
+IRank: : 0.00922
+Importance: : 0.11986
+Complexity: : 13
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a99: (dst_addr[1] == 1 & Cx[1] == 1 & cur_addr[2] == 0 & Rxy[5] == 0 & Cx[2] == 0) |=> (Nport == 0)
+IRank: : 0.00921
+Importance: : 0.65416
+Complexity: : 71
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a22: (N1 == 0 & y_dst[0] == 0 & cur_addr[2] == 1) |=> (Nport == 0)
+IRank: : 0.00921
+Importance: : 0.37757
+Complexity: : 41
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a55: (cur_addr[1] == 1 & E1 == 1 & x_dst[0] == 0) |=> (Nport == 0)
+IRank: : 0.00921
+Importance: : 0.37757
+Complexity: : 41
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a71: (cur_addr[2] == 1 & x_cur[0] == 1 & Rxy[3] == 0 & Rxy[6] == 1 & Rxy[5] == 0) |=> (Nport == 0)
+IRank: : 0.00919
+Importance: : 0.6344
+Complexity: : 69
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a246: (N1 == 1 & rst == 0 & Cx[0] == 1 & Rxy[1] == 1 & Rnw == 0 & Cx[2] == 0 & x_cur[0] == 0) |=> (Nport == 1)
+IRank: : 0.00919
+Importance: : 0.84593
+Complexity: : 92
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a101: (dst_addr[1] == 1 & Cx[1] == 1 & cur_addr[2] == 0 & Rxy[5] == 0 & W1 == 1) |=> (Nport == 0)
+IRank: : 0.00919
+Importance: : 0.63419
+Complexity: : 69
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a171: (cur_addr[2] == 1 & E1 == 1 & Rxy[6] == 1 & Cx[2] == 1 & dst_addr[1] == 0) |=> (Nport == 0)
+IRank: : 0.00919
+Importance: : 0.63419
+Complexity: : 69
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a263: (N1 == 1 & rst == 0 & Cx[0] == 1 & Rnw == 1 & dst_addr[1] == 0 & Cx[1] == 1 & Rxy[4] == 0 & Rxy[5] == 0 & cur_addr[2] == 1 & Rxy[6] == 0 & Rxy[2] == 0 & x_cur[0] == 1) |=> (Nport == 1)
+IRank: : 0.00918
+Importance: : 1.49651
+Complexity: : 163
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a70: (Rxy[5] == 1 & dst_addr[2] == 0 & cur_addr[2] == 0 & x_cur[0] == 0) |=> (Nport == 0)
+IRank: : 0.00916
+Importance: : 0.54018
+Complexity: : 59
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a284: (N1 == 1 & rst == 0 & Cx[0] == 1 & Rne == 1 & cur_addr[1] == 0 & x_cur[0] == 0 & Rxy[4] == 0 & Rxy[2] == 1 & Rnw == 0 & E1 == 0 & dst_addr[2] == 0 & cur_addr[2] == 0) |=> (Nport == 1)
+IRank: : 0.00916
+Importance: : 1.48421
+Complexity: : 162
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a139: (y_dst[0] == 0 & E1 == 1 & cur_addr[2] == 0 & x_cur[0] == 0) |=> (Nport == 0)
+IRank: : 0.00915
+Importance: : 0.50331
+Complexity: : 55
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a272: (N1 == 1 & rst == 0 & Cx[0] == 1 & Rnw == 1 & W1 == 1 & Cx[1] == 1 & x_dst[0] == 1 & Rxy[4] == 0 & Rxy[5] == 0 & Rxy[3] == 0 & Cx[2] == 0) |=> (Nport == 1)
+IRank: : 0.00915
+Importance: : 1.29933
+Complexity: : 142
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a295: (N1 == 1 & rst == 0 & Cx[0] == 1 & Rne == 1 & E1 == 1 & Rxy[3] == 0 & Rxy[4] == 0 & Rxy[6] == 0 & cur_addr[1] == 1 & Rnw == 0) |=> (Nport == 1)
+IRank: : 0.00915
+Importance: : 1.18017
+Complexity: : 129
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a180: (x_cur[0] == 0 & y_dst[0] == 0 & E1 == 1 & Rxy[3] == 0 & cur_addr[1] == 1) |=> (Nport == 0)
+IRank: : 0.00914
+Importance: : 0.62138
+Complexity: : 68
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a221: (dst_addr[1] == 0 & Cx[1] == 1 & x_cur[0] == 1 & cur_addr[1] == 1 & Rne == 0 & cur_addr[2] == 1) |=> (Nport == 0)
+IRank: : 0.00914
+Importance: : 0.78579
+Complexity: : 86
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a297: (N1 == 1 & rst == 0 & Cx[0] == 1 & Rnw == 1 & E1 == 0 & Cx[1] == 1 & Cx[2] == 1 & Rxy[4] == 0 & x_dst[0] == 1 & x_cur[0] == 0 & Rxy[2] == 1 & Rxy[3] == 0) |=> (Nport == 1)
+IRank: : 0.00914
+Importance: : 1.42507
+Complexity: : 156
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a175: (Rxy[2] == 0 & Rxy[3] == 1 & Cx[1] == 1 & E1 == 1 & Cx[2] == 1) |=> (Nport == 0)
+IRank: : 0.00914
+Importance: : 0.57576
+Complexity: : 63
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a21: (Rxy[1] == 0 & W1 == 1 & Cx[1] == 0) |=> (Nport == 0)
+IRank: : 0.00913
+Importance: : 0.33782
+Complexity: : 37
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a279: (N1 == 1 & rst == 0 & Cx[0] == 1 & Rnw == 1 & Rne == 1 & x_cur[0] == 0 & dst_addr[1] == 1 & Cx[2] == 0 & Cx[1] == 0 & cur_addr[1] == 1 & Rxy[3] == 1) |=> (Nport == 1)
+IRank: : 0.00913
+Importance: : 1.35154
+Complexity: : 148
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a310: (N1 == 1 & rst == 0 & Cx[0] == 1 & Rnw == 1 & Cx[1] == 1 & W1 == 1 & y_dst[0] == 1 & cur_addr[2] == 1 & Rxy[5] == 0 & x_cur[0] == 0 & Rne == 0) |=> (Nport == 1)
+IRank: : 0.00912
+Importance: : 1.31288
+Complexity: : 144
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a65: (Rxy[1] == 0 & Rxy[2] == 0 & Rxy[6] == 1 & Cx[2] == 0) |=> (Nport == 0)
+IRank: : 0.00912
+Importance: : 0.47408
+Complexity: : 52
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a282: (N1 == 1 & rst == 0 & Cx[0] == 1 & Rne == 1 & cur_addr[1] == 0 & x_cur[0] == 0 & Rxy[4] == 0 & Rxy[2] == 1 & Rnw == 0 & Rxy[5] == 0 & y_dst[0] == 1 & Cx[1] == 0) |=> (Nport == 1)
+IRank: : 0.00911
+Importance: : 1.44913
+Complexity: : 159
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a247: (N1 == 1 & rst == 0 & Cx[0] == 1 & Rxy[1] == 1 & Rnw == 0 & dst_addr[1] == 0 & x_dst[0] == 0) |=> (Nport == 1)
+IRank: : 0.00911
+Importance: : 0.86549
+Complexity: : 95
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a227: (Rxy[4] == 0 & Rxy[2] == 0 & dst_addr[2] == 0 & Cx[1] == 0 & Cx[2] == 0) |=> (Nport == 0)
+IRank: : 0.00909
+Importance: : 0.6178
+Complexity: : 68
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a50: (Rxy[2] == 1 & Rxy[4] == 1 & Rxy[3] == 0 & N1 == 0) |=> (Nport == 0)
+IRank: : 0.00908
+Importance: : 0.4541
+Complexity: : 50
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a29: (Rxy[1] == 0 & Rxy[4] == 1 & W1 == 1) |=> (Nport == 0)
+IRank: : 0.00908
+Importance: : 0.33603
+Complexity: : 37
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a10: (N1 == 0 & Rxy[1] == 0 & W1 == 1) |=> (Nport == 0)
+IRank: : 0.00908
+Importance: : 0.31785
+Complexity: : 35
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a305: (N1 == 1 & rst == 0 & Cx[0] == 1 & Rnw == 1 & Rxy[2] == 0 & Rxy[3] == 0 & x_cur[0] == 0 & Rne == 1 & dst_addr[2] == 1 & Rxy[6] == 0 & Rxy[4] == 0 & Cx[1] == 0) |=> (Nport == 1)
+IRank: : 0.00906
+Importance: : 1.43145
+Complexity: : 158
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a255: (N1 == 1 & rst == 0 & Cx[0] == 1 & Rnw == 1 & Rne == 1 & x_cur[0] == 0 & Cx[2] == 0 & W1 == 1 & Rxy[4] == 0 & dst_addr[2] == 0) |=> (Nport == 1)
+IRank: : 0.00905
+Importance: : 1.17713
+Complexity: : 130
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a84: (Rxy[5] == 1 & dst_addr[2] == 0 & Rxy[6] == 0 & Cx[2] == 1) |=> (Nport == 0)
+IRank: : 0.00905
+Importance: : 0.49793
+Complexity: : 55
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a240: (E1 == 1 & x_dst[0] == 1 & Rxy[5] == 1 & Rxy[3] == 1 & Cx[2] == 1) |=> (Nport == 0)
+IRank: : 0.00905
+Importance: : 0.57914
+Complexity: : 64
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a162: (E1 == 1 & Rxy[4] == 1 & x_cur[0] == 1 & Rxy[6] == 0) |=> (Nport == 0)
+IRank: : 0.00905
+Importance: : 0.46178
+Complexity: : 51
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a170: (cur_addr[2] == 1 & Rxy[5] == 1 & W1 == 1 & Rnw == 0) |=> (Nport == 0)
+IRank: : 0.00905
+Importance: : 0.46178
+Complexity: : 51
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a128: (Rxy[5] == 1 & Rxy[6] == 1 & Cx[1] == 0 & dst_addr[1] == 0 & x_cur[0] == 0) |=> (Nport == 0)
+IRank: : 0.00904
+Importance: : 0.62368
+Complexity: : 69
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a52: (cur_addr[1] == 1 & E1 == 1 & Rne == 0) |=> (Nport == 0)
+IRank: : 0.00904
+Importance: : 0.3437
+Complexity: : 38
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a217: (Rxy[6] == 1 & E1 == 1 & y_dst[0] == 0 & Rxy[4] == 0 & Cx[2] == 1 & x_cur[0] == 1) |=> (Nport == 0)
+IRank: : 0.00904
+Importance: : 0.70488
+Complexity: : 78
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a257: (N1 == 1 & rst == 0 & Cx[0] == 1 & Rnw == 1 & Rne == 1 & x_cur[0] == 0 & dst_addr[1] == 1 & y_dst[0] == 1 & Cx[2] == 0 & E1 == 0) |=> (Nport == 1)
+IRank: : 0.00903
+Importance: : 1.1823
+Complexity: : 131
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a125: (Rne == 1 & x_dst[0] == 1 & Cx[2] == 1 & cur_addr[2] == 0 & Rxy[3] == 0) |=> (Nport == 0)
+IRank: : 0.00903
+Importance: : 0.60499
+Complexity: : 67
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a166: (x_cur[0] == 0 & Rxy[3] == 0 & cur_addr[2] == 0 & Rne == 0) |=> (Nport == 0)
+IRank: : 0.00903
+Importance: : 0.48763
+Complexity: : 54
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a53: (Rxy[4] == 1 & Rxy[1] == 0 & E1 == 1 & dst_addr[1] == 0) |=> (Nport == 0)
+IRank: : 0.00902
+Importance: : 0.47796
+Complexity: : 53
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a94: (Rxy[6] == 1 & x_dst[0] == 0 & Rxy[1] == 0 & N1 == 0) |=> (Nport == 0)
+IRank: : 0.00901
+Importance: : 0.45927
+Complexity: : 51
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a93: (Rxy[6] == 1 & x_dst[0] == 0 & Rxy[1] == 0 & W1 == 1) |=> (Nport == 0)
+IRank: : 0.00901
+Importance: : 0.45927
+Complexity: : 51
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a4: (N1 == 0 & dst_addr[1] == 0 & E1 == 1) |=> (Nport == 0)
+IRank: : 0.00899
+Importance: : 0.3417
+Complexity: : 38
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a150: (Rxy[2] == 0 & x_dst[0] == 1 & x_cur[0] == 1 & dst_addr[1] == 1 & W1 == 1) |=> (Nport == 0)
+IRank: : 0.00895
+Importance: : 0.60887
+Complexity: : 68
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a172: (cur_addr[2] == 1 & Rnw == 1 & E1 == 1 & x_dst[0] == 0 & y_dst[0] == 1) |=> (Nport == 0)
+IRank: : 0.00894
+Importance: : 0.59019
+Complexity: : 66
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a63: (W1 == 0 & Cx[1] == 1 & Rnw == 1 & Rxy[3] == 0 & N1 == 0) |=> (Nport == 0)
+IRank: : 0.00893
+Importance: : 0.52709
+Complexity: : 59
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a225: (Cx[2] == 0 & Rxy[6] == 0 & dst_addr[2] == 1 & Cx[1] == 1 & Rnw == 0) |=> (Nport == 0)
+IRank: : 0.00893
+Importance: : 0.5891
+Complexity: : 66
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a243: (Rne == 1 & Rxy[1] == 0 & x_cur[0] == 1 & Rxy[5] == 0 & Cx[1] == 0) |=> (Nport == 0)
+IRank: : 0.00892
+Importance: : 0.57113
+Complexity: : 64
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a219: (Cx[1] == 1 & Rnw == 1 & Cx[2] == 0 & x_cur[0] == 1 & dst_addr[1] == 1) |=> (Nport == 0)
+IRank: : 0.00891
+Importance: : 0.59678
+Complexity: : 67
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a111: (y_dst[0] == 0 & dst_addr[2] == 1 & N1 == 0) |=> (Nport == 0)
+IRank: : 0.0089
+Importance: : 0.36506
+Complexity: : 41
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a199: (E1 == 1 & Cx[1] == 0 & Rxy[5] == 1 & dst_addr[2] == 0 & Rnw == 1) |=> (Nport == 0)
+IRank: : 0.00889
+Importance: : 0.56913
+Complexity: : 64
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a35: (Rxy[4] == 1 & Rxy[1] == 0 & Rxy[5] == 0 & Rne == 0) |=> (Nport == 0)
+IRank: : 0.00887
+Importance: : 0.44359
+Complexity: : 50
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a39: (x_dst[0] == 1 & Cx[2] == 1 & Cx[1] == 0 & dst_addr[1] == 0 & Rne == 0) |=> (Nport == 0)
+IRank: : 0.00887
+Importance: : 0.59428
+Complexity: : 67
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a234: (E1 == 1 & Cx[1] == 0 & dst_addr[1] == 0 & Rnw == 1) |=> (Nport == 0)
+IRank: : 0.00884
+Importance: : 0.45106
+Complexity: : 51
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a37: (E1 == 1 & Rne == 0 & Cx[1] == 1) |=> (Nport == 0)
+IRank: : 0.00883
+Importance: : 0.30913
+Complexity: : 35
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a49: (E1 == 1 & Rne == 0 & Cx[2] == 0) |=> (Nport == 0)
+IRank: : 0.00883
+Importance: : 0.30913
+Complexity: : 35
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a130: (Rne == 1 & Rxy[5] == 1 & x_dst[0] == 1 & y_dst[0] == 1 & Rxy[3] == 1) |=> (Nport == 0)
+IRank: : 0.0088
+Importance: : 0.57201
+Complexity: : 65
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a156: (Rne == 1 & x_cur[0] == 1 & x_dst[0] == 1 & dst_addr[1] == 1 & W1 == 1) |=> (Nport == 0)
+IRank: : 0.00879
+Importance: : 0.58018
+Complexity: : 66
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a3: (N1 == 0 & Rne == 0 & E1 == 1) |=> (Nport == 0)
+IRank: : 0.00876
+Importance: : 0.28915
+Complexity: : 33
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a27: (dst_addr[2] == 0 & Rne == 0 & E1 == 1) |=> (Nport == 0)
+IRank: : 0.00872
+Importance: : 0.33119
+Complexity: : 38
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a98: (Rnw == 1 & W1 == 0 & dst_addr[1] == 0 & x_dst[0] == 0 & Rne == 1) |=> (Nport == 0)
+IRank: : 0.00863
+Importance: : 0.54381
+Complexity: : 63
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a14: (N1 == 0 & x_cur[0] == 1 & Rnw == 0 & Rne == 1) |=> (Nport == 0)
+IRank: : 0.0086
+Importance: : 0.40439
+Complexity: : 47
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a34: (N1 == 0 & Rnw == 1 & W1 == 0 & Rne == 0) |=> (Nport == 0)
+IRank: : 0.0086
+Importance: : 0.37853
+Complexity: : 44
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+
+################################
+# Tabularized Assertion Report #
+################################
+
+
+Assertion Index |  IRank  | Importance | Complexity | Triggered | Vacuous | Verif Status
+--------------- | ------- | ---------- | ---------- | --------- | ------- | ------------
+     a137       | 0.02291 |  0.68742   |     30     |  Unknown  | Unknown |   Unknown   
+      a87       | 0.02006 |  0.64187   |     32     |  Unknown  | Unknown |   Unknown   
+     a143       | 0.02006 |  0.64187   |     32     |  Unknown  | Unknown |   Unknown   
+     a121       | 0.02004 |  0.52092   |     26     |  Unknown  | Unknown |   Unknown   
+      a51       | 0.01948 |  0.66235   |     34     |  Unknown  | Unknown |   Unknown   
+      a11       | 0.01896 |  0.53093   |     28     |  Unknown  | Unknown |   Unknown   
+      a73       | 0.01893 |   0.5678   |     30     |  Unknown  | Unknown |   Unknown   
+     a134       | 0.0185  |  0.57347   |     31     |  Unknown  | Unknown |   Unknown   
+     a196       | 0.01836 |  0.55091   |     30     |  Unknown  | Unknown |   Unknown   
+      a16       | 0.01733 |  0.43334   |     25     |  Unknown  | Unknown |   Unknown   
+      a61       | 0.01718 |  0.46382   |     27     |  Unknown  | Unknown |   Unknown   
+     a185       | 0.01718 |  0.77295   |     45     |  Unknown  | Unknown |   Unknown   
+      a80       | 0.01715 |  0.75477   |     44     |  Unknown  | Unknown |   Unknown   
+      a28       | 0.01642 |  0.44335   |     27     |  Unknown  | Unknown |   Unknown   
+     a136       | 0.01591 |  0.62031   |     39     |  Unknown  | Unknown |   Unknown   
+      a59       | 0.01583 |   0.649    |     41     |  Unknown  | Unknown |   Unknown   
+     a132       | 0.01576 |  0.69354   |     44     |  Unknown  | Unknown |   Unknown   
+     a104       | 0.01575 |  0.69283   |     44     |  Unknown  | Unknown |   Unknown   
+      a48       | 0.01568 |  0.65847   |     42     |  Unknown  | Unknown |   Unknown   
+     a184       | 0.01564 |  0.65668   |     42     |  Unknown  | Unknown |   Unknown   
+      a2        | 0.01562 |  0.18747   |     12     |  Unknown  | Unknown |   Unknown   
+      a68       | 0.0156  |  0.67077   |     43     |  Unknown  | Unknown |   Unknown   
+     a135       | 0.01558 |  0.68537   |     44     |  Unknown  | Unknown |   Unknown   
+     a167       | 0.01538 |  0.64617   |     42     |  Unknown  | Unknown |   Unknown   
+     a123       | 0.01529 |  0.67286   |     44     |  Unknown  | Unknown |   Unknown   
+      a72       | 0.01512 |  0.39313   |     26     |  Unknown  | Unknown |   Unknown   
+     a233       | 0.01511 |  0.68003   |     45     |  Unknown  | Unknown |   Unknown   
+     a179       | 0.01508 |  0.70872   |     47     |  Unknown  | Unknown |   Unknown   
+     a124       | 0.01489 |  0.67002   |     45     |  Unknown  | Unknown |   Unknown   
+      a57       | 0.01481 |   0.4295   |     29     |  Unknown  | Unknown |   Unknown   
+      a7        | 0.01441 |  0.34575   |     24     |  Unknown  | Unknown |   Unknown   
+     a191       | 0.01424 |  0.76887   |     54     |  Unknown  | Unknown |   Unknown   
+      a15       | 0.01386 |   0.5404   |     39     |  Unknown  | Unknown |   Unknown   
+     a228       | 0.01383 |  0.62214   |     45     |  Unknown  | Unknown |   Unknown   
+     a223       | 0.0138  |  0.59345   |     43     |  Unknown  | Unknown |   Unknown   
+     a205       | 0.01376 |   0.7981   |     58     |  Unknown  | Unknown |   Unknown   
+     a229       | 0.01366 |  0.60112   |     44     |  Unknown  | Unknown |   Unknown   
+     a222       | 0.01347 |  0.82196   |     61     |  Unknown  | Unknown |   Unknown   
+      a41       | 0.01329 |  0.65117   |     49     |  Unknown  | Unknown |   Unknown   
+     a107       | 0.01321 |  0.68695   |     52     |  Unknown  | Unknown |   Unknown   
+     a158       | 0.0132  |  0.51479   |     39     |  Unknown  | Unknown |   Unknown   
+      a78       | 0.01315 |  0.51299   |     39     |  Unknown  | Unknown |   Unknown   
+     a102       | 0.01315 |  0.51299   |     39     |  Unknown  | Unknown |   Unknown   
+     a116       | 0.01304 |  0.48251   |     37     |  Unknown  | Unknown |   Unknown   
+     a168       | 0.01304 |  0.69125   |     53     |  Unknown  | Unknown |   Unknown   
+     a142       | 0.01304 |  0.54757   |     42     |  Unknown  | Unknown |   Unknown   
+     a220       | 0.01294 |  0.87981   |     68     |  Unknown  | Unknown |   Unknown   
+      a92       | 0.01291 |  0.52938   |     41     |  Unknown  | Unknown |   Unknown   
+      a31       | 0.01291 |  0.52938   |     41     |  Unknown  | Unknown |   Unknown   
+     a165       | 0.01288 |  0.50248   |     39     |  Unknown  | Unknown |   Unknown   
+     a181       | 0.01286 |  0.56575   |     44     |  Unknown  | Unknown |   Unknown   
+     a178       | 0.01286 |  0.56575   |     44     |  Unknown  | Unknown |   Unknown   
+     a169       | 0.01285 |  0.68128   |     53     |  Unknown  | Unknown |   Unknown   
+     a224       | 0.01278 |  0.71586   |     56     |  Unknown  | Unknown |   Unknown   
+     a103       | 0.01276 |  0.74021   |     58     |  Unknown  | Unknown |   Unknown   
+     a230       | 0.01271 |  0.71152   |     56     |  Unknown  | Unknown |   Unknown   
+     a241       | 0.01259 |  0.70514   |     56     |  Unknown  | Unknown |   Unknown   
+     a161       | 0.01253 |  0.67665   |     54     |  Unknown  | Unknown |   Unknown   
+     a275       | 0.01253 |  1.54102   |    123     |  Unknown  | Unknown |   Unknown   
+     a100       | 0.0125  |  0.56271   |     45     |  Unknown  | Unknown |   Unknown   
+     a215       | 0.01248 |   0.7116   |     57     |  Unknown  | Unknown |   Unknown   
+     a314       | 0.01243 |  1.38024   |    111     |  Unknown  | Unknown |   Unknown   
+     a112       | 0.01241 |  0.55841   |     45     |  Unknown  | Unknown |   Unknown   
+      a40       | 0.01238 |  0.73029   |     59     |  Unknown  | Unknown |   Unknown   
+     a105       | 0.01234 |  0.46899   |     38     |  Unknown  | Unknown |   Unknown   
+     a249       | 0.01232 |  1.15761   |     94     |  Unknown  | Unknown |   Unknown   
+     a106       | 0.01229 |  0.51637   |     42     |  Unknown  | Unknown |   Unknown   
+     a315       | 0.01225 |  1.39613   |    114     |  Unknown  | Unknown |   Unknown   
+     a325       | 0.01222 |  1.64942   |    135     |  Unknown  | Unknown |   Unknown   
+      a18       | 0.01222 |  0.30554   |     25     |  Unknown  | Unknown |   Unknown   
+     a308       | 0.01215 |  1.44627   |    119     |  Unknown  | Unknown |   Unknown   
+     a188       | 0.0121  |  0.62927   |     52     |  Unknown  | Unknown |   Unknown   
+     a117       | 0.01205 |  0.60237   |     50     |  Unknown  | Unknown |   Unknown   
+      a60       | 0.01204 |  0.27685   |     23     |  Unknown  | Unknown |   Unknown   
+      a20       | 0.01204 |  0.27685   |     23     |  Unknown  | Unknown |   Unknown   
+      a25       | 0.01204 |  0.27685   |     23     |  Unknown  | Unknown |   Unknown   
+     a331       | 0.01202 |  1.55107   |    129     |  Unknown  | Unknown |   Unknown   
+     a210       | 0.01202 |  0.64925   |     54     |  Unknown  | Unknown |   Unknown   
+     a152       | 0.01202 |  0.64925   |     54     |  Unknown  | Unknown |   Unknown   
+     a213       | 0.01201 |  0.60058   |     50     |  Unknown  | Unknown |   Unknown   
+     a320       |  0.012  |  1.71552   |    143     |  Unknown  | Unknown |   Unknown   
+     a206       | 0.01198 |  0.65871   |     55     |  Unknown  | Unknown |   Unknown   
+     a235       | 0.01192 |  0.69129   |     58     |  Unknown  | Unknown |   Unknown   
+     a149       | 0.0119  |  0.61876   |     52     |  Unknown  | Unknown |   Unknown   
+      a47       | 0.01187 |  0.78351   |     66     |  Unknown  | Unknown |   Unknown   
+     a153       | 0.01182 |  0.62643   |     53     |  Unknown  | Unknown |   Unknown   
+     a146       | 0.01182 |  0.62643   |     53     |  Unknown  | Unknown |   Unknown   
+     a182       | 0.0118  |  0.64875   |     55     |  Unknown  | Unknown |   Unknown   
+     a145       | 0.0118  |  0.59007   |     50     |  Unknown  | Unknown |   Unknown   
+     a200       | 0.01176 |   0.7999   |     68     |  Unknown  | Unknown |   Unknown   
+     a129       | 0.01175 |   0.6462   |     55     |  Unknown  | Unknown |   Unknown   
+     a289       | 0.01175 |   1.257    |    107     |  Unknown  | Unknown |   Unknown   
+     a133       | 0.01174 |  0.61059   |     52     |  Unknown  | Unknown |   Unknown   
+     a324       | 0.01173 |  1.60642   |    137     |  Unknown  | Unknown |   Unknown   
+     a108       | 0.01169 |  0.71285   |     61     |  Unknown  | Unknown |   Unknown   
+     a316       | 0.01168 |  1.41373   |    121     |  Unknown  | Unknown |   Unknown   
+     a226       | 0.01168 |  0.85244   |     73     |  Unknown  | Unknown |   Unknown   
+     a318       | 0.01163 |  1.58181   |    136     |  Unknown  | Unknown |   Unknown   
+     a114       | 0.01161 |  0.65029   |     56     |  Unknown  | Unknown |   Unknown   
+     a203       | 0.0116  |  0.64958   |     56     |  Unknown  | Unknown |   Unknown   
+     a216       | 0.0116  |  0.82375   |     71     |  Unknown  | Unknown |   Unknown   
+     a313       | 0.01158 |  1.62156   |    140     |  Unknown  | Unknown |   Unknown   
+      a89       | 0.01158 |  0.62523   |     54     |  Unknown  | Unknown |   Unknown   
+     a323       | 0.01157 |  1.73496   |    150     |  Unknown  | Unknown |   Unknown   
+     a186       | 0.01157 |  0.64779   |     56     |  Unknown  | Unknown |   Unknown   
+     a273       | 0.01153 |  1.41761   |    123     |  Unknown  | Unknown |   Unknown   
+     a138       | 0.0115  |  0.62093   |     54     |  Unknown  | Unknown |   Unknown   
+     a321       | 0.01147 |  1.52592   |    133     |  Unknown  | Unknown |   Unknown   
+     a328       | 0.01147 |  1.38821   |    121     |  Unknown  | Unknown |   Unknown   
+     a281       | 0.01146 |  1.40944   |    123     |  Unknown  | Unknown |   Unknown   
+     a302       | 0.01145 |  1.52342   |    133     |  Unknown  | Unknown |   Unknown   
+     a151       | 0.01132 |  0.78087   |     69     |  Unknown  | Unknown |   Unknown   
+      a90       | 0.01122 |  0.45998   |     41     |  Unknown  | Unknown |   Unknown   
+     a160       | 0.01122 |  0.75197   |     67     |  Unknown  | Unknown |   Unknown   
+      a26       | 0.01122 |  0.45998   |     41     |  Unknown  | Unknown |   Unknown   
+     a238       | 0.01122 |  0.72899   |     65     |  Unknown  | Unknown |   Unknown   
+     a252       | 0.01121 |  1.22196   |    109     |  Unknown  | Unknown |   Unknown   
+     a239       | 0.01119 |  0.77199   |     69     |  Unknown  | Unknown |   Unknown   
+      a9        | 0.01119 |  0.42541   |     38     |  Unknown  | Unknown |   Unknown   
+     a317       | 0.01116 |  1.57334   |    141     |  Unknown  | Unknown |   Unknown   
+     a271       | 0.01116 |  1.55086   |    139     |  Unknown  | Unknown |   Unknown   
+      a8        | 0.01115 |  0.42362   |     38     |  Unknown  | Unknown |   Unknown   
+      a30       | 0.01115 |  0.42362   |     38     |  Unknown  | Unknown |   Unknown   
+     a292       | 0.01114 |  1.62589   |    146     |  Unknown  | Unknown |   Unknown   
+     a306       | 0.01107 |  1.59411   |    144     |  Unknown  | Unknown |   Unknown   
+      a38       | 0.01106 |  0.43129   |     39     |  Unknown  | Unknown |   Unknown   
+      a12       | 0.01106 |  0.43129   |     39     |  Unknown  | Unknown |   Unknown   
+     a159       | 0.01102 |  0.74918   |     68     |  Unknown  | Unknown |   Unknown   
+      a81       |  0.011  |  0.48384   |     44     |  Unknown  | Unknown |   Unknown   
+      a83       | 0.01099 |  0.42879   |     39     |  Unknown  | Unknown |   Unknown   
+     a319       | 0.01097 |  1.36051   |    124     |  Unknown  | Unknown |   Unknown   
+     a193       | 0.01097 |  0.39492   |     36     |  Unknown  | Unknown |   Unknown   
+     a301       | 0.01096 |  1.40226   |    128     |  Unknown  | Unknown |   Unknown   
+     a293       | 0.01093 |  1.46524   |    134     |  Unknown  | Unknown |   Unknown   
+      a33       | 0.01091 |  0.50202   |     46     |  Unknown  | Unknown |   Unknown   
+      a5        | 0.01091 |  0.44747   |     41     |  Unknown  | Unknown |   Unknown   
+      a32       | 0.01088 |   0.4026   |     37     |  Unknown  | Unknown |   Unknown   
+      a17       | 0.01088 |   0.4026   |     37     |  Unknown  | Unknown |   Unknown   
+      a13       | 0.01088 |   0.4026   |     37     |  Unknown  | Unknown |   Unknown   
+     a154       | 0.01087 |  0.41311   |     38     |  Unknown  | Unknown |   Unknown   
+     a270       | 0.01087 |  1.33699   |    123     |  Unknown  | Unknown |   Unknown   
+     a290       | 0.01084 |  1.49627   |    138     |  Unknown  | Unknown |   Unknown   
+      a44       | 0.01084 |  0.45514   |     42     |  Unknown  | Unknown |   Unknown   
+      a19       | 0.01084 |  0.45514   |     42     |  Unknown  | Unknown |   Unknown   
+     a309       | 0.01078 |  1.36956   |    127     |  Unknown  | Unknown |   Unknown   
+     a333       | 0.01077 |  1.48626   |    138     |  Unknown  | Unknown |   Unknown   
+     a212       | 0.01074 |  0.57985   |     54     |  Unknown  | Unknown |   Unknown   
+      a96       | 0.0107  |  0.57805   |     54     |  Unknown  | Unknown |   Unknown   
+      a77       | 0.0107  |  0.57805   |     54     |  Unknown  | Unknown |   Unknown   
+     a173       | 0.01069 |  0.54527   |     51     |  Unknown  | Unknown |   Unknown   
+     a232       | 0.01068 |  0.58752   |     55     |  Unknown  | Unknown |   Unknown   
+     a304       | 0.01068 |  1.52772   |    143     |  Unknown  | Unknown |   Unknown   
+      a66       | 0.01065 |  0.59624   |     56     |  Unknown  | Unknown |   Unknown   
+     a122       | 0.01065 |  0.59624   |     56     |  Unknown  | Unknown |   Unknown   
+      a76       | 0.01065 |  0.59624   |     56     |  Unknown  | Unknown |   Unknown   
+     a141       | 0.01064 |  0.48951   |     46     |  Unknown  | Unknown |   Unknown   
+     a113       | 0.01062 |  0.54169   |     51     |  Unknown  | Unknown |   Unknown   
+     a291       | 0.01062 |  1.65708   |    156     |  Unknown  | Unknown |   Unknown   
+     a283       | 0.01062 |  1.41252   |    133     |  Unknown  | Unknown |   Unknown   
+     a274       | 0.01061 |  1.41073   |    133     |  Unknown  | Unknown |   Unknown   
+      a97       | 0.0106  |  0.56166   |     53     |  Unknown  | Unknown |   Unknown   
+     a262       | 0.0106  |  1.14485   |    108     |  Unknown  | Unknown |   Unknown   
+      a58       | 0.01059 |  0.60391   |     57     |  Unknown  | Unknown |   Unknown   
+     a267       | 0.01059 |  1.37686   |    130     |  Unknown  | Unknown |   Unknown   
+     a251       | 0.01058 |  1.43838   |    136     |  Unknown  | Unknown |   Unknown   
+      a79       | 0.01056 |  0.55987   |     53     |  Unknown  | Unknown |   Unknown   
+     a197       | 0.01055 |   0.5909   |     56     |  Unknown  | Unknown |   Unknown   
+     a164       | 0.01055 |  0.60141   |     57     |  Unknown  | Unknown |   Unknown   
+     a176       | 0.01055 |  0.60141   |     57     |  Unknown  | Unknown |   Unknown   
+      a86       | 0.01051 |  0.51479   |     49     |  Unknown  | Unknown |   Unknown   
+     a198       | 0.01051 |  0.56733   |     54     |  Unknown  | Unknown |   Unknown   
+      a91       | 0.01051 |  0.56754   |     54     |  Unknown  | Unknown |   Unknown   
+      a95       | 0.0105  |  0.56683   |     54     |  Unknown  | Unknown |   Unknown   
+     a207       | 0.01049 |  0.53476   |     51     |  Unknown  | Unknown |   Unknown   
+     a269       | 0.01049 |  1.23727   |    118     |  Unknown  | Unknown |   Unknown   
+     a294       | 0.01048 |   1.2781   |    122     |  Unknown  | Unknown |   Unknown   
+      a46       | 0.01047 |  0.56554   |     54     |  Unknown  | Unknown |   Unknown   
+     a183       | 0.01047 |  0.60708   |     58     |  Unknown  | Unknown |   Unknown   
+     a195       | 0.01046 |  0.57522   |     55     |  Unknown  | Unknown |   Unknown   
+     a202       | 0.01046 |  0.56504   |     54     |  Unknown  | Unknown |   Unknown   
+     a109       | 0.01045 |  0.57451   |     55     |  Unknown  | Unknown |   Unknown   
+      a82       | 0.01042 |  0.53118   |     51     |  Unknown  | Unknown |   Unknown   
+     a120       | 0.01042 |  0.57322   |     55     |  Unknown  | Unknown |   Unknown   
+     a187       | 0.01042 |  0.53118   |     51     |  Unknown  | Unknown |   Unknown   
+     a144       | 0.01042 |  0.53118   |     51     |  Unknown  | Unknown |   Unknown   
+      a45       | 0.01041 |  0.59319   |     57     |  Unknown  | Unknown |   Unknown   
+     a334       | 0.01041 |  1.51987   |    146     |  Unknown  | Unknown |   Unknown   
+      a88       | 0.01041 |  0.57251   |     55     |  Unknown  | Unknown |   Unknown   
+     a155       | 0.01041 |  0.52067   |     50     |  Unknown  | Unknown |   Unknown   
+      a43       | 0.0104  |  0.57201   |     55     |  Unknown  | Unknown |   Unknown   
+     a157       | 0.0104  |  0.54064   |     52     |  Unknown  | Unknown |   Unknown   
+     a265       | 0.0104  |   1.3935   |    134     |  Unknown  | Unknown |   Unknown   
+     a177       | 0.01039 |  0.64395   |     62     |  Unknown  | Unknown |   Unknown   
+     a244       | 0.01038 |   0.5914   |     57     |  Unknown  | Unknown |   Unknown   
+     a163       | 0.01038 |  0.70559   |     68     |  Unknown  | Unknown |   Unknown   
+     a218       | 0.01038 |   0.7161   |     69     |  Unknown  | Unknown |   Unknown   
+      a85       | 0.01037 |  0.51867   |     50     |  Unknown  | Unknown |   Unknown   
+     a214       | 0.01035 |  0.71431   |     69     |  Unknown  | Unknown |   Unknown   
+     a258       | 0.01032 |  1.38299   |    134     |  Unknown  | Unknown |   Unknown   
+      a69       | 0.01031 |  0.53635   |     52     |  Unknown  | Unknown |   Unknown   
+     a147       | 0.01031 |  0.55682   |     54     |  Unknown  | Unknown |   Unknown   
+     a194       | 0.01031 |  0.71147   |     69     |  Unknown  | Unknown |   Unknown   
+     a118       | 0.01031 |  0.53635   |     52     |  Unknown  | Unknown |   Unknown   
+     a208       | 0.01031 |  0.65976   |     64     |  Unknown  | Unknown |   Unknown   
+     a242       | 0.0103  |  0.72127   |     70     |  Unknown  | Unknown |   Unknown   
+      a64       | 0.0103  |  0.66922   |     65     |  Unknown  | Unknown |   Unknown   
+     a110       | 0.0103  |   0.4843   |     47     |  Unknown  | Unknown |   Unknown   
+      a36       | 0.01029 |  0.59657   |     58     |  Unknown  | Unknown |   Unknown   
+     a174       | 0.01029 |  0.71998   |     70     |  Unknown  | Unknown |   Unknown   
+     a201       | 0.01027 |  0.72895   |     71     |  Unknown  | Unknown |   Unknown   
+     a190       | 0.01027 |  0.66743   |     65     |  Unknown  | Unknown |   Unknown   
+     a204       | 0.01027 |  0.72895   |     71     |  Unknown  | Unknown |   Unknown   
+     a303       | 0.01026 |  1.45702   |    142     |  Unknown  | Unknown |   Unknown   
+     a211       | 0.01024 |  0.74763   |     73     |  Unknown  | Unknown |   Unknown   
+     a126       | 0.01023 |  0.68561   |     67     |  Unknown  | Unknown |   Unknown   
+     a245       | 0.01022 |  0.80777   |     79     |  Unknown  | Unknown |   Unknown   
+     a276       | 0.0102  |  1.37744   |    135     |  Unknown  | Unknown |   Unknown   
+     a131       | 0.0102  |  0.69329   |     68     |  Unknown  | Unknown |   Unknown   
+      a0        | 0.01018 |  0.17312   |     17     |  Unknown  | Unknown |   Unknown   
+     a237       | 0.01014 |  0.67957   |     67     |  Unknown  | Unknown |   Unknown   
+     a192       | 0.01013 |  0.63803   |     63     |  Unknown  | Unknown |   Unknown   
+     a189       | 0.01013 |  0.65871   |     65     |  Unknown  | Unknown |   Unknown   
+     a332       | 0.0101  |  1.38366   |    137     |  Unknown  | Unknown |   Unknown   
+      a42       | 0.01009 |   0.6457   |     64     |  Unknown  | Unknown |   Unknown   
+     a127       | 0.01009 |  0.69646   |     69     |  Unknown  | Unknown |   Unknown   
+     a140       | 0.01005 |  0.70363   |     70     |  Unknown  | Unknown |   Unknown   
+     a209       | 0.01005 |  0.73332   |     73     |  Unknown  | Unknown |   Unknown   
+     a330       | 0.01005 |  1.47787   |    147     |  Unknown  | Unknown |   Unknown   
+     a148       | 0.01004 |  0.62235   |     62     |  Unknown  | Unknown |   Unknown   
+     a236       | 0.01003 |  0.66209   |     66     |  Unknown  | Unknown |   Unknown   
+     a119       |  0.01   |  0.68007   |     68     |  Unknown  | Unknown |   Unknown   
+     a248       |  0.01   |  1.06031   |    106     |  Unknown  | Unknown |   Unknown   
+     a285       | 0.00999 |   1.4287   |    143     |  Unknown  | Unknown |   Unknown   
+     a250       | 0.00995 |  1.08416   |    109     |  Unknown  | Unknown |   Unknown   
+     a278       | 0.00993 |  1.18196   |    119     |  Unknown  | Unknown |   Unknown   
+     a253       | 0.00988 |  1.18534   |    120     |  Unknown  | Unknown |   Unknown   
+     a259       | 0.00988 |  1.18534   |    120     |  Unknown  | Unknown |   Unknown   
+     a261       | 0.00988 |  1.18534   |    120     |  Unknown  | Unknown |   Unknown   
+     a322       | 0.00986 |  1.46907   |    149     |  Unknown  | Unknown |   Unknown   
+     a115       | 0.00984 |  0.64958   |     66     |  Unknown  | Unknown |   Unknown   
+     a307       | 0.00984 |  1.43629   |    146     |  Unknown  | Unknown |   Unknown   
+     a312       | 0.0098  |  1.28344   |    131     |  Unknown  | Unknown |   Unknown   
+     a277       | 0.0098  |  1.30391   |    133     |  Unknown  | Unknown |   Unknown   
+     a335       | 0.00976 |  1.32727   |    136     |  Unknown  | Unknown |   Unknown   
+     a256       | 0.00975 |   1.2972   |    133     |  Unknown  | Unknown |   Unknown   
+     a254       | 0.00975 |  1.27722   |    131     |  Unknown  | Unknown |   Unknown   
+     a326       | 0.00971 |  1.36944   |    141     |  Unknown  | Unknown |   Unknown   
+     a296       | 0.00971 |  1.48508   |    153     |  Unknown  | Unknown |   Unknown   
+     a288       | 0.00971 |  1.44605   |    149     |  Unknown  | Unknown |   Unknown   
+     a327       | 0.0097  |  1.38741   |    143     |  Unknown  | Unknown |   Unknown   
+     a266       | 0.00969 |  1.39529   |    144     |  Unknown  | Unknown |   Unknown   
+     a264       | 0.00969 |  1.28911   |    133     |  Unknown  | Unknown |   Unknown   
+     a287       | 0.00968 |   1.3935   |    144     |  Unknown  | Unknown |   Unknown   
+     a299       | 0.00967 |  1.53755   |    159     |  Unknown  | Unknown |   Unknown   
+     a268       | 0.00967 |  1.23835   |    128     |  Unknown  | Unknown |   Unknown   
+     a286       | 0.00962 |   1.2512   |    130     |  Unknown  | Unknown |   Unknown   
+     a298       | 0.0096  |  1.38278   |    144     |  Unknown  | Unknown |   Unknown   
+     a260       | 0.0096  |  1.45868   |    152     |  Unknown  | Unknown |   Unknown   
+     a280       | 0.00957 |  1.38795   |    145     |  Unknown  | Unknown |   Unknown   
+      a56       | 0.00932 |  0.35421   |     38     |  Unknown  | Unknown |   Unknown   
+      a67       | 0.00932 |  0.49405   |     53     |  Unknown  | Unknown |   Unknown   
+      a23       | 0.00931 |   0.3724   |     40     |  Unknown  | Unknown |   Unknown   
+      a24       | 0.00931 |   0.3724   |     40     |  Unknown  | Unknown |   Unknown   
+      a62       | 0.0093  |  0.47408   |     51     |  Unknown  | Unknown |   Unknown   
+      a54       | 0.00927 |  0.38007   |     41     |  Unknown  | Unknown |   Unknown   
+      a6        | 0.00927 |  0.38007   |     41     |  Unknown  | Unknown |   Unknown   
+     a300       | 0.00926 |  1.47195   |    159     |  Unknown  | Unknown |   Unknown   
+      a75       | 0.00925 |  0.49047   |     53     |  Unknown  | Unknown |   Unknown   
+      a74       | 0.00925 |  0.49047   |     53     |  Unknown  | Unknown |   Unknown   
+     a311       | 0.00923 |  1.44859   |    157     |  Unknown  | Unknown |   Unknown   
+     a231       | 0.00922 |  0.63619   |     69     |  Unknown  | Unknown |   Unknown   
+     a329       | 0.00922 |  1.40129   |    152     |  Unknown  | Unknown |   Unknown   
+      a1        | 0.00922 |  0.11986   |     13     |  Unknown  | Unknown |   Unknown   
+      a99       | 0.00921 |  0.65416   |     71     |  Unknown  | Unknown |   Unknown   
+      a22       | 0.00921 |  0.37757   |     41     |  Unknown  | Unknown |   Unknown   
+      a55       | 0.00921 |  0.37757   |     41     |  Unknown  | Unknown |   Unknown   
+     a171       | 0.00919 |  0.63419   |     69     |  Unknown  | Unknown |   Unknown   
+      a71       | 0.00919 |   0.6344   |     69     |  Unknown  | Unknown |   Unknown   
+     a246       | 0.00919 |  0.84593   |     92     |  Unknown  | Unknown |   Unknown   
+     a101       | 0.00919 |  0.63419   |     69     |  Unknown  | Unknown |   Unknown   
+     a263       | 0.00918 |  1.49651   |    163     |  Unknown  | Unknown |   Unknown   
+      a70       | 0.00916 |  0.54018   |     59     |  Unknown  | Unknown |   Unknown   
+     a284       | 0.00916 |  1.48421   |    162     |  Unknown  | Unknown |   Unknown   
+     a139       | 0.00915 |  0.50331   |     55     |  Unknown  | Unknown |   Unknown   
+     a272       | 0.00915 |  1.29933   |    142     |  Unknown  | Unknown |   Unknown   
+     a295       | 0.00915 |  1.18017   |    129     |  Unknown  | Unknown |   Unknown   
+     a180       | 0.00914 |  0.62138   |     68     |  Unknown  | Unknown |   Unknown   
+     a221       | 0.00914 |  0.78579   |     86     |  Unknown  | Unknown |   Unknown   
+     a297       | 0.00914 |  1.42507   |    156     |  Unknown  | Unknown |   Unknown   
+     a175       | 0.00914 |  0.57576   |     63     |  Unknown  | Unknown |   Unknown   
+     a279       | 0.00913 |  1.35154   |    148     |  Unknown  | Unknown |   Unknown   
+      a21       | 0.00913 |  0.33782   |     37     |  Unknown  | Unknown |   Unknown   
+      a65       | 0.00912 |  0.47408   |     52     |  Unknown  | Unknown |   Unknown   
+     a310       | 0.00912 |  1.31288   |    144     |  Unknown  | Unknown |   Unknown   
+     a282       | 0.00911 |  1.44913   |    159     |  Unknown  | Unknown |   Unknown   
+     a247       | 0.00911 |  0.86549   |     95     |  Unknown  | Unknown |   Unknown   
+     a227       | 0.00909 |   0.6178   |     68     |  Unknown  | Unknown |   Unknown   
+      a50       | 0.00908 |   0.4541   |     50     |  Unknown  | Unknown |   Unknown   
+      a10       | 0.00908 |  0.31785   |     35     |  Unknown  | Unknown |   Unknown   
+      a29       | 0.00908 |  0.33603   |     37     |  Unknown  | Unknown |   Unknown   
+     a305       | 0.00906 |  1.43145   |    158     |  Unknown  | Unknown |   Unknown   
+     a255       | 0.00905 |  1.17713   |    130     |  Unknown  | Unknown |   Unknown   
+     a170       | 0.00905 |  0.46178   |     51     |  Unknown  | Unknown |   Unknown   
+      a84       | 0.00905 |  0.49793   |     55     |  Unknown  | Unknown |   Unknown   
+     a162       | 0.00905 |  0.46178   |     51     |  Unknown  | Unknown |   Unknown   
+     a240       | 0.00905 |  0.57914   |     64     |  Unknown  | Unknown |   Unknown   
+     a128       | 0.00904 |  0.62368   |     69     |  Unknown  | Unknown |   Unknown   
+      a52       | 0.00904 |   0.3437   |     38     |  Unknown  | Unknown |   Unknown   
+     a217       | 0.00904 |  0.70488   |     78     |  Unknown  | Unknown |   Unknown   
+     a125       | 0.00903 |  0.60499   |     67     |  Unknown  | Unknown |   Unknown   
+     a166       | 0.00903 |  0.48763   |     54     |  Unknown  | Unknown |   Unknown   
+     a257       | 0.00903 |   1.1823   |    131     |  Unknown  | Unknown |   Unknown   
+      a53       | 0.00902 |  0.47796   |     53     |  Unknown  | Unknown |   Unknown   
+      a93       | 0.00901 |  0.45927   |     51     |  Unknown  | Unknown |   Unknown   
+      a94       | 0.00901 |  0.45927   |     51     |  Unknown  | Unknown |   Unknown   
+      a4        | 0.00899 |   0.3417   |     38     |  Unknown  | Unknown |   Unknown   
+     a150       | 0.00895 |  0.60887   |     68     |  Unknown  | Unknown |   Unknown   
+     a172       | 0.00894 |  0.59019   |     66     |  Unknown  | Unknown |   Unknown   
+      a63       | 0.00893 |  0.52709   |     59     |  Unknown  | Unknown |   Unknown   
+     a225       | 0.00893 |   0.5891   |     66     |  Unknown  | Unknown |   Unknown   
+     a243       | 0.00892 |  0.57113   |     64     |  Unknown  | Unknown |   Unknown   
+     a219       | 0.00891 |  0.59678   |     67     |  Unknown  | Unknown |   Unknown   
+     a111       | 0.0089  |  0.36506   |     41     |  Unknown  | Unknown |   Unknown   
+     a199       | 0.00889 |  0.56913   |     64     |  Unknown  | Unknown |   Unknown   
+      a35       | 0.00887 |  0.44359   |     50     |  Unknown  | Unknown |   Unknown   
+      a39       | 0.00887 |  0.59428   |     67     |  Unknown  | Unknown |   Unknown   
+     a234       | 0.00884 |  0.45106   |     51     |  Unknown  | Unknown |   Unknown   
+      a49       | 0.00883 |  0.30913   |     35     |  Unknown  | Unknown |   Unknown   
+      a37       | 0.00883 |  0.30913   |     35     |  Unknown  | Unknown |   Unknown   
+     a130       | 0.0088  |  0.57201   |     65     |  Unknown  | Unknown |   Unknown   
+     a156       | 0.00879 |  0.58018   |     66     |  Unknown  | Unknown |   Unknown   
+      a3        | 0.00876 |  0.28915   |     33     |  Unknown  | Unknown |   Unknown   
+      a27       | 0.00872 |  0.33119   |     38     |  Unknown  | Unknown |   Unknown   
+      a98       | 0.00863 |  0.54381   |     63     |  Unknown  | Unknown |   Unknown   
+      a14       | 0.0086  |  0.40439   |     47     |  Unknown  | Unknown |   Unknown   
+      a34       | 0.0086  |  0.37853   |     44     |  Unknown  | Unknown |   Unknown   
+
+
+###############################
+# Summarized Assertion Report #
+###############################
+
+
+Total number of mined assertions: 336
+Total number of passed assertions: 0
+Total number of failed assertions: 0
+Total number of vacuous / unexplored assertions: 336
+Hit rate: 0.0
+Miss rate: 1.0

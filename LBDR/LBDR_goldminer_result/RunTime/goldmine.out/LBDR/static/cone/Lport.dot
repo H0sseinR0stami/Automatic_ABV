@@ -1,0 +1,67 @@
+strict digraph "" {
+	flit_id	 [complexity=1,
+		importance=0.0576205582109,
+		rank=0.0576205582109];
+	Lport	 [complexity=0,
+		importance=0.0389369155206,
+		rank=0.0];
+	flit_id -> Lport;
+	"[1]E1"	 [complexity=5,
+		importance=0.0699237324238,
+		rank=0.0139847464848];
+	"[1]E1" -> Lport;
+	"[1]x_cur"	 [complexity=8,
+		importance=0.0957805161639,
+		rank=0.0119725645205];
+	"[1]x_cur" -> "[1]E1";
+	"[1]W1"	 [complexity=5,
+		importance=0.0699237324238,
+		rank=0.0139847464848];
+	"[1]x_cur" -> "[1]W1";
+	"[1]rst"	 [complexity=11,
+		importance=0.143157254472,
+		rank=0.0130142958611];
+	"[1]cur_addr"	 [complexity=10,
+		importance=0.124473611781,
+		rank=0.0124473611781];
+	"[1]rst" -> "[1]cur_addr";
+	rst	 [complexity=3,
+		importance=0.0965574737314,
+		rank=0.0321858245771];
+	rst -> Lport;
+	"[1]x_dst"	 [complexity=8,
+		importance=0.0932784531468,
+		rank=0.0116598066433];
+	"[1]x_dst" -> "[1]E1";
+	"[1]x_dst" -> "[1]W1";
+	"[1]W1" -> Lport;
+	"[1]cur_addr" -> "[1]x_cur";
+	"[1]y_cur"	 [complexity=8,
+		importance=0.0957805161639,
+		rank=0.0119725645205];
+	"[1]cur_addr" -> "[1]y_cur";
+	"[1]S1"	 [complexity=5,
+		importance=0.0699237324238,
+		rank=0.0139847464848];
+	"[1]S1" -> Lport;
+	"[1]y_cur" -> "[1]S1";
+	"[1]N1"	 [complexity=5,
+		importance=0.0699237324238,
+		rank=0.0139847464848];
+	"[1]y_cur" -> "[1]N1";
+	"[1]y_dst"	 [complexity=8,
+		importance=0.0932784531468,
+		rank=0.0116598066433];
+	"[1]y_dst" -> "[1]S1";
+	"[1]y_dst" -> "[1]N1";
+	"[1]dst_addr"	 [complexity=10,
+		importance=0.111962095837,
+		rank=0.0111962095837];
+	"[1]dst_addr" -> "[1]x_dst";
+	"[1]dst_addr" -> "[1]y_dst";
+	empty	 [complexity=2,
+		importance=0.0576205582109,
+		rank=0.0288102791054];
+	empty -> Lport;
+	"[1]N1" -> Lport;
+}

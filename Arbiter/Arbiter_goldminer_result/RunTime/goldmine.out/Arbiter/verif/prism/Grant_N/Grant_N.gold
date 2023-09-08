@@ -1,0 +1,451 @@
+Report file generated at: Jun-17-2023 07:37:42 PM
+
+#############################
+# Detailed Assertion Report #
+#############################
+
+
+a0: (rst == 1) |=> (Grant_N == 0)
+IRank: : 0.35002
+Importance: : 0.70004
+Complexity: : 2
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a3: (state[1] == 1) |-> (Grant_N == 0)
+IRank: : 0.33397
+Importance: : 0.33397
+Complexity: : 1
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a2: (state[0] == 1) |-> (Grant_N == 0)
+IRank: : 0.33397
+Importance: : 0.33397
+Complexity: : 1
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a4: (state[2] == 0) |-> (Grant_N == 0)
+IRank: : 0.33397
+Importance: : 0.33397
+Complexity: : 1
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a20: (RTS_FF == 1) ##2 (state[4] == 0) |-> (Grant_N == 0)
+IRank: : 0.21442
+Importance: : 1.28655
+Complexity: : 6
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a38: (state_in[3] == 0 & state[2] == 1 & DCTS == 1) ##2 (state[2] == 1 & state[0] == 0 & state[1] == 0 & state[4] == 0) |-> (Grant_N == 1)
+IRank: : 0.17348
+Importance: : 3.29607
+Complexity: : 19
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a43: (state_in[2] == 1 & RTS_FF_in == 0 & RTS_FF == 1) ##2 (state[2] == 1 & state[0] == 0 & state[1] == 0 & state[3] == 1) |-> (Grant_N == 1)
+IRank: : 0.17058
+Importance: : 2.89991
+Complexity: : 17
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a37: (RTS_FF == 1 & DCTS == 0) ##1 (state[2] == 1 & state[0] == 0 & state[1] == 0 & state[4] == 0 & state[3] == 1) |-> (Grant_N == 1)
+IRank: : 0.16838
+Importance: : 1.85218
+Complexity: : 11
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a16: (state_in[4] == 0 & state_in[1] == 1 & DCTS == 0) |=> ##1 (Grant_N == 0)
+IRank: : 0.16336
+Importance: : 1.79696
+Complexity: : 11
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a45: (state_in[4] == 1 & DCTS == 0 & RTS_FF == 0) ##1 (RTS_FF == 1 & DCTS == 0) ##2 (state[2] == 1 & state[0] == 0 & state[1] == 0) |-> (Grant_N == 1)
+IRank: : 0.15875
+Importance: : 3.49256
+Complexity: : 22
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a46: (state_in[2] == 1 & RTS_FF_in == 0 & state_in[4] == 0 & state_in[3] == 0 & state_in[1] == 0) ##2 (state[2] == 1 & state[0] == 0 & state[1] == 0 & state[3] == 1) |-> (Grant_N == 1)
+IRank: : 0.15576
+Importance: : 3.27099
+Complexity: : 21
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a44: (state[2] == 0 & state_in[1] == 1 & state_in[4] == 1 & state_in[3] == 1 & DCTS == 1) ##2 (state[2] == 1 & state[3] == 0) |-> (Grant_N == 1)
+IRank: : 0.15263
+Importance: : 3.51056
+Complexity: : 23
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a35: (state_in[3] == 1 & RTS_FF == 1) ##1 (RTS_FF == 1 & DCTS == 0) ##2 (state[2] == 1 & state[0] == 0 & state[1] == 0) |-> (Grant_N == 1)
+IRank: : 0.15165
+Importance: : 2.57803
+Complexity: : 17
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a41: (DCTS == 1 & state_in[4] == 0) ##1 (RTS_FF == 1 & DCTS == 0) ##2 (state[2] == 1 & state[0] == 0 & state[1] == 0) |-> (Grant_N == 1)
+IRank: : 0.14941
+Importance: : 2.53998
+Complexity: : 17
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a17: (state_in[4] == 0 & state_in[1] == 1 & state_in[2] == 0) |=> ##1 (Grant_N == 0)
+IRank: : 0.14707
+Importance: : 1.32365
+Complexity: : 9
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a1: (state_in[0] == 1) |=> ##1 (Grant_N == 0)
+IRank: : 0.14707
+Importance: : 0.44122
+Complexity: : 3
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a11: (state[2] == 0 & DCTS == 0) ##2 (state[4] == 0) |-> (Grant_N == 0)
+IRank: : 0.14253
+Importance: : 1.85294
+Complexity: : 13
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a39: (state_in[3] == 0 & state[2] == 1 & state[4] == 0) ##2 (state[2] == 1 & state[0] == 0 & state[1] == 0 & state[4] == 1) |-> (Grant_N == 1)
+IRank: : 0.14219
+Importance: : 2.98598
+Complexity: : 21
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a21: (RTS_FF == 1 & state_in[2] == 1 & RTS_FF_in == 0) ##2 (state[3] == 0) |-> (Grant_N == 0)
+IRank: : 0.13557
+Importance: : 1.898
+Complexity: : 14
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a30: (RTS_FF_in == 1 & DCTS == 0 & state_in[3] == 1) ##2 (state[3] == 0) |-> (Grant_N == 0)
+IRank: : 0.13285
+Importance: : 1.85995
+Complexity: : 14
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a33: (state[2] == 1 & state[0] == 1 & state_in[4] == 1 & state_in[0] == 0 & DCTS == 0) ##1 (DCTS == 0) ##2 (state[2] == 1 & state[0] == 0 & state[1] == 0) |-> (Grant_N == 1)
+IRank: : 0.13161
+Importance: : 4.07989
+Complexity: : 31
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a36: (state[2] == 1 & DCTS == 1 & state[0] == 1 & state_in[2] == 1 & state_in[3] == 1) ##1 (DCTS == 0) ##2 (state[2] == 1 & state[0] == 0 & state[1] == 0) |-> (Grant_N == 1)
+IRank: : 0.13161
+Importance: : 4.07989
+Complexity: : 31
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a34: (state[2] == 1 & DCTS == 1 & state[0] == 1 & state_in[4] == 1 & state_in[1] == 1) ##1 (DCTS == 0) ##2 (state[2] == 1 & state[0] == 0 & state[1] == 0) |-> (Grant_N == 1)
+IRank: : 0.13161
+Importance: : 4.07989
+Complexity: : 31
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a42: (state[2] == 1 & state_in[3] == 0 & RTS_FF_in == 0 & state[1] == 1 & DCTS == 0) ##2 (state[2] == 1 & state[0] == 0 & state[1] == 0 & state[3] == 1) |-> (Grant_N == 1)
+IRank: : 0.13131
+Importance: : 4.07074
+Complexity: : 31
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a14: (state[2] == 0 & state_in[1] == 0 & DCTS == 0) |=> ##1 (Grant_N == 0)
+IRank: : 0.13068
+Importance: : 1.96018
+Complexity: : 15
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a13: (state_in[3] == 1 & DCTS == 0) ##1 (DCTS == 1) |=> (Grant_N == 0)
+IRank: : 0.12981
+Importance: : 1.42788
+Complexity: : 11
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a10: (RTS_FF == 1) ##1 (DCTS == 1) |=> (Grant_N == 0)
+IRank: : 0.12809
+Importance: : 1.02471
+Complexity: : 8
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a22: (state[1] == 1 & state_in[1] == 0) ##2 (state[4] == 0) |-> (Grant_N == 0)
+IRank: : 0.12542
+Importance: : 1.37963
+Complexity: : 11
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a25: (RTS_FF_in == 1 & RTS_FF == 1 & state_in[3] == 0 & state_in[4] == 0) |=> ##1 (Grant_N == 0)
+IRank: : 0.12533
+Importance: : 2.00524
+Complexity: : 16
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a40: (state[2] == 0 & state_in[1] == 1 & state_in[4] == 1 & RTS_FF_in == 0 & RTS_FF == 1) ##2 (state[2] == 1) |-> (Grant_N == 1)
+IRank: : 0.12265
+Importance: : 2.94365
+Complexity: : 24
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a24: (state_in[4] == 0 & DCTS == 0 & RTS_FF_in == 0) |=> ##1 (Grant_N == 0)
+IRank: : 0.11738
+Importance: : 1.52598
+Complexity: : 13
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a15: (state[2] == 0 & state_in[1] == 0 & state_in[2] == 0) |=> ##1 (Grant_N == 0)
+IRank: : 0.11437
+Importance: : 1.48687
+Complexity: : 13
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a7: (state[2] == 0 & state[1] == 0 & DCTS == 0) |=> ##1 (Grant_N == 0)
+IRank: : 0.11176
+Importance: : 2.12341
+Complexity: : 19
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a23: (state_in[2] == 1 & state_in[3] == 1) ##1 (DCTS == 1) |=> (Grant_N == 0)
+IRank: : 0.10606
+Importance: : 0.95457
+Complexity: : 9
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a19: (state_in[3] == 1 & state_in[1] == 0) ##1 (DCTS == 1) |=> (Grant_N == 0)
+IRank: : 0.10606
+Importance: : 0.95457
+Complexity: : 9
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a32: (state[2] == 0 & state[1] == 0) ##2 (state[3] == 1) |-> (Grant_N == 0)
+IRank: : 0.10286
+Importance: : 1.54285
+Complexity: : 15
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a31: (RTS_FF == 1 & state[1] == 0 & RTS_FF_in == 0) |=> ##1 (Grant_N == 0)
+IRank: : 0.1016
+Importance: : 1.72725
+Complexity: : 17
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a12: (state[2] == 0 & state[1] == 0 & state_in[2] == 1) |=> ##1 (Grant_N == 0)
+IRank: : 0.09706
+Importance: : 1.65009
+Complexity: : 17
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a9: (state[2] == 0 & state[1] == 0 & state_in[1] == 0) |=> ##1 (Grant_N == 0)
+IRank: : 0.09706
+Importance: : 1.65009
+Complexity: : 17
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a29: (state_in[4] == 0 & state_in[3] == 1 & RTS_FF_in == 0) |=> ##1 (Grant_N == 0)
+IRank: : 0.0957
+Importance: : 1.05267
+Complexity: : 11
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a26: (state[2] == 1) ##1 (DCTS == 1) ##2 (state[4] == 0) |-> (Grant_N == 0)
+IRank: : 0.09187
+Importance: : 1.01054
+Complexity: : 11
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a8: (state[2] == 0 & RTS_FF_in == 1) ##2 (state[4] == 0) |-> (Grant_N == 0)
+IRank: : 0.08528
+Importance: : 1.10864
+Complexity: : 13
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a27: (RTS_FF_in == 1 & state_in[4] == 1 & state[1] == 1) |=> ##1 (Grant_N == 0)
+IRank: : 0.08106
+Importance: : 1.21589
+Complexity: : 15
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a28: (state[2] == 1 & state[3] == 0) ##1 (DCTS == 1) |=> (Grant_N == 0)
+IRank: : 0.07535
+Importance: : 1.28101
+Complexity: : 17
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a6: (state[2] == 0 & state[1] == 0 & RTS_FF_in == 1) |=> ##1 (Grant_N == 0)
+IRank: : 0.07258
+Importance: : 1.37911
+Complexity: : 19
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a18: (RTS_FF_in == 1) ##1 (RTS_FF == 0) |=> (Grant_N == 0)
+IRank: : 0.03505
+Importance: : 0.28041
+Complexity: : 8
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+a5: (RTS_FF_in == 1) ##1 (DCTS == 1) |=> (Grant_N == 0)
+IRank: : 0.0303
+Importance: : 0.24237
+Complexity: : 8
+Triggered: : Unknown
+Vacuous: : Unknown
+Verification status: : Unknown
+
+
+################################
+# Tabularized Assertion Report #
+################################
+
+
+Assertion Index |  IRank  | Importance | Complexity | Triggered | Vacuous | Verif Status
+--------------- | ------- | ---------- | ---------- | --------- | ------- | ------------
+      a0        | 0.35002 |  0.70004   |     2      |  Unknown  | Unknown |   Unknown   
+      a3        | 0.33397 |  0.33397   |     1      |  Unknown  | Unknown |   Unknown   
+      a2        | 0.33397 |  0.33397   |     1      |  Unknown  | Unknown |   Unknown   
+      a4        | 0.33397 |  0.33397   |     1      |  Unknown  | Unknown |   Unknown   
+      a20       | 0.21442 |  1.28655   |     6      |  Unknown  | Unknown |   Unknown   
+      a38       | 0.17348 |  3.29607   |     19     |  Unknown  | Unknown |   Unknown   
+      a43       | 0.17058 |  2.89991   |     17     |  Unknown  | Unknown |   Unknown   
+      a37       | 0.16838 |  1.85218   |     11     |  Unknown  | Unknown |   Unknown   
+      a16       | 0.16336 |  1.79696   |     11     |  Unknown  | Unknown |   Unknown   
+      a45       | 0.15875 |  3.49256   |     22     |  Unknown  | Unknown |   Unknown   
+      a46       | 0.15576 |  3.27099   |     21     |  Unknown  | Unknown |   Unknown   
+      a44       | 0.15263 |  3.51056   |     23     |  Unknown  | Unknown |   Unknown   
+      a35       | 0.15165 |  2.57803   |     17     |  Unknown  | Unknown |   Unknown   
+      a41       | 0.14941 |  2.53998   |     17     |  Unknown  | Unknown |   Unknown   
+      a17       | 0.14707 |  1.32365   |     9      |  Unknown  | Unknown |   Unknown   
+      a1        | 0.14707 |  0.44122   |     3      |  Unknown  | Unknown |   Unknown   
+      a11       | 0.14253 |  1.85294   |     13     |  Unknown  | Unknown |   Unknown   
+      a39       | 0.14219 |  2.98598   |     21     |  Unknown  | Unknown |   Unknown   
+      a21       | 0.13557 |   1.898    |     14     |  Unknown  | Unknown |   Unknown   
+      a30       | 0.13285 |  1.85995   |     14     |  Unknown  | Unknown |   Unknown   
+      a33       | 0.13161 |  4.07989   |     31     |  Unknown  | Unknown |   Unknown   
+      a36       | 0.13161 |  4.07989   |     31     |  Unknown  | Unknown |   Unknown   
+      a34       | 0.13161 |  4.07989   |     31     |  Unknown  | Unknown |   Unknown   
+      a42       | 0.13131 |  4.07074   |     31     |  Unknown  | Unknown |   Unknown   
+      a14       | 0.13068 |  1.96018   |     15     |  Unknown  | Unknown |   Unknown   
+      a13       | 0.12981 |  1.42788   |     11     |  Unknown  | Unknown |   Unknown   
+      a10       | 0.12809 |  1.02471   |     8      |  Unknown  | Unknown |   Unknown   
+      a22       | 0.12542 |  1.37963   |     11     |  Unknown  | Unknown |   Unknown   
+      a25       | 0.12533 |  2.00524   |     16     |  Unknown  | Unknown |   Unknown   
+      a40       | 0.12265 |  2.94365   |     24     |  Unknown  | Unknown |   Unknown   
+      a24       | 0.11738 |  1.52598   |     13     |  Unknown  | Unknown |   Unknown   
+      a15       | 0.11437 |  1.48687   |     13     |  Unknown  | Unknown |   Unknown   
+      a7        | 0.11176 |  2.12341   |     19     |  Unknown  | Unknown |   Unknown   
+      a23       | 0.10606 |  0.95457   |     9      |  Unknown  | Unknown |   Unknown   
+      a19       | 0.10606 |  0.95457   |     9      |  Unknown  | Unknown |   Unknown   
+      a32       | 0.10286 |  1.54285   |     15     |  Unknown  | Unknown |   Unknown   
+      a31       | 0.1016  |  1.72725   |     17     |  Unknown  | Unknown |   Unknown   
+      a12       | 0.09706 |  1.65009   |     17     |  Unknown  | Unknown |   Unknown   
+      a9        | 0.09706 |  1.65009   |     17     |  Unknown  | Unknown |   Unknown   
+      a29       | 0.0957  |  1.05267   |     11     |  Unknown  | Unknown |   Unknown   
+      a26       | 0.09187 |  1.01054   |     11     |  Unknown  | Unknown |   Unknown   
+      a8        | 0.08528 |  1.10864   |     13     |  Unknown  | Unknown |   Unknown   
+      a27       | 0.08106 |  1.21589   |     15     |  Unknown  | Unknown |   Unknown   
+      a28       | 0.07535 |  1.28101   |     17     |  Unknown  | Unknown |   Unknown   
+      a6        | 0.07258 |  1.37911   |     19     |  Unknown  | Unknown |   Unknown   
+      a18       | 0.03505 |  0.28041   |     8      |  Unknown  | Unknown |   Unknown   
+      a5        | 0.0303  |  0.24237   |     8      |  Unknown  | Unknown |   Unknown   
+
+
+###############################
+# Summarized Assertion Report #
+###############################
+
+
+Total number of mined assertions: 47
+Total number of passed assertions: 0
+Total number of failed assertions: 0
+Total number of vacuous / unexplored assertions: 47
+Hit rate: 0.0
+Miss rate: 1.0

@@ -1,0 +1,76 @@
+m255
+K4
+z2
+!s99 nomlopt
+!s11f vlog 2021.1 2021.01, Jan 19 2021
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/final/ABV/APB/ProposedMethod/step3_AssertionValidation/AssertionVerificationSetUpWithQuestaSim/sim
+T_opt
+!s110 1694112398
+VhgATD@]@2bQQP3A8eAgc71
+04 2 4 work tb fast 0
+=1-201a0692b944-64fa1a8e-10f-3b34
+!s102 +cover=bcesfx
+!s124 OEM100
+o-quiet -auto_acc_if_foreign -work work +cover=bcesfx
+Z1 tCvgOpt 0
+n@_opt
+OL;O;2021.1;73
+vapb
+Z2 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
+Z3 !s110 1694112397
+!i10b 1
+!s100 l?6^W2QIbHlBzPWe0fe<d3
+I409<`T@DSlP7NhNfTdl[>1
+S1
+R0
+w1694112207
+8../rtl/apb.sv
+F../rtl/apb.sv
+!i122 1
+L0 79 93
+Z4 VDg1SIo80bB@j0V0VzS_@n1
+Z5 OL;L;2021.1;73
+r1
+!s85 0
+31
+Z6 !s108 1694112397.000000
+!s107 ../rtl/apb.sv|
+!s90 -work|work|-vopt|+incdir+../include|-nocovercells|../rtl/apb.sv|
+!i113 0
+!s102 -nocovercells
+o-work work -nocovercells -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+!s92 -work work +incdir+../include -nocovercells -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R1
+vtb
+R2
+R3
+!i10b 1
+!s100 839kn:4IGSQB42PJTLE>^2
+I5LhRZ?>2_SZN5<14aPnAG2
+S1
+R0
+w1694070964
+8../tb/tb.sv
+F../tb/tb.sv
+F../properties_sva/Apb_properties.sva
+!i122 2
+L0 6 833
+R4
+R5
+r1
+!s85 0
+31
+R6
+!s107 ../properties_sva/Apb_properties.sva|../tb/tb.sv|
+!s90 -work|work|-vopt|+incdir+../include|-nocovercells|../tb/tb.sv|-assertdebug|-cover|bcefsx|
+!i113 0
+!s102 -nocovercells -cover bcefsx
+o-work work -nocovercells -assertdebug -cover bcefsx -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+!s92 -work work +incdir+../include -nocovercells -assertdebug -cover bcefsx -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R1

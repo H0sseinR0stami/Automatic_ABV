@@ -1,0 +1,68 @@
+2023-06-17 19:35:52,109 - INFO - goldmine.py -             <module> - User specified assertion file does not exist. Continuing with auto-generated assertions
+2023-06-17 19:35:52,109 - INFO - goldmine.py -             <module> - No Mining Engine specified. Engine specified in the goldmine.cfg will be used
+2023-06-17 19:35:52,114 - WARNING - goldmine.py -             <module> - VCS Executable Not Found.
+2023-06-17 19:35:52,114 - WARNING - goldmine.py -             <module> - IFV Executable Not Found. Assertion Verification won't be possible.
+2023-06-17 19:35:54,637 - INFO - goldmine.py -             <module> - Total time for parsing, ranking: 0:00:02.514078
+2023-06-17 19:35:54,637 - INFO - goldmine.py -             <module> - Peak Memory Usage for parsing, ranking: 377.97 MB
+2023-06-17 19:36:08,498 - INFO - goldmine.py -             <module> - Simulating with: iverilog
+2023-06-17 19:36:09,522 - INFO - goldmine.py -             <module> - Compile Time: 0:00:01.022186
+2023-06-17 19:36:09,523 - INFO - goldmine.py -             <module> - Compile Memory Usage: 2.75 MB
+2023-06-17 19:36:10,546 - INFO - goldmine.py -             <module> - Run Time: 0:00:01.022186
+2023-06-17 19:36:10,547 - INFO - goldmine.py -             <module> - Run Memory Usage: 2.82 MB
+2023-06-17 19:36:10,573 - INFO - goldmine.py -             <module> - Parsing VCD file: /home/hrostami/Arbiter_goldminer/goldminer/RunTime/goldmine.out/Arbiter/Arbiter.vcd
+2023-06-17 19:36:10,580 - INFO - simulation.py -             parse - Parsing VCD file generated on: Sat Jun 17 19:36:09 2023
+2023-06-17 19:36:10,581 - INFO - simulation.py -             parse - VCD file created by the tool: Icarus Verilog
+2023-06-17 19:36:10,581 - INFO - simulation.py -             parse - Design was simulated using timescale: 1ps
+2023-06-17 19:36:10,588 - INFO - simulation.py -             parse - Parsing trace data
+2023-06-17 19:36:12,108 - INFO - simulation.py -             parse - Creating time shifted data for Sequential circuit type
+2023-06-17 19:36:12,480 - INFO - simulation.py -             parse - Converting time shifted mine data in dataframes
+2023-06-17 19:36:12,820 - INFO - simulation.py -             parse - Validating simulation data
+2023-06-17 19:36:34,046 - INFO - goldmine.py -             <module> - Number of added unique data examples: 1364
+2023-06-17 19:36:34,047 - INFO - goldmine.py -             <module> - Number of valid examples: 1345
+2023-06-17 19:36:34,047 - INFO - goldmine.py -             <module> - Number of invalid examples: 19
+2023-06-17 19:36:34,047 - INFO - goldmine.py -             <module> - Total time to parse VCD file: 0:00:23.472941
+2023-06-17 19:36:34,223 - INFO - goldmine.py -             <module> - Engine used for mining: prism
+2023-06-17 19:36:34,224 - INFO - miner.py -             miner - Constructing target specific data frame for mining..
+2023-06-17 19:36:52,403 - INFO - simulation.py -             erase_and_reindex_data - Number of added unique data examples: 1364
+2023-06-17 19:36:52,403 - INFO - simulation.py -             erase_and_reindex_data - Number of valid examples: 1345
+2023-06-17 19:36:52,403 - INFO - simulation.py -             erase_and_reindex_data - Number of invalid examples: 19
+2023-06-17 19:37:07,345 - INFO - goldmine.py -             <module> - Formal verification of mined assertions was skipped as per user request
+2023-06-17 19:37:07,362 - INFO - assertion_analyzer.py -             analyze_for_rank - Cannot find file: /home/hrostami/Arbiter_goldminer/goldminer/RunTime/goldmine.out/Arbiter/verif/prism/Grant_L/Grant_L.cone
+2023-06-17 19:37:07,363 - INFO - assertion_analyzer.py -             analyze - Cannot find file: /home/hrostami/Arbiter_goldminer/goldminer/RunTime/goldmine.out/Arbiter/verif/prism/Grant_L/Grant_L.gold
+2023-06-17 19:37:08,575 - INFO - miner.py -             miner - Constructing target specific data frame for mining..
+2023-06-17 19:37:27,291 - INFO - simulation.py -             erase_and_reindex_data - Number of added unique data examples: 1364
+2023-06-17 19:37:27,292 - INFO - simulation.py -             erase_and_reindex_data - Number of valid examples: 1345
+2023-06-17 19:37:27,292 - INFO - simulation.py -             erase_and_reindex_data - Number of invalid examples: 19
+2023-06-17 19:37:42,782 - INFO - goldmine.py -             <module> - Formal verification of mined assertions was skipped as per user request
+2023-06-17 19:37:42,798 - INFO - assertion_analyzer.py -             analyze_for_rank - Cannot find file: /home/hrostami/Arbiter_goldminer/goldminer/RunTime/goldmine.out/Arbiter/verif/prism/Grant_N/Grant_N.cone
+2023-06-17 19:37:42,799 - INFO - assertion_analyzer.py -             analyze - Cannot find file: /home/hrostami/Arbiter_goldminer/goldminer/RunTime/goldmine.out/Arbiter/verif/prism/Grant_N/Grant_N.gold
+2023-06-17 19:37:43,604 - INFO - miner.py -             miner - Constructing target specific data frame for mining..
+2023-06-17 19:38:01,986 - INFO - simulation.py -             erase_and_reindex_data - Number of added unique data examples: 1364
+2023-06-17 19:38:01,986 - INFO - simulation.py -             erase_and_reindex_data - Number of valid examples: 1345
+2023-06-17 19:38:01,987 - INFO - simulation.py -             erase_and_reindex_data - Number of invalid examples: 19
+2023-06-17 19:38:14,884 - INFO - goldmine.py -             <module> - Formal verification of mined assertions was skipped as per user request
+2023-06-17 19:38:14,899 - INFO - assertion_analyzer.py -             analyze_for_rank - Cannot find file: /home/hrostami/Arbiter_goldminer/goldminer/RunTime/goldmine.out/Arbiter/verif/prism/Grant_E/Grant_E.cone
+2023-06-17 19:38:14,900 - INFO - assertion_analyzer.py -             analyze - Cannot find file: /home/hrostami/Arbiter_goldminer/goldminer/RunTime/goldmine.out/Arbiter/verif/prism/Grant_E/Grant_E.gold
+2023-06-17 19:38:15,606 - INFO - miner.py -             miner - Constructing target specific data frame for mining..
+2023-06-17 19:38:25,318 - INFO - simulation.py -             erase_and_reindex_data - Number of added unique data examples: 1364
+2023-06-17 19:38:25,318 - INFO - simulation.py -             erase_and_reindex_data - Number of valid examples: 1346
+2023-06-17 19:38:25,318 - INFO - simulation.py -             erase_and_reindex_data - Number of invalid examples: 18
+2023-06-17 19:38:25,488 - INFO - goldmine.py -             <module> - Formal verification of mined assertions was skipped as per user request
+2023-06-17 19:38:25,496 - INFO - assertion_analyzer.py -             analyze_for_rank - Cannot find file: /home/hrostami/Arbiter_goldminer/goldminer/RunTime/goldmine.out/Arbiter/verif/prism/RTS/RTS.cone
+2023-06-17 19:38:25,496 - INFO - assertion_analyzer.py -             analyze - Cannot find file: /home/hrostami/Arbiter_goldminer/goldminer/RunTime/goldmine.out/Arbiter/verif/prism/RTS/RTS.gold
+2023-06-17 19:38:26,183 - INFO - miner.py -             miner - Constructing target specific data frame for mining..
+2023-06-17 19:38:44,693 - INFO - simulation.py -             erase_and_reindex_data - Number of added unique data examples: 1364
+2023-06-17 19:38:44,693 - INFO - simulation.py -             erase_and_reindex_data - Number of valid examples: 1345
+2023-06-17 19:38:44,694 - INFO - simulation.py -             erase_and_reindex_data - Number of invalid examples: 19
+2023-06-17 19:38:51,902 - INFO - goldmine.py -             <module> - Formal verification of mined assertions was skipped as per user request
+2023-06-17 19:38:51,913 - INFO - assertion_analyzer.py -             analyze_for_rank - Cannot find file: /home/hrostami/Arbiter_goldminer/goldminer/RunTime/goldmine.out/Arbiter/verif/prism/Grant_W/Grant_W.cone
+2023-06-17 19:38:51,914 - INFO - assertion_analyzer.py -             analyze - Cannot find file: /home/hrostami/Arbiter_goldminer/goldminer/RunTime/goldmine.out/Arbiter/verif/prism/Grant_W/Grant_W.gold
+2023-06-17 19:38:52,642 - INFO - miner.py -             miner - Constructing target specific data frame for mining..
+2023-06-17 19:39:11,410 - INFO - simulation.py -             erase_and_reindex_data - Number of added unique data examples: 1364
+2023-06-17 19:39:11,410 - INFO - simulation.py -             erase_and_reindex_data - Number of valid examples: 1345
+2023-06-17 19:39:11,410 - INFO - simulation.py -             erase_and_reindex_data - Number of invalid examples: 19
+2023-06-17 19:39:18,509 - INFO - goldmine.py -             <module> - Formal verification of mined assertions was skipped as per user request
+2023-06-17 19:39:18,521 - INFO - assertion_analyzer.py -             analyze_for_rank - Cannot find file: /home/hrostami/Arbiter_goldminer/goldminer/RunTime/goldmine.out/Arbiter/verif/prism/Grant_S/Grant_S.cone
+2023-06-17 19:39:18,522 - INFO - assertion_analyzer.py -             analyze - Cannot find file: /home/hrostami/Arbiter_goldminer/goldminer/RunTime/goldmine.out/Arbiter/verif/prism/Grant_S/Grant_S.gold
+2023-06-17 19:39:19,214 - INFO - goldmine.py -             <module> - Total time to mine: 0:02:44.990873
+2023-06-17 19:39:19,214 - INFO - goldmine.py -             <module> - Total Run Time: 0:03:27.100136

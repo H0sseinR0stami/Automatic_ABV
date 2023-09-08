@@ -1,0 +1,48 @@
+strict digraph "" {
+	"[2]RTS_FF_in"	 [complexity=5,
+		importance=0.170232256532,
+		rank=0.0340464513065];
+	"[1]RTS_FF"	 [complexity=3,
+		importance=0.11018240961,
+		rank=0.03672746987];
+	"[2]RTS_FF_in" -> "[1]RTS_FF";
+	"[1]rst"	 [complexity=2,
+		importance=0.700039417932,
+		rank=0.350019708966];
+	"[1]rst" -> "[1]RTS_FF";
+	state	 [complexity=1,
+		importance=0.333972051358,
+		rank=0.333972051358];
+	"[1]rst" -> state;
+	Grant_W	 [complexity=0,
+		importance=0.04003844545,
+		rank=0.0];
+	"[1]RTS_FF" -> Grant_W;
+	"[2]DCTS"	 [complexity=5,
+		importance=0.914528877,
+		rank=0.1829057754];
+	"[2]DCTS" -> "[2]RTS_FF_in";
+	"[2]state_in"	 [complexity=3,
+		importance=0.441216780892,
+		rank=0.147072260297];
+	"[2]DCTS" -> "[2]state_in";
+	"[2]state_in" -> state;
+	"[2]RTS_FF"	 [complexity=5,
+		importance=0.952577525945,
+		rank=0.190515505189];
+	"[2]RTS_FF" -> "[2]RTS_FF_in";
+	"[2]RTS_FF" -> "[2]state_in";
+	state -> Grant_W;
+	"[2]state"	 [complexity=7,
+		importance=0.604438148256,
+		rank=0.0863483068937];
+	"[2]state" -> "[2]RTS_FF_in";
+	"[2]IDLE"	 [complexity=7,
+		importance=0.542792084813,
+		rank=0.0775417264019];
+	"[2]IDLE" -> "[2]RTS_FF_in";
+	"[1]DCTS"	 [complexity=3,
+		importance=0.0721337606654,
+		rank=0.0240445868885];
+	"[1]DCTS" -> Grant_W;
+}

@@ -1,0 +1,25 @@
+Assertion report generated on: 17-Jun-2023 07:39:19 PM
+
+Assertion summary report for design: Arbiter
+############################################
+
+Target  | Total | Passed | Failed | Vacuous | Hit | Miss
+------- | ----- | ------ | ------ | ------- | --- | ----
+Grant_E |  41   |   0    |   0    |   41    | 0.0 | 1.0 
+Grant_L |  44   |   0    |   0    |   44    | 0.0 | 1.0 
+Grant_N |  47   |   0    |   0    |   47    | 0.0 | 1.0 
+Grant_S |  30   |   0    |   0    |   30    | 0.0 | 1.0 
+Grant_W |  24   |   0    |   0    |   24    | 0.0 | 1.0 
+  RTS   |   3   |   0    |   0    |    3    | 0.0 | 1.0 
+
+
+Resource usage summary report for the desing: Arbiter
+#####################################################
+
+      Phase       | Time (in [H]H:MM:SS:UUUUUU) | Memory (in MB)
+----------------- | --------------------------- | --------------
+V Parse & Ranking |       0:00:02.514078        |     377.97    
+   Simulation     |       0:00:02.051803        |     450.48    
+     D Parse      |       0:00:23.472941        |     454.22    
+     Mining       |       0:02:44.990873        |     483.65    
+     Overall      |       0:03:27.100136        |     483.65    

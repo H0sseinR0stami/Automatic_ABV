@@ -1,0 +1,48 @@
+
+property property_1;
+@(posedge PCLK)
+(RX_EMPTY == 1) |-> (INT_RX == 1)
+endproperty
+
+
+
+property property_2;
+@(posedge PCLK)
+(RX_EMPTY == 0) |-> (INT_RX == 0)
+endproperty
+
+
+
+property property_3;
+@(posedge PCLK)
+(TX_EMPTY == 0) |-> (INT_TX == 0)
+endproperty
+
+
+
+property property_4;
+@(posedge PCLK)
+(TX_EMPTY == 1) |-> (INT_TX == 1)
+endproperty
+
+
+
+property property_5;
+@(posedge PCLK)
+(ERROR == 0) |-> (PSLVERR == 0)
+endproperty
+
+
+
+property property_6;
+@(posedge PCLK)
+(ERROR == 1) |-> (PSLVERR == 1)
+endproperty
+
+
+property_1_assert : assert property (property_1) else $error ("property_1 not held!");
+property_2_assert : assert property (property_2) else $error ("property_2 not held!");
+property_3_assert : assert property (property_3) else $error ("property_3 not held!");
+property_4_assert : assert property (property_4) else $error ("property_4 not held!");
+property_5_assert : assert property (property_5) else $error ("property_5 not held!");
+property_6_assert : assert property (property_6) else $error ("property_6 not held!");

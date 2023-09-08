@@ -1,0 +1,25 @@
+strict digraph "" {
+	"[1]rst"	 [complexity=2,
+		importance=3.67647751429,
+		rank=1.83823875714];
+	state	 [complexity=1,
+		importance=1.82219109954,
+		rank=1.82219109954];
+	"[1]rst" -> state;
+	"[2]DCTS"	 [complexity=5,
+		importance=3.89096697335,
+		rank=0.778193394671];
+	"[2]state_in"	 [complexity=3,
+		importance=1.92943582907,
+		rank=0.643145276356];
+	"[2]DCTS" -> "[2]state_in";
+	"[2]state_in" -> state;
+	"[2]RTS_FF"	 [complexity=5,
+		importance=3.9290156223,
+		rank=0.78580312446];
+	"[2]RTS_FF" -> "[2]state_in";
+	Xbar_sel	 [complexity=0,
+		importance=0.0480124922466,
+		rank=0.0];
+	state -> Xbar_sel;
+}

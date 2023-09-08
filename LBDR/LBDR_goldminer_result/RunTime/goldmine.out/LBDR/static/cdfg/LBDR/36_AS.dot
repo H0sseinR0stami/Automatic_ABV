@@ -1,0 +1,12 @@
+strict digraph "" {
+	node [label="\N"];
+	"36:AS"	 [ast="<pyverilog.vparser.ast.Assign object at 0x7fdf564cfd10>",
+		def_var="['Nport']",
+		fillcolor=deepskyblue,
+		label="36:AS
+Nport = 0;",
+		statements="[]",
+		style=filled,
+		typ=Assign,
+		use_var="[]"];
+}

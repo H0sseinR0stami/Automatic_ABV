@@ -1,0 +1,84 @@
+strict digraph "" {
+	flit_id	 [complexity=1,
+		importance=0.0853604984153,
+		rank=0.0853604984153];
+	Sport	 [complexity=0,
+		importance=0.066676855725,
+		rank=0.0];
+	flit_id -> Sport;
+	"[1]Cx"	 [complexity=13,
+		importance=0.117640164558,
+		rank=0.00904924342751];
+	"[1]Cs"	 [complexity=11,
+		importance=0.0889470689402,
+		rank=0.00808609717638];
+	"[1]Cx" -> "[1]Cs";
+	"[1]E1"	 [complexity=11,
+		importance=0.0976636726282,
+		rank=0.00887851569347];
+	"[1]E1" -> Sport;
+	"[1]x_cur"	 [complexity=14,
+		importance=0.123520456368,
+		rank=0.0088228897406];
+	"[1]x_cur" -> "[1]E1";
+	"[1]W1"	 [complexity=11,
+		importance=0.0976636726282,
+		rank=0.00887851569347];
+	"[1]x_cur" -> "[1]W1";
+	"[1]Rsw"	 [complexity=11,
+		importance=0.0871537836777,
+		rank=0.00792307124343];
+	"[1]Rsw" -> Sport;
+	"[1]rst"	 [complexity=17,
+		importance=0.170897194676,
+		rank=0.0100527761574];
+	"[1]rst" -> "[1]Cx";
+	"[1]cur_addr"	 [complexity=16,
+		importance=0.152213551986,
+		rank=0.00951334699911];
+	"[1]rst" -> "[1]cur_addr";
+	"[1]Rxy"	 [complexity=13,
+		importance=0.115846879295,
+		rank=0.00891129840732];
+	"[1]rst" -> "[1]Rxy";
+	"[1]Cs" -> Sport;
+	rst	 [complexity=3,
+		importance=0.15203735414,
+		rank=0.0506791180467];
+	rst -> Sport;
+	"[1]x_dst"	 [complexity=14,
+		importance=0.121018393351,
+		rank=0.00864417095365];
+	"[1]x_dst" -> "[1]E1";
+	"[1]x_dst" -> "[1]W1";
+	"[1]W1" -> Sport;
+	"[1]cur_addr" -> "[1]x_cur";
+	"[1]y_cur"	 [complexity=14,
+		importance=0.123520456368,
+		rank=0.0088228897406];
+	"[1]cur_addr" -> "[1]y_cur";
+	"[1]Rse"	 [complexity=11,
+		importance=0.0871537836777,
+		rank=0.00792307124343];
+	"[1]Rse" -> Sport;
+	"[1]S1"	 [complexity=11,
+		importance=0.0976636726282,
+		rank=0.00887851569347];
+	"[1]S1" -> Sport;
+	"[1]y_cur" -> "[1]S1";
+	"[1]Rxy" -> "[1]Rsw";
+	"[1]Rxy" -> "[1]Rse";
+	"[1]y_dst"	 [complexity=14,
+		importance=0.121018393351,
+		rank=0.00864417095365];
+	"[1]y_dst" -> "[1]S1";
+	empty	 [complexity=2,
+		importance=0.0853604984153,
+		rank=0.0426802492076];
+	empty -> Sport;
+	"[1]dst_addr"	 [complexity=16,
+		importance=0.139702036041,
+		rank=0.00873137725259];
+	"[1]dst_addr" -> "[1]x_dst";
+	"[1]dst_addr" -> "[1]y_dst";
+}

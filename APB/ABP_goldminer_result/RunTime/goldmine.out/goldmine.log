@@ -1,0 +1,56 @@
+2023-06-16 13:32:25,698 - INFO - goldmine.py -             <module> - User specified assertion file does not exist. Continuing with auto-generated assertions
+2023-06-16 13:32:25,698 - INFO - goldmine.py -             <module> - No Mining Engine specified. Engine specified in the goldmine.cfg will be used
+2023-06-16 13:32:25,703 - WARNING - goldmine.py -             <module> - VCS Executable Not Found.
+2023-06-16 13:32:25,703 - WARNING - goldmine.py -             <module> - IFV Executable Not Found. Assertion Verification won't be possible.
+2023-06-16 13:32:27,786 - INFO - goldmine.py -             <module> - Total time for parsing, ranking: 0:00:02.077382
+2023-06-16 13:32:27,787 - INFO - goldmine.py -             <module> - Peak Memory Usage for parsing, ranking: 388.56 MB
+2023-06-16 13:32:44,494 - INFO - goldmine.py -             <module> - Simulating with: iverilog
+2023-06-16 13:32:45,520 - INFO - goldmine.py -             <module> - Compile Time: 0:00:01.023795
+2023-06-16 13:32:45,520 - INFO - goldmine.py -             <module> - Compile Memory Usage: 2.82 MB
+2023-06-16 13:32:46,545 - INFO - goldmine.py -             <module> - Run Time: 0:00:01.023795
+2023-06-16 13:32:46,546 - INFO - goldmine.py -             <module> - Run Memory Usage: 2.82 MB
+2023-06-16 13:32:46,572 - INFO - goldmine.py -             <module> - Parsing VCD file: /home/hrostami/ABP_goldminer/RunTime/goldmine.out/APB/APB.vcd
+2023-06-16 13:32:46,595 - INFO - simulation.py -             parse - Parsing VCD file generated on: Fri Jun 16 13:32:45 2023
+2023-06-16 13:32:46,595 - INFO - simulation.py -             parse - VCD file created by the tool: Icarus Verilog
+2023-06-16 13:32:46,596 - INFO - simulation.py -             parse - Design was simulated using timescale: 1ps
+2023-06-16 13:32:46,610 - INFO - simulation.py -             parse - Parsing trace data
+2023-06-16 13:33:31,903 - INFO - simulation.py -             parse - Creating time shifted data for Sequential circuit type
+2023-06-16 13:33:39,119 - INFO - simulation.py -             parse - Converting time shifted mine data in dataframes
+2023-06-16 13:33:41,423 - INFO - simulation.py -             parse - Validating simulation data
+2023-06-16 13:35:03,722 - INFO - goldmine.py -             <module> - Number of added unique data examples: 3724
+2023-06-16 13:35:03,722 - INFO - goldmine.py -             <module> - Number of valid examples: 0
+2023-06-16 13:35:03,722 - INFO - goldmine.py -             <module> - Number of invalid examples: 3724
+2023-06-16 13:35:03,722 - INFO - goldmine.py -             <module> - Total time to parse VCD file: 0:02:17.149785
+2023-06-16 13:35:05,508 - INFO - goldmine.py -             <module> - Engine used for mining: prism
+2023-06-16 13:35:05,509 - INFO - miner.py -             miner - Constructing target specific data frame for mining..
+2023-06-16 13:35:09,467 - INFO - simulation.py -             erase_and_reindex_data - Number of added unique data examples: 3724
+2023-06-16 13:35:09,467 - INFO - simulation.py -             erase_and_reindex_data - Number of valid examples: 3724
+2023-06-16 13:35:09,468 - INFO - simulation.py -             erase_and_reindex_data - Number of invalid examples: 0
+2023-06-16 13:35:09,491 - INFO - goldmine.py -             <module> - Formal verification of mined assertions was skipped as per user request
+2023-06-16 13:35:10,153 - INFO - miner.py -             miner - Constructing target specific data frame for mining..
+2023-06-16 13:36:20,740 - INFO - simulation.py -             erase_and_reindex_data - Number of added unique data examples: 3724
+2023-06-16 13:36:20,741 - INFO - simulation.py -             erase_and_reindex_data - Number of valid examples: 3724
+2023-06-16 13:36:20,741 - INFO - simulation.py -             erase_and_reindex_data - Number of invalid examples: 0
+2023-06-16 13:36:20,750 - INFO - goldmine.py -             <module> - Target value did not change in valid data rows. Mining cannot continue
+2023-06-16 13:36:20,751 - INFO - miner.py -             miner - Constructing target specific data frame for mining..
+2023-06-16 13:37:35,198 - INFO - simulation.py -             erase_and_reindex_data - Number of added unique data examples: 3724
+2023-06-16 13:37:35,198 - INFO - simulation.py -             erase_and_reindex_data - Number of valid examples: 3724
+2023-06-16 13:37:35,198 - INFO - simulation.py -             erase_and_reindex_data - Number of invalid examples: 0
+2023-06-16 13:37:35,208 - INFO - goldmine.py -             <module> - Target value did not change in valid data rows. Mining cannot continue
+2023-06-16 13:37:35,209 - INFO - miner.py -             miner - Constructing target specific data frame for mining..
+2023-06-16 13:37:39,202 - INFO - simulation.py -             erase_and_reindex_data - Number of added unique data examples: 3724
+2023-06-16 13:37:39,202 - INFO - simulation.py -             erase_and_reindex_data - Number of valid examples: 3724
+2023-06-16 13:37:39,202 - INFO - simulation.py -             erase_and_reindex_data - Number of invalid examples: 0
+2023-06-16 13:37:39,225 - INFO - goldmine.py -             <module> - Formal verification of mined assertions was skipped as per user request
+2023-06-16 13:37:39,867 - INFO - miner.py -             miner - Constructing target specific data frame for mining..
+2023-06-16 13:38:50,438 - INFO - simulation.py -             erase_and_reindex_data - Number of added unique data examples: 3724
+2023-06-16 13:38:50,438 - INFO - simulation.py -             erase_and_reindex_data - Number of valid examples: 3724
+2023-06-16 13:38:50,438 - INFO - simulation.py -             erase_and_reindex_data - Number of invalid examples: 0
+2023-06-16 13:38:50,448 - INFO - goldmine.py -             <module> - Target value did not change in valid data rows. Mining cannot continue
+2023-06-16 13:38:50,449 - INFO - miner.py -             miner - Constructing target specific data frame for mining..
+2023-06-16 13:38:54,423 - INFO - simulation.py -             erase_and_reindex_data - Number of added unique data examples: 3724
+2023-06-16 13:38:54,423 - INFO - simulation.py -             erase_and_reindex_data - Number of valid examples: 3724
+2023-06-16 13:38:54,423 - INFO - simulation.py -             erase_and_reindex_data - Number of invalid examples: 0
+2023-06-16 13:38:54,445 - INFO - goldmine.py -             <module> - Formal verification of mined assertions was skipped as per user request
+2023-06-16 13:38:55,151 - INFO - goldmine.py -             <module> - Total time to mine: 0:03:49.642671
+2023-06-16 13:38:55,151 - INFO - goldmine.py -             <module> - Total Run Time: 0:06:29.447898

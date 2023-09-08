@@ -1,0 +1,75 @@
+flit_id
+Importance: 0.05762
+Complexity: 1
+Rank: 0.05762
+
+[1]E1
+Importance: 0.06992
+Complexity: 5
+Rank: 0.01398
+
+[1]x_cur
+Importance: 0.09578
+Complexity: 8
+Rank: 0.01197
+
+[1]rst
+Importance: 0.14316
+Complexity: 11
+Rank: 0.01301
+
+Lport
+Importance: 0.03894
+Complexity: 0
+Rank: 0.0
+
+rst
+Importance: 0.09656
+Complexity: 3
+Rank: 0.03219
+
+[1]x_dst
+Importance: 0.09328
+Complexity: 8
+Rank: 0.01166
+
+[1]W1
+Importance: 0.06992
+Complexity: 5
+Rank: 0.01398
+
+[1]cur_addr
+Importance: 0.12447
+Complexity: 10
+Rank: 0.01245
+
+[1]S1
+Importance: 0.06992
+Complexity: 5
+Rank: 0.01398
+
+[1]y_cur
+Importance: 0.09578
+Complexity: 8
+Rank: 0.01197
+
+[1]y_dst
+Importance: 0.09328
+Complexity: 8
+Rank: 0.01166
+
+[1]dst_addr
+Importance: 0.11196
+Complexity: 10
+Rank: 0.0112
+
+empty
+Importance: 0.05762
+Complexity: 2
+Rank: 0.02881
+
+[1]N1
+Importance: 0.06992
+Complexity: 5
+Rank: 0.01398
+

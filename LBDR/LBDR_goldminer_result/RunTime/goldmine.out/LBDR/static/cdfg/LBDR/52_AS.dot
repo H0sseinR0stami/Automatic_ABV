@@ -1,0 +1,12 @@
+strict digraph "" {
+	node [label="\N"];
+	"52:AS"	 [ast="<pyverilog.vparser.ast.Assign object at 0x7fdf564d11d0>",
+		def_var="['Rwn']",
+		fillcolor=deepskyblue,
+		label="52:AS
+Rwn = Rxy[4];",
+		statements="[]",
+		style=filled,
+		typ=Assign,
+		use_var="['Rxy']"];
+}

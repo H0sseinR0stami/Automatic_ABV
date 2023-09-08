@@ -1,0 +1,5 @@
+[1]rst	state
+[2]DCTS	[2]state_in
+[2]state_in	state
+[2]RTS_FF	[2]state_in
+state	Xbar_sel

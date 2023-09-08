@@ -1,0 +1,71 @@
+strict digraph "" {
+	node [label="\N"];
+	"92:IF"	 [ast="<pyverilog.vparser.ast.IfStatement object at 0x7fdf564d0990>",
+		fillcolor=springgreen,
+		label="92:IF",
+		statements="[]",
+		style=filled,
+		typ=IfStatement];
+	"95:IF"	 [ast="<pyverilog.vparser.ast.IfStatement object at 0x7fdf564d0a10>",
+		fillcolor=springgreen,
+		label="95:IF",
+		statements="[]",
+		style=filled,
+		typ=IfStatement];
+	"92:IF" -> "95:IF"	 [cond="['rst', 'empty']",
+		label="!((rst || empty))",
+		lineno=92];
+	"92:BL"	 [ast="<pyverilog.vparser.ast.Block object at 0x7fdf57900890>",
+		fillcolor=turquoise,
+		label="92:BL
+{ Nport, Eport, Wport, Sport, Lport } <= 0;",
+		statements="[<pyverilog.vparser.ast.NonblockingSubstitution object at 0x7fdf579008d0>]",
+		style=filled,
+		typ=Block];
+	"92:IF" -> "92:BL"	 [cond="['rst', 'empty']",
+		label="(rst || empty)",
+		lineno=92];
+	"95:BL"	 [ast="<pyverilog.vparser.ast.Block object at 0x7fdf564d0a90>",
+		fillcolor=turquoise,
+		label="95:BL
+Nport <= (N1 & ~E1 & ~W1 | N1 & E1 & Rne | N1 & W1 & Rnw) & Cn;
+Eport <= (E1 & ~N1 & ~S1 | E1 & N1 & Ren | E1 & S1 & Res) & \
+Ce;
+Wport <= (W1 & ~N1 & ~S1 | W1 & N1 & Rwn | W1 & S1 & Rws) & Cw;
+Sport <= (S1 & ~E1 & ~W1 | S1 & E1 & Rse | S1 & W1 & Rsw) & \
+Cs;
+Lport <= ~N1 & ~E1 & ~W1 & ~S1;",
+		statements="[<pyverilog.vparser.ast.NonblockingSubstitution object at 0x7fdf564d0ad0>, <pyverilog.vparser.ast.NonblockingSubstitution object \
+at 0x7fdf564fc190>, <pyverilog.vparser.ast.NonblockingSubstitution object at 0x7fdf564fc750>, <pyverilog.vparser.ast.NonblockingSubstitution \
+object at 0x7fdf564fcd90>, <pyverilog.vparser.ast.NonblockingSubstitution object at 0x7fdf57900410>]",
+		style=filled,
+		typ=Block];
+	"Leaf_91:AL"	 [def_var="['Lport', 'Nport', 'Sport', 'Eport', 'Wport']",
+		label="Leaf_91:AL"];
+	"95:BL" -> "Leaf_91:AL"	 [cond="[]",
+		lineno=None];
+	"91:BL"	 [ast="<pyverilog.vparser.ast.Block object at 0x7fdf57900c10>",
+		fillcolor=turquoise,
+		label="91:BL",
+		statements="[]",
+		style=filled,
+		typ=Block];
+	"91:BL" -> "92:IF"	 [cond="[]",
+		lineno=None];
+	"95:IF" -> "95:BL"	 [cond="['flit_id']",
+		label="(flit_id == 3'b001)",
+		lineno=95];
+	"92:BL" -> "Leaf_91:AL"	 [cond="[]",
+		lineno=None];
+	"91:AL"	 [ast="<pyverilog.vparser.ast.Always object at 0x7fdf57900c50>",
+		clk_sens=True,
+		fillcolor=gold,
+		label="91:AL",
+		sens="['clk']",
+		statements="[]",
+		style=filled,
+		typ=Always,
+		use_var="['flit_id', 'Cw', 'Cn', 'Res', 'S1', 'Rne', 'Rnw', 'Cs', 'Rws', 'Ren', 'Rwn', 'W1', 'Rse', 'rst', 'N1', 'Rsw', 'E1', 'empty', 'Ce']"];
+	"91:AL" -> "91:BL"	 [cond="[]",
+		lineno=None];
+}

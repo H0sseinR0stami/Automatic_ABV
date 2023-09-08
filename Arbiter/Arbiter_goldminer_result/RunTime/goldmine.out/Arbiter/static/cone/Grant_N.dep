@@ -1,0 +1,13 @@
+[1]rst	[1]RTS_FF
+[1]rst	state
+[2]RTS_FF_in	[1]RTS_FF
+[1]RTS_FF	Grant_N
+[2]DCTS	[2]state_in
+[2]DCTS	[2]RTS_FF_in
+[2]state_in	state
+[2]RTS_FF	[2]state_in
+[2]RTS_FF	[2]RTS_FF_in
+state	Grant_N
+[2]state	[2]RTS_FF_in
+[2]IDLE	[2]RTS_FF_in
+[1]DCTS	Grant_N
