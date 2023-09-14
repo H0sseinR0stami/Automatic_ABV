@@ -63,9 +63,8 @@ async def test_arbiter(dut):
                 print("overall coverage level", cov_op)
                 if(cov_op >= Maximum_Functional_coverage):
                     break
-                if (i >= iteration):         
+                if (i == iteration):         
                     if (cov_op > ex_cov_op):
-                        ex_cov_op = cov_op
                         ex_cov_op = cov_op
                         iteration = iteration + more_steps
         top_cover_item = coverage_db["top"]

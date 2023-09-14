@@ -151,7 +151,7 @@ async def LBDR_test(dut):
                f.write(f'{seed_value}\n')
          break
 
-      if (i >= iteration):         
+      if (i == iteration):         
         if (cov_op > ex_cov_op):
             ex_cov_op = cov_op
             iteration = iteration + more_steps
